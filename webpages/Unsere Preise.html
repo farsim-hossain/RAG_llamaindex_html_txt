@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Waldorf365 Dokumentation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="wiki.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+  
+    
+
+
+
+<meta name="description" content="Waldorf 365 Dokumentation: ">
+        <meta name="keywords"
+        content="Waldorf 365, Preise, Pakete, Module">
+      <meta name="author" content="Ulrich Großmann"></head><body>
+    <div class="wrapper"><nav id="sidebar">
+
+<form action="search.php">
+<input type="text" id="key" name="key" placeholder="Suche...">
+<input type="submit" value="">
+</form>
+<ul class="list-unstyled components">
+
+<li id="menu0" >
+    <a href="#faq" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">FAQ</a>
+    <ul class="collapse list-unstyled" id="faq">     
+        <li>
+            <a href="faq.php">FAQ</a>
+        </li>  
+    </ul>
+</li>
+
+<li id="menu1" >
+    <a href="#blog" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Neuigkeiten</a>
+    <ul class="collapse list-unstyled" id="blog">     
+        <li>
+            <a href="blog5.php">31.12.23 Jahresrückblick</a>
+        </li>  
+        <li>
+            <a href="blog4.php">1.5.23 Neuer Standard³</a>
+        </li>  
+        <li>
+            <a href="blog3.php">20.4.23 Neue Internetseite</a>
+        </li> 
+        <li>
+            <a href="blog2.php">1.8.22 Neues Zeugnissystem</a>
+        </li>    
+        <li>
+            <a href="blog1.php">11.6.22 Neue Dokumentation</a>
+        </li>       
+    </ul>
+</li>
+
+<li id="menu2" >
+    <a href="#philosophy" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Allgemeines</a>
+    <ul class="collapse list-unstyled show" id="philosophy">     
+        <li>
+            <a href="philosophy_opennes.php">Offenheit</a>
+        </li> 
+        <li>
+            <a href="philosophy_security.php">Datenschutz</a>
+        </li>       
+        <li>
+            <a href="philosophy_pricing.php">Preise</a>
+        </li> 
+    </ul>
+</li>
+<li id="menu2" >
+    <a href="#dataprotection" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Datenschutz</a>
+    <ul class="collapse list-unstyled" id="dataprotection">     
+        <li>
+            <a href="philosophy_security.php">Datenschutz</a>
+        </li> 
+        <li>
+            <a href="philosophy_copy.php">Sicherheitskopien</a>
+         </li> 
+         <li>
+            <a href="philosophy_security-problems.php">Sicherheitsrisiken</a>
+         </li>         
+    </ul>
+</li>
+
+
+<li id="menu3" >
+    <a href="#datei" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Waldorf 365 Planer</a>
+    <ul class="collapse list-unstyled" id="datei">
+        <li>
+            <a href="file_overview">Übersicht</a>
+        </li>     
+        <li>
+            <a href="file_system-requirements">Systemvoraussetzungen</a>
+        </li> 
+        <li>
+            <a href="file_install-linux">Installation Linux</a>
+        </li>   
+        <li>
+            <a href="file_export-and-import">Export und Import</a>
+        </li>  
+        <li>
+            <a href="file_export-xml">XML-Export und Import</a>
+        </li>   
+        <li>
+            <a href="file_import-students-teacher">Import Lehrer-/Schülerdaten</a>
+        </li>   
+        <li>
+            <a href="file_zoom">Gesamtzoom</a>
+        </li>  
+        <li>
+            <a href="file_license">Lizenz</a>
+        </li> 
+        <li>
+            <a href="file_update">Update</a>
+        </li>  
+         <li>
+            <a href="file_basic-data">Grunddaten</a>
+        </li>      
+    </ul>
+</li>
+
+<li id="menu4" >
+    <a href="#courses" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Deputate</a>
+    <ul class="collapse list-unstyled" id="courses">
+        <li>
+            <a href="courses_overview">Übersicht</a>
+        </li>  
+        <li>
+            <a href="courses_view">Deputatsplan anzeigen</a>
+        </li>   
+        <li>
+            <a href="courses_parting">Kurse richtig teilen</a>
+        </li>  
+        <li>
+            <a href="courses_changes">Änderungen einpflegen</a>
+        </li>   
+        <li>
+            <a href="courses_monthly">Monatliches Deputat & Einmalzahlung</a>
+        </li>         
+    </ul>
+</li>
+
+<li id="menu5" >
+    <a href="#schedule" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Stundenplan</a>
+    <ul class="collapse list-unstyled" id="schedule">
+        <li>
+            <a href="schedule_overview.php">Übersicht</a>
+        </li>  
+        <li>
+            <a href="schedule_view.php">Stundenplan anzeigen</a>
+        </li>  
+        <li>
+            <a href="schedule_fix-constraints.php">Algorithmus</a>
+        </li>  
+        <li>
+            <a href="schedule_user-interface.php">Digitale Stecktafel</a>
+        </li> 
+        <li>
+            <a href="schedule_hand.php">Mit der Stecktafel arbeiten</a>
+        </li> 
+        <li>
+            <a href="schedule_all-view.php">Gesamtsicht</a>
+        </li>  
+        <li>
+            <a href="schedule_move-collisions">Kollisionen erkennen</a>
+        </li>    
+        <li>
+            <a href="schedule_parallel-view">Nebeneinander-Ansicht</a>
+        </li>   
+        <li>
+            <a href="schedule_user-constraints-faq">Planungsregeln-FAQ</a>
+        </li>   
+        <li>
+            <a href="schedule_good-plan">Tipps</a>
+        </li>  
+        <li>
+            <a href="schedule_epochslots">Handwerklich-künstlerische Epochen</a>
+        </li>
+        <li>
+            <a href="schedule_part-planning">Teilplan / Halbjahresplan</a>
+        </li>
+        <li>
+            <a href="schedule_supervisions">Aufsichtspläne</a>
+        </li>
+        <li>
+            <a href="schedule_view-settings.php">Ansicht anpassen</a>
+        </li>  
+    </ul>
+</li>
+
+<li id="menu6" >
+    <a href="#epochplan" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Epochenplan</a>
+    <ul class="collapse list-unstyled" id="epochplan">
+        <li>
+            <a href="epochplan_overview.php">Übersicht</a>
+        </li>  
+        <li>
+            <a href="schedule_hand.php">Mit der Stecktafel arbeiten</a>
+        </li> 
+        <li>
+            <a href="epochplan_view.php">Epochenplan anzeigen</a>
+        </li>   
+        <li>
+            <a href="epochplan_whole-day.php">Praktika, Klassenfahrten</a>
+        </li>      
+    </ul>
+</li>
+
+
+<li id="menu7">
+    <a href="#cloud" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Waldorf 365 Cloud</a>
+    <ul class="collapse list-unstyled" id="cloud">
+        <li>
+            <a href="cloud_install.php">App installieren</a>
+        </li> 
+    </ul>
+</li>
+
+
+<li id="menu8" >
+    <a href="#vertretungen" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Vertretungen</a>
+    <ul class="collapse list-unstyled" id="vertretungen">
+        <li>
+            <a href="substitutions_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="substitutions_criteria.php">Kriterien</a>
+        </li> 
+        <li>
+            <a href="substitutions_sicknote.php">Krankmelden</a>
+        </li>    
+
+        <li>
+            <a href="substitutions_edit-sicknote.php">Krankmeldung bearbeiten</a>
+        </li> 
+        <li>
+            <a href="substitutions_digital_sicknote.php">Elektronische Krankmeldung (eAU)</a>
+        </li>  
+        <li>
+            <a href="substitutions_edit-substitution.php">Vertretung bearbeiten</a>
+        </li> 
+        <li>
+            <a href="substitutions_plan.php">Vertretungsplan anzeigen</a>
+        </li>     
+        <li>
+            <a href="substitutions_statistics.php">Vertretungsstatistik</a>
+        </li>     
+        <li>
+            <a href="substitutions_sustitutionsplan.php">Vertretungsbereitschaften einrichten</a>
+        </li> 
+        <li>
+            <a href="substitutions_website.php">Vertretungsplan auf Webseite anzeigen</a>
+        </li>       
+    </ul>
+</li>
+
+<li id="menu9" >
+    <a href="#kalender" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Kalender</a>
+    <ul class="collapse list-unstyled" id="kalender">
+        <li>
+            <a href="calendar_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="calendar_new-event.php">Neue Veranstaltung</a>
+        </li> 
+        <li>
+            <a href="calendar_levels-of-privacy.php">öffentlich / privat</a>
+        </li> 
+        <li>
+            <a href="calendar_add-videoconference.php">Videokonferenz</a>
+        </li> 
+        <li>
+            <a href="calendar_equipment-reservation.php">Geräte reservieren</a>
+        </li> 
+        <li>
+            <a href="calendar_export-events.php">Termine exportieren</a>
+        </li> 
+        <li>
+            <a href="calendar_export-private.php">Private Termine exportieren</a>
+        </li> 
+        <li>
+            <a href="calendar_website.php">Termine auf Webseite anzeigen</a>
+        </li>    
+         <li>
+            <a href="studentapp_parents-day-create.php">Elternsprechtag anlegen</a>
+        </li>      
+    </ul>
+</li>
+
+<li id="menu10" >
+    <a href="#moodle" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Lernplattform</a>
+    <ul class="collapse list-unstyled" id="moodle">
+        <li>
+            <a href="moodle_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="moodle_login.php">Zu Moodle&trade; wechseln</a>
+        </li> 
+        <li>
+            <a href="moodle_import-students.php">Schüler synchronisieren</a>
+        </li> 
+        <li>
+            <a href="moodle_import-teacher.php">Lehrer synchronisieren</a>
+        </li> 
+        <li>
+            <a href="moodle_import-courses.php">Kurse synchronisieren</a>
+        </li>         
+    </ul>
+</li>
+
+<li id="menu11" >
+    <a href="#reports" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Zeugnisse</a>
+    <ul class="collapse list-unstyled" id="reports">
+        <li>
+            <a href="reports_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="reports_roadmap.php">Ablaufplan</a>
+        </li> 
+        <li>
+            <a href="reports_write-overview.php">Zeugnisse schreiben - Übersicht</a>
+        </li> 
+        <li>
+            <a href="reports_write.php">Zeugnisse online schreiben</a>
+        </li> 
+        <li>
+            <a href="reports_write-offline.php">Zeugnisse offline schreiben</a>
+        </li>
+        <li>
+            <a href="reports_write-hand.php">Zeugnisse von Hand schreiben</a>
+        </li> 
+        <li>
+            <a href="reports_correct.php">Zeugnisse korrigieren</a>
+        </li> 
+        <li>
+            <a href="reports_accept.php">Zeugnisse freigeben</a>
+        </li> 
+        <li>
+            <a href="reports_print-individual.php">Druckvorschau</a>
+        </li> 
+        <li>
+            <a href="reports_print.php">Zeugnisse drucken</a>
+        </li> 
+        <li>
+            <a href="reports_archieve.php">Zeugnisse archivieren</a>
+        </li> 
+        <li>
+            <a href="reports_create-marks.php">Noten erzeugen</a>
+        </li> 
+        <li>
+            <a href="reports_definition.php">Zeugnisprozesse</a>
+        </li> 
+        <li>
+            <a href="reports_create-definition.php">Zeugnisdefinition erstellen</a>
+        </li> 
+        <li>
+            <a href="reports_create-process.php">Zeugnisprozesse verwalten</a>
+        </li> 
+        <li>
+            <a href="reports_spellchecking-install.php">Rechtschreibkorrektur installieren</a>
+        </li> 
+        <li>
+            <a href="reports_spellchecking.php">Rechtschreibung korrigieren</a>
+        </li> 
+        <li>
+            <a href="reports_sort-subjects.php">Zeugnisreihenfolge</a>
+        </li>   
+        <li>
+            <a href="reports_problems.php">Zeugnisprobleme</a>
+        </li>     
+    </ul>
+</li>
+
+<li id="menu12">
+    <a href="#register" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Klassenbuch</a>
+    <ul class="collapse list-unstyled" id="register">
+        <li>
+            <a href="register_overview.php">Übersicht</a>
+        </li>   
+        <li>
+            <a href="register_open.php">Klassenbuch öffnen</a>
+        </li>  
+        <li>
+            <a href="register_themes.php">Stundenthemen</a>
+        </li> 
+        <li>
+            <a href="register_absence.php">Abwesenheit, Verspätung</a>
+        </li> 
+        <li>
+            <a href="register_entry.php">Eintrag, Bemerkung</a>
+        </li>  
+        <li>
+            <a href="register_homework.php">Hausaufgabe</a>
+        </li> 
+        <li>
+            <a href="studentapp_register.php">Für Eltern anzeigen</a>
+        </li> 
+    </ul>
+</li>
+
+<li id="menu13">
+    <a href="#user" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Benutzerverwaltung</a>
+    <ul class="collapse list-unstyled" id="user">
+        <li>
+            <a href="user_overview.php">Übersicht</a>
+        </li>      
+        <li>
+            <a href="user_change-password.php">Passwort ändern</a>
+        </li>  
+        <li>
+            <a href="user_change-role.php">Rollen ändern</a>
+        </li>  
+        <li>
+            <a href="user_notifications.php">Benachrichtigungen</a>
+        </li>  
+    </ul>
+</li>
+
+<li id="menu14">
+    <a href="#threema" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Messenger</a>
+    <ul class="collapse list-unstyled" id="threema">
+        <li>
+            <a href="threema_overview.php">Übersicht</a>
+        </li>   
+    </ul>
+</li>
+
+<li id="menu15">
+    <a href="#bbb" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Videokonferenzen</a>
+    <ul class="collapse list-unstyled" id="bbb">
+        <li>
+            <a href="bbb_overview.php">Übersicht</a>
+        </li>   
+        <li>
+            <a href="calendar_add-videoconference.php">Videokonferenz hinzufügen</a>
+        </li> 
+        <li>
+            <a href="bbb_start-videoconference.php">Videokonferenz starten</a>
+        </li> 
+    </ul>
+</li>
+
+<li id="menu16">
+    <a href="#studentapp" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Schüler/Eltern-App</a>
+    <ul class="collapse list-unstyled" id="studentapp">
+        <li>
+            <a href="studentapp_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="studentapp_rights.php">Einrichten, Rechteverwaltung</a>
+        <li>
+            <a href="studentapp_homework.php">Hausaufgaben anzeigen</a>
+        </li>
+        <li>
+            <a href="studentapp_sicknote.php">Schüler krankmelden</a>
+        </li>
+         <li>
+            <a href="studentapp_register.php">Klassenbuch-Einträge</a>
+        </li>
+        <li>
+            <a href="studentapp_parents-day-create.php">Elternsprechtag anlegen</a>
+        </li>
+        <li>
+            <a href="studentapp_parents-day.php">Elternsprechtag Anmeldung</a>
+        </li>
+    </ul>
+</li>
+
+
+</ul>
+
+</nav>
+
+        <!-- Page Content  -->
+        <div id="right-part">
+
+            <nav id="menu" class="navbar navbar-expand-lg navbar-light sky bg-light">
+           
+                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <a href="index.php"  class="mr-auto"><img src="wikiimages/logo-white.png" class="logo d-inline"><span id="title-font">Dokumentation</span></a>
+                   
+
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+            <a class="nav-link nav-a" id="main-page-link" href="../index.php">Zur Hauptseite</a>
+          </li>
+                           
+                        </ul>
+                    </div>
+            
+            </nav><div id="content-wrapper"><div id="top"></div></div><div id="content" class="container col-xl-10 py-2"><h1>Unsere Preise</h1><p class="tag-paragraph"><img class="tag-image" src="wikiimages/tags.svg"> Stichwörter: <span class="tag">Preise</span><span class="tag">Pakete</span><span class="tag">Module</span></p>
+
+<p><span class="waldorf365"> Waldorf 365 </span>besteht aus zwei Anwendungen, dem <span class="waldorf365Planer">Waldorf 365 Planer</span> und der <span class="waldorf365Cloud">Waldorf 365 Cloud</span>, die ihrerseits 
+aus mehreren Modulen bestehen. Sie können<span class="waldorf365"> Waldorf 365 </span>in einzelnen Modulen buchen, oder eines unserer 
+kostengünstigen Gesamtpakete.
+
+</p>
+<p class="remark"><img src="wikiimages/info2.svg" class="info-image"> Alle Preise sind monatliche Preise inclusive die jeweils gültige gesetzliche Mehrwertsteuer</p>
+
+<h2 id="courses">Deputate <span class="free">Kostenlos</span> <span class="planer-app"><span class="waldorf365Planer">Waldorf 365 Planer</span></span></h2>
+
+<ul>
+    <li>Erfassung der Grunddaten (Fächer, Lehrer, Klassen, Räume, Schüler, Gruppen, usw.).</li>
+    <li>Verwaltung von Lehrgenehmigungen.</li>
+    <li>Verwaltung von Verträgen.</li>
+    <li>Verwaltung eines Curriculums (Klassenweise Sollstunden).</li>
+    <li>Verwaltung eines Deputatsplanes nach Klassen, Lehrern oder Fächern.</li>
+    <li>Druck/Export der Pläne in folgende Formate: PDF, CSV, Excel, Zwischenablage.</li>
+    <li>Druck/Export von Zusammenfassungen und Statistiken in die benannten Formate.</li>
+    <li>Beliebig oft: Speichern, Rückgängigmachen und Wiederherstellen.</li>
+    <li>Export und Import nach Asc-XML.</li>
+    <li>Import von Schülerdaten und Lehrerdaten aus Excel (z. B. Prokurat), CSV oder Zwischenablage.</li>
+    <li>Automatisches Erkennen von Problemen im Plan und in den Grunddaten und ggf. automatisches Beheben derselben.</li>
+    <li>Manuelle Erfassung von Anmerkungen.</li>
+
+</ul>
+
+<h2 id="epochenplan">Epochenplan <span class="free">Kostenlos</span> <span class="planer-app"><span class="waldorf365Planer">Waldorf 365 Planer</span></span></h2>
+<ul>
+    <li>Manuelles Erstellen und Bearbeiten von Epochenplänen an der Digitalen Stecktafel.</li>
+    <li>Automatische Kollisionserkennung und Anzeige in der Stecktafel.</li>
+    <li>Automatisches Generieren von Epochenplänen.</li>
+    <li>Der Raumplan wird automatisch mit generiert.</li>
+    <li>Erfassen von individuellen Planungsbedingungen wie gewünschten Epochenlängen, Abwesenheiten, Epochenreihenfolgen usw. per Assistent.</li>
+    <li>Export in verschiedene PDF-Formate(Querformat, Hochformat, Lehrerpläne, Klassenpläne).</li>
+</ul>
+
+<h2 id="stundenplan">Stundenplan <span class="price">69 €</span> <span class="planer-app"><span class="waldorf365Planer">Waldorf 365 Planer</span></span></h2>
+<ul>
+    <li>Manuelles Erstellen und Bearbeiten von Stundenplänen an der Digitalen Stecktafel.</li>
+    <li>Automatische Kollisionserkennung und Anzeige in der Stecktafel.</li>
+    <li>Automatisches Generieren von Stundenplänen.</li>
+    <li>Der Raumplan wird automatisch mit generiert.</li>
+    <li>Beliebig viele beliebig positionierbare verknüpfte Epochenschienen.</li>
+    <li>Erfassen von individuellen Planungsbedingungen wie Doppelstunden, Randstunden, Abwesenheiten, Anzahl der Nachmittage, Fächer, die nicht am selben Tag liegen dürfen, usw.</li>
+    <li>Export in verschiedene PDF-Formate (Gesamtpläne, Raumpläne, Lehrerpläne, Klassenpläne).</li>
+</ul>
+
+
+
+<h2 id="cloud-server">Cloud-Server <span class="price">49 €</span> <span class="cloud-app"><span class="waldorf365Cloud">Waldorf 365 Cloud</span></span></h2>
+<ul>
+    <li>Server-Datei, an der beliebig viele gleichzeitige Nutzer von beliebig vielen <span class="waldorf365Planer">Waldorf 365 Planer</span> Instanzen 
+    arbeiten können.</li>
+    <li>Tägliche verschlüsselte Sicherheitskopie in zweitem Serverstandort, die 21 Tage vorgehalten werden.</li>
+    <li><span class="waldorf365Cloud">Waldorf 365 Cloud</span> Internetseite und <span class="waldorf365Cloud">Waldorf 365 Cloud</span> Smartphone App für alle Betriebssysteme</li>
+        <ul>
+        <li>Anzeige von Deputatsplan, Stundenplan, Epochenplan</li>
+        <li>Feedback-Prozesse zu Deputatsplan, Stundenplan, Epochenplan</li>
+        </ul>
+</ul>
+
+<h2 id="calendar">Kalender <span class="price">29 €</span> <span class="cloud-app"><span class="waldorf365Cloud">Waldorf 365 Cloud</span></span></h2>
+<ul>
+    <li>Kalender, der alle regulären oder im Vertretungsplan geänderten Stunden erfasst.</li>
+    <li>Automatisches Hinzufügen von gesetzlichen Feiertagen.</li>
+    <li>Erfassen von privaten, internen oder öffentlichen Terminen.</li>
+    <li>Export der öffentlichen Termine im ICalendar-Format (z. B. Outlook, google calendar, Apple Kalenderformate).</li>
+    <li>Geschützter Export der privaten und externen Termine im ICalendar-Format.</li>
+    <li>Benachrichtigung der Teilnehmer von internen und privaten Veranstaltungen per E-Mail (oder bei Buchung des Moduls Threema per Messanger) möglich.</li>
+    <li>Die Benachrichtigungsrichtlinie kann von den Lehrern individuell angepasst werden.</li>
+    <li>Raumbuchungen und Buchung von externen Vermietungen.</li>
+    <li>Buchung von Geräten.</li>
+    <li>Buchung von Videokonferenzen in Verbindung mit dem Modul BigBlueButton.</li>
+</ul>
+
+<h2 id="substitutions">Vertretungen <span class="price">69 €</span> <span class="cloud-app"><span class="waldorf365Cloud">Waldorf 365 Cloud</span></span></h2>
+<ul>
+    <li>Erfassen von Krankmeldungen der Lehrer.</li>
+    <li>Automatisches Ermitteln von Vertretungen auf der Basis des Vertretungsbereitschaftplanes, 
+    des Stundenplanes und Schulkalenders.</li>
+    <li>Automatische Benachrichtigung der Vertretungslehrer per E-Mail.</li>
+    <li>Automatische Benachrichtigungen per Threema Messanger in Verbindung mit dem Modul Threema</li>
+    <li>Die Benachrichtigungsrichtlinie kann von den Lehrern individuell angepasst werden.</li>
+    <li>Verwaltung von Arbeitsaufträgen für die Vertretungsstunden.</li>
+    <li>Raumbuchungen und Buchung von externen Vermietungen.</li>
+    <li>Export des Vertretungsplanes im PDF-Format.</li>
+</ul>
+
+<h2 id="zeugnisse">Zeugnisse <span class="price">69 €</span> <span class="cloud-app"><span class="waldorf365Cloud">Waldorf 365 Cloud</span></span></h2>
+<ul>
+    <li>Erstellen von beliebigen Zeugnissen, wie Jahreszeugnissen, Halbjahreszeugnissen, Textzeugnissen, Notenzeugnissen oder Abschlusszeugnissen.</li>
+    <li>Sieben vorhandene Zeugnisvorlagen.</li>
+    <li>Wir erstellen Ihnen kostenlos eine individuelle Zeugnisvorlage nach Ihren Vorstellungen.</li>
+    <li>Weitere Zeugnisvorlagen erstellen wir Ihnen zu einem Stundensatz von 90 €.</li>
+    <li>Die Zeugnisvorlagen können auch selbst im mitgelieferten Vorlagen-Editor 
+    erstellt und bearbeitete werden.</li>
+    <li>Eingabe der Zeugnistexte und Noten online.</li>
+    <li>Automatisches Einlesen von Word-Dateien mit Zeugnissen (Offline-Modus).</li>
+    <li>Unterstützung von handgeschriebenen Zeugnissen in Kombination.</li>
+    <li>Unterstützung von automatischer Korrektur von Rechtschreibung, Zeichensetzung, Grammatik und Stil schon während des Schreibens 
+    (erfordert die Installation eines kostenlosen Plugins).</li>
+    <li>Intelligente (z. B. geschlechterspezifische) Zeugnistexte</li>
+    <li>Professioneller Drucksatz mit Ligaturen und automatischer Silbentrennung mit LaTeX.</li>
+    <li>Geführter Korrekturprozess zum gegenseitigen Korrekturlesen in der Cloud.</li>
+    <li>Das Zeugnisprogramm läuft auch am Smartphone.</li>
+    <li>Übersichten über den Fortschritt des Zeugnisprozesses.</li>
+    <li>Druck als Blätter, Broschüre oder mit Mantelbogen.</li>
+    <li>Unterstützte Formate: DIN A4 und DIN A5.</li>  
+    <li>Export und Archivierung der Zeugnisse in folgende Formate: OpenDocument (Word, LibreOffice...), LaTeX und PDF.</li>  
+</ul>
+
+<h2 id="moodle">Lernplattform <span class="price">ab 19 €</span><span class="cloud-app"><span class="waldorf365Cloud">Waldorf 365 Cloud</span></span></h2>
+<ul>
+    <li>Automatische Anmeldung und Weiterleitung von<span class="waldorf365"> Waldorf 365 </span>nach Moodle&trade;.
+    Die Lehrer müssen weder Adresse noch Passwort und Benutzername kennen, um sich 
+    in Moodle&trade; einzuloggen.</li>
+    <li>Automatische Synchronisation von Lehrer- und Schüler-Moodle&trade;-Accounts aus den<span class="waldorf365"> Waldorf 365 </span>Daten.</li>
+    <li>Automatisches Generieren von Moodle&trade;-Kursen auf der Basis des<span class="waldorf365"> Waldorf 365 </span>Deputatsplanes.</li>
+    <li>Die Schüler werden automatisch ihren jeweiligen Kursen zugeteilt.</li>
+    <li>Die Lehrer werden automatisch als Trainer in den Kursen hinzugefügt.</li>
+</ul>
+
+<h2 id="bbb">Videokonferenzen<span class="price">1,29 €</span> je gleichzeitiger Nutzer je Monat <span class="cloud-app"><span class="waldorf365Cloud">Waldorf 365 Cloud</span></span></h2>
+<ul>
+    <li>Datenschutzkonformes Videokonferenzsystem BigBlueButton&trade;.</li>
+    <li>Garantierte Serverkapazität.</li>
+    <li>Umfragen, Präsentationen, Gruppenräume, Whiteboard usw.</li>
+    <li>Teilnahme per Telefon möglich.</li>
+</ul>
+
+<h2 id="threema">Messager ab <span class="price">9 €</span> <span class="cloud-app"><span class="waldorf365Cloud">Waldorf 365 Cloud</span></span></h2>
+<p>9 € für eine einzügige Schule und 19 € für alle mehrzügigen Schulformen.</p>
+<ul>
+    <li>Benachrichtigungen können per Threema&trade;-Messanger empfangen werden.</li>
+</ul>
+
+<h2>Unsere Gesamtpakete</h2>
+
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm  border-sky">
+            <div class="card-header py-3 text-white bg-sky border-sky">
+                <h4 class="my-0 fw-normal">Demo</h4>
+              </div>
+              <div class="card-body">
+              <h3 class="card-title free">Kostenlos</h3>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Deputate</li>
+                <li>Stundenplanung</li>
+                <li>Epochenplanung</li>
+                <li>Lokale Dateien</li>
+                <li>2 Planungsregeln</li>
+                <li>Kein Drucken von Plänen</li>
+              </ul>
+              <a class="important-link" href="http://waldorf365.de#section-demo">Beantragen</a>
+            </div>
+            </div>
+          </div>
+
+          <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-medium">
+            <div class="card-header bg-sky  text-white bg-medium  py-3 border-medium">
+              <h4 class="my-0 fw-normal ">Premium Partnerschaft</h4>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title pricing-card-title">49 €<small class="text-muted fw-light"> / Monat</small></h3>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Telefonservice</li>
+                <li>E-Mail-Service</li>
+                <li>Individuelle Anpassungen</li>  
+                <li>Beliebige Zeugnislayouts</li>
+                <li>Unterstützten Sie die Entwicklung von Waldorf 365</li>                
+              </ul>
+              <a class="important-link"
+                href="mailto:bestellen@ug-software.de?subject=Premium Partner werden">Partner werden</a>
+            </div>
+          </div>
+        </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-white bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Premium-Paket</h4>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title pricing-card-title">399 €<small class="text-muted fw-light"> / Monat</small></h3>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Alle Module<br>
+                  <span class="footnote">*außer Zusatzmodul Videokonferenzen</span>
+                  <li>Premium Partnerschaft</li>
+                  <li>Alle neuen Module<br>
+                  <li>Ein Preis für alles<br>
+                </ul>
+                <a href="mailto:bestellen@ug-software.de?subject=Gesamtpaket bestellen"
+                  class="w-100 btn btn-lg btn-primary bg-primary">Bestellen</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+</div> 
+</div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  
+    <script type="text/javascript">
+  $(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+});
+
+
+      
+    </script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,220 @@
+#Frage:
+bevor wir mit der App in einer Klasse starten können - hier habe ich nun folgende Frage: 
+wir können in den Planer leider immer nur eine Emailadresse eintragen... wäre es möglich, dass wir zwei Spalten bekommen, sodass wir auch zwei Emailadressen eintragen können? Wir haben nämlich bei den meisten Kindern immer die Emailadresse der Mutter und des Vaters und vor allem bei getrennten Familien wäre es wichtig, dass auch beide Elternteile Zugriff auf Waldorf haben und die Email über die Vertretungen erhalten... 
+oder ist es auch möglich, in dieses eine Feld zwei Emailadressen einzutragen? 
+
+#Antwort:
+Sie können in das E-Mail-Feld beliebig viele E-Mail-Adressen durch Komma getrennt eintragen.
+Ab der Version 1.2.0 versendet Waldorf 365 alle Mails an die beiden eingetragenen Adressen (oder an drei Adressen, wenn 3 Adressen eingetragen sind). Das bedeutet, dass das Passwort und die Benachrichtigungen bei Vertretungen an alle eingetragenen Adressen versendet wird.
+Es wird jedoch nur ein Account erstellt. D. h. alle Familienmitglieder gehen mit gleichem Benutzernamen und Passwort in das Programm. Sie können dabei gleichzeitig in die Cloud gehen, ohne sich dabei zu stören. Das bedeutet auch, dass die Einstellung, ob man Mails erhalten möchte, immer für alle eingetragenen Mailadressen von einem Schüler die gleiche ist. Es ist also nicht möglich, dass der Vater Mails erhält aber die Mutter keine. Die Datenschutzerklärung wird auch nur der ersten Person angezeigt, die sich einloggt. Diese Punkte sollte man wissen.
+
+#Frage:
+wir haben einen neuen Stundenplan erstellt, den sogenannten „Plan 16 Winterstundenplan“. Frau Maier hat diesen erstellt und bei ihr im Waldorf365 Planer ist er auch ersichtlich.
+Blöderweise können Frau Müller und ich diesen Plan nicht über den gleichen root-Account an unseren Laptops einsehen! Woran liegt das? Ebenso ist der Stundenplan nicht in die Cloud übertragen worden (dort ist nur Plan15)… wir haben bereits die Gültigkeitsdauer von Plan15 geändert, sodass er gestern auslief und heute der „Plan 16 Winterstundenplan“ gesetzt wurde und losging, trotzdem können wir ihn nicht sehen….
+Ich habe auch schon den Planer neu gestartet, das hilft auch nichts.
+Können Sie uns helfen?
+
+#Antwort:
+Kann es sei, dass Frau Maier den Plan offline erstellt hat, also also sie nicht mit der Cloud verbunden war?
+
+Jedenfalls gibt es im Menü Export die Funktion den Stundenplan zu exportieren. Wenn Frau Maier den Plan noch hat, kann sie diesen also mit dieser Funktion exportieren. Dann können zum Beispiel Sie, wenn Sie mit der Cloud verbunden sind, den Stundenplan mit der Funktion "Stundenplan importieren" in die Cloud-Datei einfügen.
+
+#Frage:
+Können Schüler durch die Schulgemeinschafts-App Vertretungen bereits sehen, während diese noch geplant werden?
+
+#Antwort:
+wir haben für die nächste Version der Waldorf 365 Cloud eine von Ihnen gewünschte Änderung geplant. Allerdings sind wir etwas unsicher, ob diese spezifisch entwickelte Änderung Ihren Wünschen entsprechen wird und möchten deshalb vorher nochmals um Ihr Ok bitten. Es geht um Vertretungen, welche Schüler bzw. Eltern noch nicht sehen sollen.
+
+Wir haben diese Frage momentan so gelöst: Wenn eine Vertretung unbestätigt ist (mit Fragezeichen), dann wird sie Schülern und Eltern zunächst nicht angezeigt. Nach der Deadline (die man in den Einstellungen zum Vertretungsplan einsehen kann) werden jedoch auch unbestätigte Vertretungen den Schülern und Eltern angezeigt.
+
+Wenn Unterricht ausfällt, wird dies sofort angezeigt, auch für Vertretungen, die einige Tage in der Zukunft liegen. Möchte man dies vermeiden, so muss man einen fiktiven Lehrer (z. B. mit dem Namen "unklar") hinzufügen. Diesen kann man allen Stunden zuweisen, die noch unklar sind und nicht für die Schüler oder Eltern angezeigt werden sollen.
+
+In diesem Zusammenhang haben wir neben der Deadline für Vertretungen in den Einstellungen für den Vertretungsplan eine weitere Deadline hinzugefügt. Jetzt gibt es zwei Zeitpunkte. Bis zu dem ersten Zeitpunkt können sich Lehrer krankmelden, ohne eine Warnung zu erhalten. Zwischen dem ersten und zweiten Zeitpunkt kann der Vertretungs-Verantwortliche den Plan noch verbessern. Zum zweiten Zeitpunkt werden die Benachrichtigungen für den kommenden Tag versendet und alle Vertretungen des kommenden Tages (auch die unbestätigten) für Eltern bzw. Schüler freigeschaltet.
+
+#Frage:
+Ich habe eine Datei mit einem Stundenplan auf meinem Computer gespeichert und möchte diesen Stundenplan auf die Cloud übertragen.
+
+#Antwort:
+Das Einfügen des Stundenplanes von der lokalen Kopie auf die Cloud geht im Prinzip so:
+
+1) Auf dem Startbilschirm auf Datei öffnen gehen. (Nicht mit der Cloud verbinden!)
+
+2) Den Stundenplan exportieren (Nicht Datei speichern, sondern Import/Export > Stundenplan exportieren.
+
+3) Das Programm sicherheitshalber neu starten.
+
+4) Auf dem Startbildschirm mit der Cloud verbinden
+
+5) Jetzt Import/Export > Stundenplan importieren. Wählen Sie jetzt nicht Sicherheits-Kopie-Datei, sondern die Datei vom Stundenplan-Export aus.
+
+#Frage:
+Eine Vertretung soll nicht in der Statistik gezählt werden.
+
+#Antwort:
+Wir haben eine neue Funktion hinzugefügt, durch die Administratoren festlegen können,
+dass eine Vertretungsstunde nicht in der Statistik gezählt werden soll.
+Auf die Stunde klicken, dann *Ändern*, dann *Vertretung nicht in Statistik zählen*.
+Bei einer Stunde, die nicht in der Statistik erfasst wird, wird der Lehrer in Klammern gesetzt.
+
+#Frage:
+Zusammenlegungen von Stunden mit Parallelgruppen.
+
+#Antwort:
+Wir haben eine neue Funktion hinzugefügt, durch die man eine bestehende Vertretung so ändern kann, dass die Stunde mit einer Parallelgruppe zusammengelegt wird, die zur gleichen Zeit bei einem Lehrer Unterricht hat.
+        
+Bei dieser Funktion wird die Stunde automatisch nicht in der Statistik gezählt.
+
+#Frage:
+Verschieben von Stunden
+
+#Antwort:
+Es ist nicht angedacht, den Stundenplan bei einer kurzfristigen Verschiebung anzupassen. 
+Auf die Stunde klicken, dann *Ändern*, dann *Verschieben*. Nun auf dem Plan mit dem Fadenkreuz auf die passende Position (leerer Bereich!) klicken. Die Stunde wird verschoben.
+Bei dieser Funktion wird die Stunde automatisch nicht in der Statistik gezählt
+
+#Frage:
+Der "Zeugnistext-Vortext" ist für die Zeugnissprüche, nehme ich an? 
+
+#Antwort:
+Der Zeugnisvortext ist ein Text, der bei allen Schülern gleich ist. Fachlehrer beschreiben damit in der Regel die Themen des Schuljahres. Man kann ihn weglassen oder einmal schreiben und dann in den Zeugnissen übernehmen.
+
+Die Zeugnissprüche sind bei den Schülerfeldern.
+
+#Frage:
+leider können meine KollegInnen derzeit keine Veranstaltungen eintragen, der Button zum Hinzufügen einer Veranstaltung fehlt leider.. bei mir am Laptop und am Handy ist er noch ersichtlich, bei allen anderen aber leider nicht mehr. Wissen Sie, woran das liegt?
+
+#Antwort:
+Es gib eine Einstellung, die bei Ihnen deaktiviert war:
+
+Einstellungen > Kalender > Wer kann Veranstaltungen im Kalender eintragen und ändern?
+
+Hier müssen Sie *Alle Lehrer können Veranstaltungen eintragen* markieren.
+
+Dadurch sollten die Kollegen wieder Veranstaltungen eintragen können.
+
+#Frage:
+Wir werden nochmals kleine Stundenplanänderungen vornehmen müssen und ich bin gerade dabei, herauszufinden, wie ich die Druckansicht des Gesamtstundenplans verändern kann - da ich in diesem Schuljahr die Anrechnungsstunden als Klasse eingepflegt habe, damit diese auch für jede Lehrkraft in der Abrechnung auftauchen, werden diese im Gesamtstundenplan mit angezeigt, sodass dieser sehr klein und schlecht lesbar wird. 
+Wenn ich eine Druckansicht möchte, in welcher die Anrechnungsstunden nicht vorkommen, müsste ich jedes Mal alle Anrechnungsstunden händisch herausnehmen und anschließend wieder einfügen. Gibt es noch eine andere Möglichkeit, dass diese nicht in der Druckansicht vorkommen? (ich meine die PDF-Druckansicht)
+
+#Antwort:
+Waldorf 365 rechnet im Deputatsplan alle Kurse an, auch solche, die nicht im Stundenplan gesetzt sind. 
+Der geschickteste Weg ist vermutlich, die Kurse/Karten für die Anrechnungsstunden überhaupt nicht in den Stundenplan zu setzen.
+Die Abrechnung sollte dann über die Deputatspläne erfolgen.
+
+Wenn man solche Kurse anlegt, die nicht im Stundenplan gesetzt sind, werden bei der Stundenplanung allerdings immer Fehler für die nicht gesetzten Karten angezeigt.
+Um dies zu vermeiden, kann man Anrechnungsstunden nicht mit Wochenstunden anlegen, sondern mit händischem Deputat. 
+Man setzt also im Deputatsplan die Wochenstunden und Epochenstunden auf 0 und gibt in der Spalte Spezialfälle ein händisches Deputat an.
+
+#Frage:
+Ist der root-Account nun für immer deaktiviert? Falls ja, könnten wir diesen nochmals neu erstellen? Ich werde mich mit meinem persönlichen Account anmelden, aber die Geschäftsführung nutzt den root-Account und bräuchte ihn für die Abrechnung. 
+
+#Antwort:
+Der root-Account ist zwar für immer deaktiviert, aber Sie können im Planer in den *Grunddaten* bei *Personal* Personen anlegen, die keine Lehrer sind.
+
+Anschließend können Sie sich in der Cloud anmelden und bei den *Einstellungen* in der *Benutzerverwaltung* diesen Personen ein *Passwort* zusenden oder per PDF erstellen und dann den *Administrator-Status* zuteilen.
+
+Das ist auf lange Sicht eine sauberere und sichere Lösung, auch wenn sie jetzt etwas Umgewöhnung erfordert.
+
+#Frage:
+Wenn ich neue Kurse bzw. Fächer hinzufüge, werden diese immer im Raum "Kl.1" hinterlegt. Zum händisch abändern ist das oft sehr umständlich. Mache ich hier etwas falsch? 
+
+#Antwort:
+Wenn im Planer im *Deputatsplan* in der letzten Spalte *Raum* mit den Raumvorschlägen für einen Kurs kein Raumvorschlag angegeben ist, dann weist Waldorf 365, wenn man diesen Kurs im Stundenplan setzt, den erstbesten freien Raum zu. Das könnte bei Ihnen das Klassenzimmer 1 sein, weil dieses an erster Stelle in der Liste der Räume steht.
+
+Waldorf 365 benötigt diese Raumvorschläge. Sie können jedoch auf *Raumvorschläge generieren* gehen, dann werden möglichst sinnvolle Raumvorschläge automatisch erstellt.
+
+#Frage:
+Meine Kollegin hat anscheinend eine "Autokorrektur" in Waldi365 - sie hat das sonst an keinem PC bzw in keinem Programm.. wenn sie aber in Waldi die Zeugnisse tippt, bekommt sie Vorschläge und Veränderungen in den Texten, die sie so nicht schreibt. Z.B. wenn sie Maria schreiben möchte, erscheint "Mutti und Köter" - kann das an Waldi365 liegen? 
+
+#Antwort:
+Waldorf 365 hat keine Autokorrektur, aber manche Browser oder Betriebssysteme. Zum Beispiel hat Apple eine Auto-Korrektur, die beim Zeugnisschreiben mit Waldorf 365 in dem Browser Safari aktiv wird. Dies lässt sich in der Regel deaktivieren. Um hier weiterhelfen zu können, müssten wir genauer wissen, welches Betriebssystem und welchen Browser die Kollegin verwendet, idealerweise mit einem Screenshot, wie sich das manifestiert.
+
+#Frage:
+Ich gebe derzeit Spielturnen in der 2.Klasse und wollte die Zeugnisse aus dem letzten Jahr begutachten, um einmal zu sehen, wie sie vorher geschrieben wurden. Nun ist es so, dass im letzten Jahr eine Kollegin unterrichtet hat, die nicht mehr an der Schule ist und somit auch nicht mehr in Waldi365 auf der Cloud aufgelistet wird - deshalb kann ich mich auch nicht unter ihrem Namen in das Zeugnis einloggen bzw. dieses sehen. Gibt es hier eine Möglichkeit, an die Zeugnisse zu gelangen? 
+
+#Antwort:
+Als Administratorin haben Sie die Gelegenheit in den Einstellungen den Bereich „Schuljahr“ auszuwählen und hier das angezeigte Schuljahr auf das letzte Jahr zu setzen. Dies wirkt sich nur auf Ihre Ansicht aus, die Kollegen sehen weiter das aktuelle Schuljahr. Nun können Sie auf "Benutzer wechseln" gehen und dann die Zeugnisse anzeigen, z. B. über „Alte Zeugnisse“. Allerdings ist zu beachten, dass die Liste im „Benutzer-Wechseln“ Menü sich nicht sofort auf das neue Schuljahr einstellt. Sie müssen deshalb einmal die Seite im Browser neu laden, erst dann erscheint die Kollegin aus dem letzten Schuljahr in dieser Liste.
+
+#Frage:
+Wenn neben Frau Müller noch zwei weitere Lehrkräfte die Programme nutzen wollen, reicht es wenn ich ihnen die Zugangsdaten für Cloud geben oder brauchen sie dann einen Zugriff für das Kundenportal? Oder sollte nur ich als Geschäftsführung den Zugriff darauf haben?
+
+#Antwort:
+prinzipiell genügt es zunächst, wenn die Geschäftsführung Zugriff auf das Kundenportal hat.
+
+Die Lehrkräfte benötigen nur einen Zugriff auf die Cloud.
+
+Über das Kundenportal könnten diese jedoch unser Ticketsystem nutzen, über das man Fehler melden und Wünsche äußern kann. Zukünftig kann man darüber auch Termine für Schulungen oder Support-Videokonferenzen buchen, Dateien zu Support-Zwecken austauschen usw.
+
+All dies wird aber auch weiterhin per E-Mail möglich sein.
+
+#Frage:
+Müssen im Kundenportal auch Bankdaten angegeben werden oder wie
+läuft das mit der Bezahlung der Linzenz?
+
+#Antwort:
+Die Bezahlung erfolgt zunächst per Rechnung, d. h. wir senden Ihnen dann eine Rechnung zu. Die Bezahlung per Bankeinzug werden wir erst zu einem späteren Zeitpunkt anbieten.
+ 
+Es muss also nur eine Rechnungsadresse angegeben werden. 
+
+#Frage:
+Ich möchte gerne das Abo buchen. Wie wäre da der konkrete Ablauf?
+
+#Antwort:
+Der Ablauf zum Buchen ist mittlerweile recht einfach: Sobald Sie bereit sind, sende ich Ihnen die Zugangsdaten zu unserem Kundenportal. Dort müssen Sie die Daten der Schule angeben, die zu buchenden Module wählen und dann zwei Verträge (Software-Lizenzvertrag und Datenschutzvertrag) herunterladen, unterschreiben, einscannen und wieder hochladen. 
+Das dauert nicht länger als eine Stunde.
+Oft macht das direkt die Geschäftsführung. Schreiben Sie mir dann einfach, für wen ich am besten den Zugang zum Kundenportal bereitstellen soll.
+ 
+Wir stellen dann innerhalb von 24 Stunden den Server (sofern gewünscht) und die Lizenzschlüssel für die Vollversion bereit. So dass Sie also einen Tag später loslegen können.
+
+#Frage:
+Wo finde ich die Waldorf 365 Logdatei (Protokolldatei)?
+
+#Antwort:
+Bei Windows finden Sie den persönlichen Ordner in der Regel unter Dieser PC > C: > Benutzer > (Name des Benutzerkontos).
+Bei MacOS öffnen Sie einfach den Finder. In der Seitenleiste sollte es einen Ordner mit dem Name des Benutzerkontos geben.
+ 
+Im persönlichen Ordner ist dann die Datei namens Waldorf365Logdatei.log. 
+Diese müssen Sie dem Support dann einfach per E-Mail-Anhang zusenden (support@waldorf365.de). Dadurch kann dieser dann das Problem analysieren.
+
+#Frage:
+Benötigt man das Modul Cloud-Server zwingend?
+
+#Antwort:
+Den Cloud-Server benötigen Sie nicht zwingend. 
+
+Ohne den Cloud-Server 
+- Können Sie nur die Module Epochenplan und Stundenplan nutzen.
+- Können Sie nur alleine bzw. nur an einem Computer am Programm arbeiten und nicht von überall.
+- Erstellen wir keine automatischen Sicherheitskopien für Sie.
+
+In diesem Fall arbeiten Sie immer an den auf Ihrem Computer gespeicherten Dateien und können selber durch das Speichern der Dateien dafür sorgen, dass Sie ausreichende Sicherheitskopien Ihrer Daten haben.
+
+#Frage:
+wir haben leider ein Problem mit der Cloud bzw. dem Vertretungsplan - seit gestern werden im Kalender und im VP keine Unterrichtsstunden mehr angezeigt... mein Kollege meldete sich heute krank, das ging in das System ein, jedoch konnte ich keine Vertretungen erstellen, da ja der Kalender leer ist (und das bei allen Fächern/Klassen/KollegInnen)...
+
+#Antwort:
+Dies hängt mit falsch eingestellten Gültigkeitszeiträumen von Stundenplänen zusammen. Änder Sie das Start- und Enddatum des aktuellen Stundenplans, so dass das Aktuelle Datum enthalten ist.
+
+#Frage:
+Warum tauchen die Unterrichtsstunden der Kollegen mehrfach im Vertretungsprogramm auf? 
+
+#Antwort:
+Dieses Problem tritt dann auf, wenn die Stundenplaner den aktuellen Stundenplan mehrfach kopieren und dabei nicht darauf achten, die Start- und End-Daten zu verändern. 
+
+Bitten wenden Sie sich an die Stundenplaner und sagen diesen, dass diese die Start- und End-Daten der Stundenplanentwürfe verändern sollen, so dass nicht zwei Pläne zugleich auf der Cloud aktiv sind. 
+
+#Frage:
+Ich habe den Planer installiert, der Lizenzschlüssel funktioniert.
+Mit den Zugangsdaten kann ich mich problemlos in der Cloud anmelden.
+Mit dem Planer habe ich versucht, die Cloud zu verbinden. Dort habe ich die gleichen Zugangsdaten verwendet, wie oben angegeben. Es erscheint die Fehlermeldung: Keine Berechtigung.
+
+#Antwort:
+Das liegt an einer Sicherheitseinstellung. Sie benötigen die Administrator-Rolle oder zumindest die Stundenplan-Rolle für Ihren Account, um sich mit der Cloud zu verbinden. Dies kann von einem Administrator eingestellt werden.
+
+#Frage:
+Ich wurde blockiert da ich zu oft das Passwort falsch eingegeben habe. Können sie mir helfen?
+
+#Antwort:
+Die Blockade dauert nach dem letzten falschen Versuch 20 Minuten. Danach können Sie es in der Regel neu versuchen.
+Wenden Sie siche an den Support, dieser kann den Server neu starten. Dadurch sollten Sie nicht mehr blockiert sein. Ich Passwort kann ich Ihnen allerdings nicht sagen, aber Sie sollten jetzt wieder 8 Versuche haben.
+

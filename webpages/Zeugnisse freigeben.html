@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Waldorf365 Dokumentation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="wiki.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+  
+    
+
+
+
+<meta name="description" content="Waldorf 365 Dokumentation: ">
+        <meta name="keywords"
+        content="Waldorf 365, Zeugnis, Zeugnis freigeben, Zeugnis Korrektur">
+      <meta name="author" content="Ulrich Großmann"></head><body>
+    <div class="wrapper"><nav id="sidebar">
+
+<form action="search.php">
+<input type="text" id="key" name="key" placeholder="Suche...">
+<input type="submit" value="">
+</form>
+<ul class="list-unstyled components">
+
+<li id="menu0" >
+    <a href="#faq" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">FAQ</a>
+    <ul class="collapse list-unstyled" id="faq">     
+        <li>
+            <a href="faq.php">FAQ</a>
+        </li>  
+    </ul>
+</li>
+
+<li id="menu1" >
+    <a href="#blog" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Neuigkeiten</a>
+    <ul class="collapse list-unstyled" id="blog">     
+        <li>
+            <a href="blog5.php">31.12.23 Jahresrückblick</a>
+        </li>  
+        <li>
+            <a href="blog4.php">1.5.23 Neuer Standard³</a>
+        </li>  
+        <li>
+            <a href="blog3.php">20.4.23 Neue Internetseite</a>
+        </li> 
+        <li>
+            <a href="blog2.php">1.8.22 Neues Zeugnissystem</a>
+        </li>    
+        <li>
+            <a href="blog1.php">11.6.22 Neue Dokumentation</a>
+        </li>       
+    </ul>
+</li>
+
+<li id="menu2" >
+    <a href="#philosophy" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Allgemeines</a>
+    <ul class="collapse list-unstyled" id="philosophy">     
+        <li>
+            <a href="philosophy_opennes.php">Offenheit</a>
+        </li> 
+        <li>
+            <a href="philosophy_security.php">Datenschutz</a>
+        </li>       
+        <li>
+            <a href="philosophy_pricing.php">Preise</a>
+        </li> 
+    </ul>
+</li>
+<li id="menu2" >
+    <a href="#dataprotection" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Datenschutz</a>
+    <ul class="collapse list-unstyled" id="dataprotection">     
+        <li>
+            <a href="philosophy_security.php">Datenschutz</a>
+        </li> 
+        <li>
+            <a href="philosophy_copy.php">Sicherheitskopien</a>
+         </li> 
+         <li>
+            <a href="philosophy_security-problems.php">Sicherheitsrisiken</a>
+         </li>         
+    </ul>
+</li>
+
+
+<li id="menu3" >
+    <a href="#datei" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Waldorf 365 Planer</a>
+    <ul class="collapse list-unstyled" id="datei">
+        <li>
+            <a href="file_overview">Übersicht</a>
+        </li>     
+        <li>
+            <a href="file_system-requirements">Systemvoraussetzungen</a>
+        </li> 
+        <li>
+            <a href="file_install-linux">Installation Linux</a>
+        </li>   
+        <li>
+            <a href="file_export-and-import">Export und Import</a>
+        </li>  
+        <li>
+            <a href="file_export-xml">XML-Export und Import</a>
+        </li>   
+        <li>
+            <a href="file_import-students-teacher">Import Lehrer-/Schülerdaten</a>
+        </li>   
+        <li>
+            <a href="file_zoom">Gesamtzoom</a>
+        </li>  
+        <li>
+            <a href="file_license">Lizenz</a>
+        </li> 
+        <li>
+            <a href="file_update">Update</a>
+        </li>  
+         <li>
+            <a href="file_basic-data">Grunddaten</a>
+        </li>      
+    </ul>
+</li>
+
+<li id="menu4" >
+    <a href="#courses" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Deputate</a>
+    <ul class="collapse list-unstyled" id="courses">
+        <li>
+            <a href="courses_overview">Übersicht</a>
+        </li>  
+        <li>
+            <a href="courses_view">Deputatsplan anzeigen</a>
+        </li>   
+        <li>
+            <a href="courses_parting">Kurse richtig teilen</a>
+        </li>  
+        <li>
+            <a href="courses_changes">Änderungen einpflegen</a>
+        </li>   
+        <li>
+            <a href="courses_monthly">Monatliches Deputat & Einmalzahlung</a>
+        </li>         
+    </ul>
+</li>
+
+<li id="menu5" >
+    <a href="#schedule" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Stundenplan</a>
+    <ul class="collapse list-unstyled" id="schedule">
+        <li>
+            <a href="schedule_overview.php">Übersicht</a>
+        </li>  
+        <li>
+            <a href="schedule_view.php">Stundenplan anzeigen</a>
+        </li>  
+        <li>
+            <a href="schedule_fix-constraints.php">Algorithmus</a>
+        </li>  
+        <li>
+            <a href="schedule_user-interface.php">Digitale Stecktafel</a>
+        </li> 
+        <li>
+            <a href="schedule_hand.php">Mit der Stecktafel arbeiten</a>
+        </li> 
+        <li>
+            <a href="schedule_all-view.php">Gesamtsicht</a>
+        </li>  
+        <li>
+            <a href="schedule_move-collisions">Kollisionen erkennen</a>
+        </li>    
+        <li>
+            <a href="schedule_parallel-view">Nebeneinander-Ansicht</a>
+        </li>   
+        <li>
+            <a href="schedule_user-constraints-faq">Planungsregeln-FAQ</a>
+        </li>   
+        <li>
+            <a href="schedule_good-plan">Tipps</a>
+        </li>  
+        <li>
+            <a href="schedule_epochslots">Handwerklich-künstlerische Epochen</a>
+        </li>
+        <li>
+            <a href="schedule_part-planning">Teilplan / Halbjahresplan</a>
+        </li>
+        <li>
+            <a href="schedule_supervisions">Aufsichtspläne</a>
+        </li>
+        <li>
+            <a href="schedule_view-settings.php">Ansicht anpassen</a>
+        </li>  
+    </ul>
+</li>
+
+<li id="menu6" >
+    <a href="#epochplan" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Epochenplan</a>
+    <ul class="collapse list-unstyled" id="epochplan">
+        <li>
+            <a href="epochplan_overview.php">Übersicht</a>
+        </li>  
+        <li>
+            <a href="schedule_hand.php">Mit der Stecktafel arbeiten</a>
+        </li> 
+        <li>
+            <a href="epochplan_view.php">Epochenplan anzeigen</a>
+        </li>   
+        <li>
+            <a href="epochplan_whole-day.php">Praktika, Klassenfahrten</a>
+        </li>      
+    </ul>
+</li>
+
+
+<li id="menu7">
+    <a href="#cloud" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Waldorf 365 Cloud</a>
+    <ul class="collapse list-unstyled" id="cloud">
+        <li>
+            <a href="cloud_install.php">App installieren</a>
+        </li> 
+    </ul>
+</li>
+
+
+<li id="menu8" >
+    <a href="#vertretungen" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Vertretungen</a>
+    <ul class="collapse list-unstyled" id="vertretungen">
+        <li>
+            <a href="substitutions_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="substitutions_criteria.php">Kriterien</a>
+        </li> 
+        <li>
+            <a href="substitutions_sicknote.php">Krankmelden</a>
+        </li>    
+
+        <li>
+            <a href="substitutions_edit-sicknote.php">Krankmeldung bearbeiten</a>
+        </li> 
+        <li>
+            <a href="substitutions_digital_sicknote.php">Elektronische Krankmeldung (eAU)</a>
+        </li>  
+        <li>
+            <a href="substitutions_edit-substitution.php">Vertretung bearbeiten</a>
+        </li> 
+        <li>
+            <a href="substitutions_plan.php">Vertretungsplan anzeigen</a>
+        </li>     
+        <li>
+            <a href="substitutions_statistics.php">Vertretungsstatistik</a>
+        </li>     
+        <li>
+            <a href="substitutions_sustitutionsplan.php">Vertretungsbereitschaften einrichten</a>
+        </li> 
+        <li>
+            <a href="substitutions_website.php">Vertretungsplan auf Webseite anzeigen</a>
+        </li>       
+    </ul>
+</li>
+
+<li id="menu9" >
+    <a href="#kalender" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Kalender</a>
+    <ul class="collapse list-unstyled" id="kalender">
+        <li>
+            <a href="calendar_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="calendar_new-event.php">Neue Veranstaltung</a>
+        </li> 
+        <li>
+            <a href="calendar_levels-of-privacy.php">öffentlich / privat</a>
+        </li> 
+        <li>
+            <a href="calendar_add-videoconference.php">Videokonferenz</a>
+        </li> 
+        <li>
+            <a href="calendar_equipment-reservation.php">Geräte reservieren</a>
+        </li> 
+        <li>
+            <a href="calendar_export-events.php">Termine exportieren</a>
+        </li> 
+        <li>
+            <a href="calendar_export-private.php">Private Termine exportieren</a>
+        </li> 
+        <li>
+            <a href="calendar_website.php">Termine auf Webseite anzeigen</a>
+        </li>    
+         <li>
+            <a href="studentapp_parents-day-create.php">Elternsprechtag anlegen</a>
+        </li>      
+    </ul>
+</li>
+
+<li id="menu10" >
+    <a href="#moodle" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Lernplattform</a>
+    <ul class="collapse list-unstyled" id="moodle">
+        <li>
+            <a href="moodle_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="moodle_login.php">Zu Moodle&trade; wechseln</a>
+        </li> 
+        <li>
+            <a href="moodle_import-students.php">Schüler synchronisieren</a>
+        </li> 
+        <li>
+            <a href="moodle_import-teacher.php">Lehrer synchronisieren</a>
+        </li> 
+        <li>
+            <a href="moodle_import-courses.php">Kurse synchronisieren</a>
+        </li>         
+    </ul>
+</li>
+
+<li id="menu11" >
+    <a href="#reports" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Zeugnisse</a>
+    <ul class="collapse list-unstyled show" id="reports">
+        <li>
+            <a href="reports_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="reports_roadmap.php">Ablaufplan</a>
+        </li> 
+        <li>
+            <a href="reports_write-overview.php">Zeugnisse schreiben - Übersicht</a>
+        </li> 
+        <li>
+            <a href="reports_write.php">Zeugnisse online schreiben</a>
+        </li> 
+        <li>
+            <a href="reports_write-offline.php">Zeugnisse offline schreiben</a>
+        </li>
+        <li>
+            <a href="reports_write-hand.php">Zeugnisse von Hand schreiben</a>
+        </li> 
+        <li>
+            <a href="reports_correct.php">Zeugnisse korrigieren</a>
+        </li> 
+        <li>
+            <a href="reports_accept.php">Zeugnisse freigeben</a>
+        </li> 
+        <li>
+            <a href="reports_print-individual.php">Druckvorschau</a>
+        </li> 
+        <li>
+            <a href="reports_print.php">Zeugnisse drucken</a>
+        </li> 
+        <li>
+            <a href="reports_archieve.php">Zeugnisse archivieren</a>
+        </li> 
+        <li>
+            <a href="reports_create-marks.php">Noten erzeugen</a>
+        </li> 
+        <li>
+            <a href="reports_definition.php">Zeugnisprozesse</a>
+        </li> 
+        <li>
+            <a href="reports_create-definition.php">Zeugnisdefinition erstellen</a>
+        </li> 
+        <li>
+            <a href="reports_create-process.php">Zeugnisprozesse verwalten</a>
+        </li> 
+        <li>
+            <a href="reports_spellchecking-install.php">Rechtschreibkorrektur installieren</a>
+        </li> 
+        <li>
+            <a href="reports_spellchecking.php">Rechtschreibung korrigieren</a>
+        </li> 
+        <li>
+            <a href="reports_sort-subjects.php">Zeugnisreihenfolge</a>
+        </li>   
+        <li>
+            <a href="reports_problems.php">Zeugnisprobleme</a>
+        </li>     
+    </ul>
+</li>
+
+<li id="menu12">
+    <a href="#register" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Klassenbuch</a>
+    <ul class="collapse list-unstyled" id="register">
+        <li>
+            <a href="register_overview.php">Übersicht</a>
+        </li>   
+        <li>
+            <a href="register_open.php">Klassenbuch öffnen</a>
+        </li>  
+        <li>
+            <a href="register_themes.php">Stundenthemen</a>
+        </li> 
+        <li>
+            <a href="register_absence.php">Abwesenheit, Verspätung</a>
+        </li> 
+        <li>
+            <a href="register_entry.php">Eintrag, Bemerkung</a>
+        </li>  
+        <li>
+            <a href="register_homework.php">Hausaufgabe</a>
+        </li> 
+        <li>
+            <a href="studentapp_register.php">Für Eltern anzeigen</a>
+        </li> 
+    </ul>
+</li>
+
+<li id="menu13">
+    <a href="#user" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Benutzerverwaltung</a>
+    <ul class="collapse list-unstyled" id="user">
+        <li>
+            <a href="user_overview.php">Übersicht</a>
+        </li>      
+        <li>
+            <a href="user_change-password.php">Passwort ändern</a>
+        </li>  
+        <li>
+            <a href="user_change-role.php">Rollen ändern</a>
+        </li>  
+        <li>
+            <a href="user_notifications.php">Benachrichtigungen</a>
+        </li>  
+    </ul>
+</li>
+
+<li id="menu14">
+    <a href="#threema" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Messenger</a>
+    <ul class="collapse list-unstyled" id="threema">
+        <li>
+            <a href="threema_overview.php">Übersicht</a>
+        </li>   
+    </ul>
+</li>
+
+<li id="menu15">
+    <a href="#bbb" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Videokonferenzen</a>
+    <ul class="collapse list-unstyled" id="bbb">
+        <li>
+            <a href="bbb_overview.php">Übersicht</a>
+        </li>   
+        <li>
+            <a href="calendar_add-videoconference.php">Videokonferenz hinzufügen</a>
+        </li> 
+        <li>
+            <a href="bbb_start-videoconference.php">Videokonferenz starten</a>
+        </li> 
+    </ul>
+</li>
+
+<li id="menu16">
+    <a href="#studentapp" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Schüler/Eltern-App</a>
+    <ul class="collapse list-unstyled" id="studentapp">
+        <li>
+            <a href="studentapp_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="studentapp_rights.php">Einrichten, Rechteverwaltung</a>
+        <li>
+            <a href="studentapp_homework.php">Hausaufgaben anzeigen</a>
+        </li>
+        <li>
+            <a href="studentapp_sicknote.php">Schüler krankmelden</a>
+        </li>
+         <li>
+            <a href="studentapp_register.php">Klassenbuch-Einträge</a>
+        </li>
+        <li>
+            <a href="studentapp_parents-day-create.php">Elternsprechtag anlegen</a>
+        </li>
+        <li>
+            <a href="studentapp_parents-day.php">Elternsprechtag Anmeldung</a>
+        </li>
+    </ul>
+</li>
+
+
+</ul>
+
+</nav>
+
+        <!-- Page Content  -->
+        <div id="right-part">
+
+            <nav id="menu" class="navbar navbar-expand-lg navbar-light sky bg-light">
+           
+                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <a href="index.php"  class="mr-auto"><img src="wikiimages/logo-white.png" class="logo d-inline"><span id="title-font">Dokumentation</span></a>
+                   
+
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+            <a class="nav-link nav-a" id="main-page-link" href="../index.php">Zur Hauptseite</a>
+          </li>
+                           
+                        </ul>
+                    </div>
+            
+            </nav><div id="content-wrapper"><div id="top"></div></div><div id="content" class="container col-xl-10 py-2"><p class="app-paragraph"><span class="cloud-app">Waldorf 365 Cloud</span></p><h1>Zeugnisse freigeben</h1><p class="tag-paragraph"><img class="tag-image" src="wikiimages/tags.svg"> Stichwörter: <span class="tag">Zeugnis</span><span class="tag">Zeugnis freigeben</span><span class="tag">Zeugnis Korrektur</span></p>
+
+<p>Bei einer Zeugnisfreigabe können Sie den korrigierten Text direkt oder leicht abgewandelt übernehmen.
+Sie können aber auch den Originaltext in Kenntnis der Korrekturvorschläge modifizieren.
+Um Ihnen hier alle Möglichkeiten zu bieten, hat<span class="waldorf365"> Waldorf 365 </span>zwei Textfelder. Sie müssen sich für eines 
+der Felder entscheiden.
+
+Das folgende Bild zeigt, wie eine Zeugnisfreigabe geht.</p>
+
+<img class="screenshot img-fluid border rounded-3 shadow-lg mb-4" src="wikiimages/report-accept.png">
+
+<ol>
+<li> 
+   Oben links werden die Unterschiede zwischen dem Original und der Korrektur angezeigt. 
+   Gelöschte Textteile sind dabei rot gekennzeichnet, Hinzufügungen sind grün.
+</li>
+<li>
+    Wenn der Korrektor einen Kommentar geschrieben hat, erscheint dieser rechts oben.
+</li>
+<li>
+    Links unten erscheint der Originaltext. Wenn Sie sich dazu entschieden haben den Originaltext
+    zu modifizieren, können Sie in das linke Textfeld schreiben und dann auf <strong>Original übernehmen</strong>
+    klicken.
+</li>
+<li>
+Rechts unten erscheint der korrigierte Text. Wenn Sie sich dazu entschieden haben diesen zu verwenden, 
+können Sie in das rechte Textfeld schreiben und dann auf <strong>Korrektur übernehmen</strong>
+klicken.
+</li>
+</ol>
+
+</div> 
+</div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  
+    <script type="text/javascript">
+  $(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+});
+
+
+      
+    </script>
+</body>
+
+</html>
+
+
+
+    

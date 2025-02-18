@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Waldorf365 Dokumentation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="wiki.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+  
+    
+
+
+
+<meta name="description" content="Waldorf 365 Dokumentation: ">
+        <meta name="keywords"
+        content="Waldorf 365, Änderungen, Kündigung, Neuer Lehrer, Stunden Änderung, Stundenplan Änderung, Deputatsplan ändern, DATEV, Gehalt">
+      <meta name="author" content="Ulrich Großmann"></head><body>
+    <div class="wrapper"><nav id="sidebar">
+
+<form action="search.php">
+<input type="text" id="key" name="key" placeholder="Suche...">
+<input type="submit" value="">
+</form>
+<ul class="list-unstyled components">
+
+<li id="menu0" >
+    <a href="#faq" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">FAQ</a>
+    <ul class="collapse list-unstyled" id="faq">     
+        <li>
+            <a href="faq.php">FAQ</a>
+        </li>  
+    </ul>
+</li>
+
+<li id="menu1" >
+    <a href="#blog" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Neuigkeiten</a>
+    <ul class="collapse list-unstyled" id="blog">     
+        <li>
+            <a href="blog5.php">31.12.23 Jahresrückblick</a>
+        </li>  
+        <li>
+            <a href="blog4.php">1.5.23 Neuer Standard³</a>
+        </li>  
+        <li>
+            <a href="blog3.php">20.4.23 Neue Internetseite</a>
+        </li> 
+        <li>
+            <a href="blog2.php">1.8.22 Neues Zeugnissystem</a>
+        </li>    
+        <li>
+            <a href="blog1.php">11.6.22 Neue Dokumentation</a>
+        </li>       
+    </ul>
+</li>
+
+<li id="menu2" >
+    <a href="#philosophy" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Allgemeines</a>
+    <ul class="collapse list-unstyled" id="philosophy">     
+        <li>
+            <a href="philosophy_opennes.php">Offenheit</a>
+        </li> 
+        <li>
+            <a href="philosophy_security.php">Datenschutz</a>
+        </li>       
+        <li>
+            <a href="philosophy_pricing.php">Preise</a>
+        </li> 
+    </ul>
+</li>
+<li id="menu2" >
+    <a href="#dataprotection" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Datenschutz</a>
+    <ul class="collapse list-unstyled" id="dataprotection">     
+        <li>
+            <a href="philosophy_security.php">Datenschutz</a>
+        </li> 
+        <li>
+            <a href="philosophy_copy.php">Sicherheitskopien</a>
+         </li> 
+         <li>
+            <a href="philosophy_security-problems.php">Sicherheitsrisiken</a>
+         </li>         
+    </ul>
+</li>
+
+
+<li id="menu3" >
+    <a href="#datei" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Waldorf 365 Planer</a>
+    <ul class="collapse list-unstyled" id="datei">
+        <li>
+            <a href="file_overview">Übersicht</a>
+        </li>     
+        <li>
+            <a href="file_system-requirements">Systemvoraussetzungen</a>
+        </li> 
+        <li>
+            <a href="file_install-linux">Installation Linux</a>
+        </li>   
+        <li>
+            <a href="file_export-and-import">Export und Import</a>
+        </li>  
+        <li>
+            <a href="file_export-xml">XML-Export und Import</a>
+        </li>   
+        <li>
+            <a href="file_import-students-teacher">Import Lehrer-/Schülerdaten</a>
+        </li>   
+        <li>
+            <a href="file_zoom">Gesamtzoom</a>
+        </li>  
+        <li>
+            <a href="file_license">Lizenz</a>
+        </li> 
+        <li>
+            <a href="file_update">Update</a>
+        </li>  
+         <li>
+            <a href="file_basic-data">Grunddaten</a>
+        </li>      
+    </ul>
+</li>
+
+<li id="menu4" >
+    <a href="#courses" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Deputate</a>
+    <ul class="collapse list-unstyled show" id="courses">
+        <li>
+            <a href="courses_overview">Übersicht</a>
+        </li>  
+        <li>
+            <a href="courses_view">Deputatsplan anzeigen</a>
+        </li>   
+        <li>
+            <a href="courses_parting">Kurse richtig teilen</a>
+        </li>  
+        <li>
+            <a href="courses_changes">Änderungen einpflegen</a>
+        </li>   
+        <li>
+            <a href="courses_monthly">Monatliches Deputat & Einmalzahlung</a>
+        </li>         
+    </ul>
+</li>
+
+<li id="menu5" >
+    <a href="#schedule" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Stundenplan</a>
+    <ul class="collapse list-unstyled" id="schedule">
+        <li>
+            <a href="schedule_overview.php">Übersicht</a>
+        </li>  
+        <li>
+            <a href="schedule_view.php">Stundenplan anzeigen</a>
+        </li>  
+        <li>
+            <a href="schedule_fix-constraints.php">Algorithmus</a>
+        </li>  
+        <li>
+            <a href="schedule_user-interface.php">Digitale Stecktafel</a>
+        </li> 
+        <li>
+            <a href="schedule_hand.php">Mit der Stecktafel arbeiten</a>
+        </li> 
+        <li>
+            <a href="schedule_all-view.php">Gesamtsicht</a>
+        </li>  
+        <li>
+            <a href="schedule_move-collisions">Kollisionen erkennen</a>
+        </li>    
+        <li>
+            <a href="schedule_parallel-view">Nebeneinander-Ansicht</a>
+        </li>   
+        <li>
+            <a href="schedule_user-constraints-faq">Planungsregeln-FAQ</a>
+        </li>   
+        <li>
+            <a href="schedule_good-plan">Tipps</a>
+        </li>  
+        <li>
+            <a href="schedule_epochslots">Handwerklich-künstlerische Epochen</a>
+        </li>
+        <li>
+            <a href="schedule_part-planning">Teilplan / Halbjahresplan</a>
+        </li>
+        <li>
+            <a href="schedule_supervisions">Aufsichtspläne</a>
+        </li>
+        <li>
+            <a href="schedule_view-settings.php">Ansicht anpassen</a>
+        </li>  
+    </ul>
+</li>
+
+<li id="menu6" >
+    <a href="#epochplan" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Epochenplan</a>
+    <ul class="collapse list-unstyled" id="epochplan">
+        <li>
+            <a href="epochplan_overview.php">Übersicht</a>
+        </li>  
+        <li>
+            <a href="schedule_hand.php">Mit der Stecktafel arbeiten</a>
+        </li> 
+        <li>
+            <a href="epochplan_view.php">Epochenplan anzeigen</a>
+        </li>   
+        <li>
+            <a href="epochplan_whole-day.php">Praktika, Klassenfahrten</a>
+        </li>      
+    </ul>
+</li>
+
+
+<li id="menu7">
+    <a href="#cloud" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Waldorf 365 Cloud</a>
+    <ul class="collapse list-unstyled" id="cloud">
+        <li>
+            <a href="cloud_install.php">App installieren</a>
+        </li> 
+    </ul>
+</li>
+
+
+<li id="menu8" >
+    <a href="#vertretungen" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Vertretungen</a>
+    <ul class="collapse list-unstyled" id="vertretungen">
+        <li>
+            <a href="substitutions_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="substitutions_criteria.php">Kriterien</a>
+        </li> 
+        <li>
+            <a href="substitutions_sicknote.php">Krankmelden</a>
+        </li>    
+
+        <li>
+            <a href="substitutions_edit-sicknote.php">Krankmeldung bearbeiten</a>
+        </li> 
+        <li>
+            <a href="substitutions_digital_sicknote.php">Elektronische Krankmeldung (eAU)</a>
+        </li>  
+        <li>
+            <a href="substitutions_edit-substitution.php">Vertretung bearbeiten</a>
+        </li> 
+        <li>
+            <a href="substitutions_plan.php">Vertretungsplan anzeigen</a>
+        </li>     
+        <li>
+            <a href="substitutions_statistics.php">Vertretungsstatistik</a>
+        </li>     
+        <li>
+            <a href="substitutions_sustitutionsplan.php">Vertretungsbereitschaften einrichten</a>
+        </li> 
+        <li>
+            <a href="substitutions_website.php">Vertretungsplan auf Webseite anzeigen</a>
+        </li>       
+    </ul>
+</li>
+
+<li id="menu9" >
+    <a href="#kalender" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Kalender</a>
+    <ul class="collapse list-unstyled" id="kalender">
+        <li>
+            <a href="calendar_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="calendar_new-event.php">Neue Veranstaltung</a>
+        </li> 
+        <li>
+            <a href="calendar_levels-of-privacy.php">öffentlich / privat</a>
+        </li> 
+        <li>
+            <a href="calendar_add-videoconference.php">Videokonferenz</a>
+        </li> 
+        <li>
+            <a href="calendar_equipment-reservation.php">Geräte reservieren</a>
+        </li> 
+        <li>
+            <a href="calendar_export-events.php">Termine exportieren</a>
+        </li> 
+        <li>
+            <a href="calendar_export-private.php">Private Termine exportieren</a>
+        </li> 
+        <li>
+            <a href="calendar_website.php">Termine auf Webseite anzeigen</a>
+        </li>    
+         <li>
+            <a href="studentapp_parents-day-create.php">Elternsprechtag anlegen</a>
+        </li>      
+    </ul>
+</li>
+
+<li id="menu10" >
+    <a href="#moodle" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Lernplattform</a>
+    <ul class="collapse list-unstyled" id="moodle">
+        <li>
+            <a href="moodle_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="moodle_login.php">Zu Moodle&trade; wechseln</a>
+        </li> 
+        <li>
+            <a href="moodle_import-students.php">Schüler synchronisieren</a>
+        </li> 
+        <li>
+            <a href="moodle_import-teacher.php">Lehrer synchronisieren</a>
+        </li> 
+        <li>
+            <a href="moodle_import-courses.php">Kurse synchronisieren</a>
+        </li>         
+    </ul>
+</li>
+
+<li id="menu11" >
+    <a href="#reports" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Zeugnisse</a>
+    <ul class="collapse list-unstyled" id="reports">
+        <li>
+            <a href="reports_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="reports_roadmap.php">Ablaufplan</a>
+        </li> 
+        <li>
+            <a href="reports_write-overview.php">Zeugnisse schreiben - Übersicht</a>
+        </li> 
+        <li>
+            <a href="reports_write.php">Zeugnisse online schreiben</a>
+        </li> 
+        <li>
+            <a href="reports_write-offline.php">Zeugnisse offline schreiben</a>
+        </li>
+        <li>
+            <a href="reports_write-hand.php">Zeugnisse von Hand schreiben</a>
+        </li> 
+        <li>
+            <a href="reports_correct.php">Zeugnisse korrigieren</a>
+        </li> 
+        <li>
+            <a href="reports_accept.php">Zeugnisse freigeben</a>
+        </li> 
+        <li>
+            <a href="reports_print-individual.php">Druckvorschau</a>
+        </li> 
+        <li>
+            <a href="reports_print.php">Zeugnisse drucken</a>
+        </li> 
+        <li>
+            <a href="reports_archieve.php">Zeugnisse archivieren</a>
+        </li> 
+        <li>
+            <a href="reports_create-marks.php">Noten erzeugen</a>
+        </li> 
+        <li>
+            <a href="reports_definition.php">Zeugnisprozesse</a>
+        </li> 
+        <li>
+            <a href="reports_create-definition.php">Zeugnisdefinition erstellen</a>
+        </li> 
+        <li>
+            <a href="reports_create-process.php">Zeugnisprozesse verwalten</a>
+        </li> 
+        <li>
+            <a href="reports_spellchecking-install.php">Rechtschreibkorrektur installieren</a>
+        </li> 
+        <li>
+            <a href="reports_spellchecking.php">Rechtschreibung korrigieren</a>
+        </li> 
+        <li>
+            <a href="reports_sort-subjects.php">Zeugnisreihenfolge</a>
+        </li>   
+        <li>
+            <a href="reports_problems.php">Zeugnisprobleme</a>
+        </li>     
+    </ul>
+</li>
+
+<li id="menu12">
+    <a href="#register" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Klassenbuch</a>
+    <ul class="collapse list-unstyled" id="register">
+        <li>
+            <a href="register_overview.php">Übersicht</a>
+        </li>   
+        <li>
+            <a href="register_open.php">Klassenbuch öffnen</a>
+        </li>  
+        <li>
+            <a href="register_themes.php">Stundenthemen</a>
+        </li> 
+        <li>
+            <a href="register_absence.php">Abwesenheit, Verspätung</a>
+        </li> 
+        <li>
+            <a href="register_entry.php">Eintrag, Bemerkung</a>
+        </li>  
+        <li>
+            <a href="register_homework.php">Hausaufgabe</a>
+        </li> 
+        <li>
+            <a href="studentapp_register.php">Für Eltern anzeigen</a>
+        </li> 
+    </ul>
+</li>
+
+<li id="menu13">
+    <a href="#user" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Benutzerverwaltung</a>
+    <ul class="collapse list-unstyled" id="user">
+        <li>
+            <a href="user_overview.php">Übersicht</a>
+        </li>      
+        <li>
+            <a href="user_change-password.php">Passwort ändern</a>
+        </li>  
+        <li>
+            <a href="user_change-role.php">Rollen ändern</a>
+        </li>  
+        <li>
+            <a href="user_notifications.php">Benachrichtigungen</a>
+        </li>  
+    </ul>
+</li>
+
+<li id="menu14">
+    <a href="#threema" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Messenger</a>
+    <ul class="collapse list-unstyled" id="threema">
+        <li>
+            <a href="threema_overview.php">Übersicht</a>
+        </li>   
+    </ul>
+</li>
+
+<li id="menu15">
+    <a href="#bbb" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Videokonferenzen</a>
+    <ul class="collapse list-unstyled" id="bbb">
+        <li>
+            <a href="bbb_overview.php">Übersicht</a>
+        </li>   
+        <li>
+            <a href="calendar_add-videoconference.php">Videokonferenz hinzufügen</a>
+        </li> 
+        <li>
+            <a href="bbb_start-videoconference.php">Videokonferenz starten</a>
+        </li> 
+    </ul>
+</li>
+
+<li id="menu16">
+    <a href="#studentapp" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Schüler/Eltern-App</a>
+    <ul class="collapse list-unstyled" id="studentapp">
+        <li>
+            <a href="studentapp_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="studentapp_rights.php">Einrichten, Rechteverwaltung</a>
+        <li>
+            <a href="studentapp_homework.php">Hausaufgaben anzeigen</a>
+        </li>
+        <li>
+            <a href="studentapp_sicknote.php">Schüler krankmelden</a>
+        </li>
+         <li>
+            <a href="studentapp_register.php">Klassenbuch-Einträge</a>
+        </li>
+        <li>
+            <a href="studentapp_parents-day-create.php">Elternsprechtag anlegen</a>
+        </li>
+        <li>
+            <a href="studentapp_parents-day.php">Elternsprechtag Anmeldung</a>
+        </li>
+    </ul>
+</li>
+
+
+</ul>
+
+</nav>
+
+        <!-- Page Content  -->
+        <div id="right-part">
+
+            <nav id="menu" class="navbar navbar-expand-lg navbar-light sky bg-light">
+           
+                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <a href="index.php"  class="mr-auto"><img src="wikiimages/logo-white.png" class="logo d-inline"><span id="title-font">Dokumentation</span></a>
+                   
+
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+            <a class="nav-link nav-a" id="main-page-link" href="../index.php">Zur Hauptseite</a>
+          </li>
+                           
+                        </ul>
+                    </div>
+            
+            </nav><div id="content-wrapper"><div id="top"></div></div><div id="content" class="container col-xl-10 py-2"><p class="app-paragraph"><span class="planer-app">Waldorf 365 Planer</span></p><h1>Veränderungen in<span class="waldorf365"> Waldorf 365 </span>einpflegen</h1><p class="tag-paragraph"><img class="tag-image" src="wikiimages/tags.svg"> Stichwörter: <span class="tag">Änderungen</span><span class="tag">Kündigung</span><span class="tag">Neuer Lehrer</span><span class="tag">Stunden Änderung</span><span class="tag">Stundenplan Änderung</span><span class="tag">Deputatsplan ändern</span><span class="tag">DATEV</span><span class="tag">Gehalt</span></p>
+
+  <p>
+    Sie kenne sicherlich die Situation, dass es  mitten im Jahr zu Veränderungen kommt.
+    Ein Kollege wird krank und ein anderer übernimmt die Epoche. Oder ein Kollege kündigt,
+    und muss im Stundenplan ersetzt werden etc.
+    In diesem Artikel erfahren Sie, wie man diese Veränderungen am besten in<span class="waldorf365"> Waldorf 365 </span>
+    abbildet. Wir betrachten dazu ein typisches Beispiel.
+  </p>
+  <p>Herr Alt kündigt nach 8 Wochen und seine 2 Wochenstunden in Klasse 8 im Fach Handarbeit 
+  werden ab diesem Zeitpunkt zusätzlich von Frau Neu übernommen.</p>
+  <p> 
+  Man könnte einfach den Lehrer Herr Alt löschen und im Deputatsplan in den Handarbeitsstunden
+  in Klasse 8 Frau Neu eintragen.
+  Diese Änderung überträgt sich dann automatisch auf den Stundenplan und andere
+  Systeme wie das Vertretungssystem oder das Klassenbuch 
+  in der Cloud, da diese Systeme die Kurse aus dem Deputatsplan übernehmen. 
+  Dadurch bilden diese Systeme nicht mehr den tatsächlichen Jahresverlauf ab. 
+  Wenn man nun zum Beispiel die Arbeitszeitdokumentation von Frau Neu berechnen lässt, 
+  wird eine falsche Ausgabe erzeugt, bei der Frau Neu von Anfang an die Stunden in Klasse 
+  8 unterrichtet. 
+  </p>
+   
+  <h3>Den Stundenplan exakt abbilden</h3>
+  <ul>
+<li> Um den Stundenplan exakt abzubilden, müssen Sie zunächst einen neuen zweiten Handarbeitskurs
+für Klasse 8 anlegen und in diesem Frau Neu als Lehrerin eintragen.
+</li>
+<li>
+Der ursprüngliche Kurs mit Herr Alt bleibt dabei bestehen.
+</li>
+<li>
+Anschließend kopieren Sie den Stundenplan und legen für beide Stundenpläne die 
+exakten Gültigkeiten fest. Der ursprüngliche Plan gilt für die ersten 8 Wochen, 
+der kopierte Plan gilt ab der 9. Unterrichtswoche.
+</li>
+<li>
+Im kopierten Stundenplan löschen Sie die Karte mit Herrn Alt und setzen an diese 
+Stelle die Karte mit Frau Neu.
+</li>
+<li>
+Auf diese Weise bilden das Vertretungssystem, der Schulkalender, das Klassenbuch und die 
+Stundenpläne in der Cloud den exakten tatsächlichen Jahresverlauf ab.
+</li>
+</ul>
+
+<h3>Deputate und Gehalt exakt berechnen</h3>
+    Um die sich ergebenden monatlichen Deputats- und Gehaltsänderungen abzubinden gibt es zwei Möglichkeiten.
+    Entweder man gibt die genauen Monate zu den Kursen ein oder man Berechnen die Gehälter auf der 
+    Basis von Einmalberechnungen. Beides ist in dem folgenden Artikel beschrieben:
+    <a href = "courses_monthly">Deputat Monatgenau rechnen</a>.
+
+
+<h2>Automatische Stundenplanung mit Änderungen</h2>
+<p> 
+    Will man aufgrund der Änderung einen neuen Stundenplan berechnen lassen, so ist noch ein 
+    weiterer Schritt nötig. Denn der Stundenplan-Algorithmus würde ohne weitere 
+    Angaben davon ausgehen, dass er in einem Stundenplan beide Kurse, den von Herrn Alt 
+    und den von Frau Neu unterbringen muss und würde damit doppelt so viel Handarbeit 
+    in Klasse 8 setzen.
+</p>
+<ul>
+    <li>
+        Der einfachste Weg besteht darin, im Stundenplan-Assistenten im  3. Schritt
+        (<strong>Nur Teilplan erstellen?</strong>) auf <strong>Objekte ausschließen</strong>
+        zu klicken und dann im Bereich <strong>Lehrer</strong> Herrn Alt auszuwählen.
+        Damit werden alle seine Kurse bei der Stundenplan-Berechnung weggelassen.
+    </li>
+    <li>
+        Ein systematischer Weg über Spezialfälle ist auch hier möglich.
+        Erzeugen Sie dazu in den Grunddaten einen neuen Spezialfall, z. B. mit dem 
+        Namen "Nur erste 8 Wochen". Dieser Spezialfall muss keine besonderen 
+        Eigenschaften oder Werte haben. Er kann aber gleichzeitig mit einem Deputatsfaktor 
+        (wie oben beschrieben) verknüpft sein.
+        Der Spezialfall dient hier nur als Marker. Weisen Sie den Spezialfall dem 
+        Kurs von Herr Alt zu und markieren Sie ihn damit.
+        Klicken Sie bei der Stundenplan-Berechnung im Stundenplan-Assistenten im  3. Schritt
+        (<strong>Nur Teilplan erstellen?</strong>) auf <strong>Objekte ausschließen</strong>
+        und wählen Sie dann im Bereich <strong>Spezialfälle</strong> den neu 
+        erstellten Spezialfall aus. Der Kurs von Herr Alt wird damit bei 
+        der Stundenplanung weggelassen.
+    </li>
+</ul>
+
+<h2>Manuelle Stundenplanung mit Änderungen</h2>
+<p> 
+    Auch für die manuelle Stundenplanung gibt es aufgrund der Lehrer-Änderung ein kleines
+    Problem. Dadurch, dass Sie den Stundenplan kopiert haben, sind für jeden Kurs 
+    doppelt so viele Stunden vorhanden.<span class="waldorf365"> Waldorf 365 </span>glaubt damit zunächst, dass Sie zu 
+    viele Karten gesetzt haben. 
+</p>
+<p> 
+    Um dies zu korrigieren, gehen Sie im Bereich <strong>Stundenplan</strong> auf
+    <strong>Plan erstellen</strong>, um die Liste der Stundenpläne anzuzeigen.
+    Legen Sie dann in der Spalte <strong>Jahres-Anteil</strong> die Anteile fest.
+    Es ist in diesem Fall am einfachsten dem alten Plan, der nur für 8 Wochen gültig war, 
+    den Anteil 0 zuzuweisen und dem neuen Plan mit Frau Neu den Anteil 1 zuzuteilen.
+    Selbstverständlich ist es auch möglich, die exakten Anteile anzugeben. Man muss dabei darauf 
+    achten passend zu runden, sodass sich die Anteile addiert exakt 1 ergeben.
+</p>
+
+<h2>Gesamtlösung</h2>
+<p> 
+    Hat man viele derartige Änderungen auf einmal, so kann es in manchen Situationen sinnvoll sein, einfach das ganze 
+    Schuljahr zu kopieren und die Änderungen im kopierten Schuljahr durchzuführen. Schuljahre müssen nicht zwingend 
+    ein ganzes Jahr abdecken, sondern können nur einem Halbjahr oder anderen Jahres-Anteil entsprechen.
+    Sie können auch einfach einem Testszenario entsprechen. Man kann in einem solchen fiktiven Schuljahr zum Beispiel 
+    neue pädagogische oder organisatorische Konzepte ausprobieren.
+</p>
+<p> 
+    Durch das Anlegen eines neuen Schuljahres konserviert man den ursprünglichen Zustand exakt.
+    Man erhält aber zugleich einen neuen Zustand, der nicht mehr mit den alten Daten verknüpft ist.
+</p>
+
+
+
+</div> 
+</div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  
+    <script type="text/javascript">
+  $(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+});
+
+
+      
+    </script>
+</body>
+
+</html>
+
+
