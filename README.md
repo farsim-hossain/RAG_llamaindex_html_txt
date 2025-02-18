@@ -73,4 +73,3 @@ Response format:
   "sources": ["source1.txt", "source2.txt"]
 }
 ```
-# RAG_llamaindex_html_txt
