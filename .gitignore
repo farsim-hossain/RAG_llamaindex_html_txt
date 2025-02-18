@@ -30,6 +30,9 @@ ENV/
 # Vector Store
 vector_store/
 
+# for_client folder
+for_client/
+
 # IDE
 .idea/
 .vscode/

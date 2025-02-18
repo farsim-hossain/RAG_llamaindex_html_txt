@@ -48,10 +48,14 @@ OPENAI_API_KEY=your_key_here
 OPENAI_MODEL=gpt-3.5-turbo
 ```
 
-## Deployment
+## Deployment Without Docker
 
 - pip install -r requirements.txt
 - python vectorize_webpages.py
+- python rest_api.py
+
+## Deployment with Docker
+
 - docker build -t rag-system .
 - docker run -p 8000:8000 --env-file .env rag-system
 
@@ -73,4 +77,5 @@ Response format:
   "sources": ["source1.txt", "source2.txt"]
 }
 ```
+
 # RAG_llamaindex_html_txt
