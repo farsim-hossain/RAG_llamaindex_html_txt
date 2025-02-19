@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Waldorf365 Dokumentation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="wiki.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+  
+    
+
+
+
+<meta name="description" content="Waldorf 365 Dokumentation: ">
+        <meta name="keywords"
+        content="Waldorf 365, Datei, Export, Import, Xml">
+      <meta name="author" content="Ulrich Großmann"></head><body>
+    <div class="wrapper"><nav id="sidebar">
+
+<form action="search.php">
+<input type="text" id="key" name="key" placeholder="Suche...">
+<input type="submit" value="">
+</form>
+<ul class="list-unstyled components">
+
+<li id="menu0" >
+    <a href="#faq" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">FAQ</a>
+    <ul class="collapse list-unstyled" id="faq">     
+        <li>
+            <a href="faq.php">FAQ</a>
+        </li>  
+    </ul>
+</li>
+
+<li id="menu1" >
+    <a href="#blog" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Neuigkeiten</a>
+    <ul class="collapse list-unstyled" id="blog">     
+        <li>
+            <a href="blog5.php">31.12.23 Jahresrückblick</a>
+        </li>  
+        <li>
+            <a href="blog4.php">1.5.23 Neuer Standard³</a>
+        </li>  
+        <li>
+            <a href="blog3.php">20.4.23 Neue Internetseite</a>
+        </li> 
+        <li>
+            <a href="blog2.php">1.8.22 Neues Zeugnissystem</a>
+        </li>    
+        <li>
+            <a href="blog1.php">11.6.22 Neue Dokumentation</a>
+        </li>       
+    </ul>
+</li>
+
+<li id="menu2" >
+    <a href="#philosophy" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Allgemeines</a>
+    <ul class="collapse list-unstyled" id="philosophy">     
+        <li>
+            <a href="philosophy_opennes.php">Offenheit</a>
+        </li> 
+        <li>
+            <a href="philosophy_security.php">Datenschutz</a>
+        </li>       
+        <li>
+            <a href="philosophy_pricing.php">Preise</a>
+        </li> 
+    </ul>
+</li>
+<li id="menu2" >
+    <a href="#dataprotection" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Datenschutz</a>
+    <ul class="collapse list-unstyled" id="dataprotection">     
+        <li>
+            <a href="philosophy_security.php">Datenschutz</a>
+        </li> 
+        <li>
+            <a href="philosophy_copy.php">Sicherheitskopien</a>
+         </li> 
+         <li>
+            <a href="philosophy_security-problems.php">Sicherheitsrisiken</a>
+         </li>         
+    </ul>
+</li>
+
+
+<li id="menu3" >
+    <a href="#datei" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Waldorf 365 Planer</a>
+    <ul class="collapse list-unstyled show" id="datei">
+        <li>
+            <a href="file_overview">Übersicht</a>
+        </li>     
+        <li>
+            <a href="file_system-requirements">Systemvoraussetzungen</a>
+        </li> 
+        <li>
+            <a href="file_install-linux">Installation Linux</a>
+        </li>   
+        <li>
+            <a href="file_export-and-import">Export und Import</a>
+        </li>  
+        <li>
+            <a href="file_export-xml">XML-Export und Import</a>
+        </li>   
+        <li>
+            <a href="file_import-students-teacher">Import Lehrer-/Schülerdaten</a>
+        </li>   
+        <li>
+            <a href="file_zoom">Gesamtzoom</a>
+        </li>  
+        <li>
+            <a href="file_license">Lizenz</a>
+        </li> 
+        <li>
+            <a href="file_update">Update</a>
+        </li>  
+         <li>
+            <a href="file_basic-data">Grunddaten</a>
+        </li>      
+    </ul>
+</li>
+
+<li id="menu4" >
+    <a href="#courses" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Deputate</a>
+    <ul class="collapse list-unstyled" id="courses">
+        <li>
+            <a href="courses_overview">Übersicht</a>
+        </li>  
+        <li>
+            <a href="courses_view">Deputatsplan anzeigen</a>
+        </li>   
+        <li>
+            <a href="courses_parting">Kurse richtig teilen</a>
+        </li>  
+        <li>
+            <a href="courses_changes">Änderungen einpflegen</a>
+        </li>   
+        <li>
+            <a href="courses_monthly">Monatliches Deputat & Einmalzahlung</a>
+        </li>         
+    </ul>
+</li>
+
+<li id="menu5" >
+    <a href="#schedule" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Stundenplan</a>
+    <ul class="collapse list-unstyled" id="schedule">
+        <li>
+            <a href="schedule_overview.php">Übersicht</a>
+        </li>  
+        <li>
+            <a href="schedule_view.php">Stundenplan anzeigen</a>
+        </li>  
+        <li>
+            <a href="schedule_fix-constraints.php">Algorithmus</a>
+        </li>  
+        <li>
+            <a href="schedule_user-interface.php">Digitale Stecktafel</a>
+        </li> 
+        <li>
+            <a href="schedule_hand.php">Mit der Stecktafel arbeiten</a>
+        </li> 
+        <li>
+            <a href="schedule_all-view.php">Gesamtsicht</a>
+        </li>  
+        <li>
+            <a href="schedule_move-collisions">Kollisionen erkennen</a>
+        </li>    
+        <li>
+            <a href="schedule_parallel-view">Nebeneinander-Ansicht</a>
+        </li>   
+        <li>
+            <a href="schedule_user-constraints-faq">Planungsregeln-FAQ</a>
+        </li>   
+        <li>
+            <a href="schedule_good-plan">Tipps</a>
+        </li>  
+        <li>
+            <a href="schedule_epochslots">Handwerklich-künstlerische Epochen</a>
+        </li>
+        <li>
+            <a href="schedule_part-planning">Teilplan / Halbjahresplan</a>
+        </li>
+        <li>
+            <a href="schedule_supervisions">Aufsichtspläne</a>
+        </li>
+        <li>
+            <a href="schedule_view-settings.php">Ansicht anpassen</a>
+        </li>  
+    </ul>
+</li>
+
+<li id="menu6" >
+    <a href="#epochplan" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Epochenplan</a>
+    <ul class="collapse list-unstyled" id="epochplan">
+        <li>
+            <a href="epochplan_overview.php">Übersicht</a>
+        </li>  
+        <li>
+            <a href="schedule_hand.php">Mit der Stecktafel arbeiten</a>
+        </li> 
+        <li>
+            <a href="epochplan_view.php">Epochenplan anzeigen</a>
+        </li>   
+        <li>
+            <a href="epochplan_whole-day.php">Praktika, Klassenfahrten</a>
+        </li>      
+    </ul>
+</li>
+
+
+<li id="menu7">
+    <a href="#cloud" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Waldorf 365 Cloud</a>
+    <ul class="collapse list-unstyled" id="cloud">
+        <li>
+            <a href="cloud_install.php">App installieren</a>
+        </li> 
+    </ul>
+</li>
+
+
+<li id="menu8" >
+    <a href="#vertretungen" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Vertretungen</a>
+    <ul class="collapse list-unstyled" id="vertretungen">
+        <li>
+            <a href="substitutions_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="substitutions_criteria.php">Kriterien</a>
+        </li> 
+        <li>
+            <a href="substitutions_sicknote.php">Krankmelden</a>
+        </li>    
+
+        <li>
+            <a href="substitutions_edit-sicknote.php">Krankmeldung bearbeiten</a>
+        </li> 
+        <li>
+            <a href="substitutions_digital_sicknote.php">Elektronische Krankmeldung (eAU)</a>
+        </li>  
+        <li>
+            <a href="substitutions_edit-substitution.php">Vertretung bearbeiten</a>
+        </li> 
+        <li>
+            <a href="substitutions_plan.php">Vertretungsplan anzeigen</a>
+        </li>     
+        <li>
+            <a href="substitutions_statistics.php">Vertretungsstatistik</a>
+        </li>     
+        <li>
+            <a href="substitutions_sustitutionsplan.php">Vertretungsbereitschaften einrichten</a>
+        </li> 
+        <li>
+            <a href="substitutions_website.php">Vertretungsplan auf Webseite anzeigen</a>
+        </li>       
+    </ul>
+</li>
+
+<li id="menu9" >
+    <a href="#kalender" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Kalender</a>
+    <ul class="collapse list-unstyled" id="kalender">
+        <li>
+            <a href="calendar_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="calendar_new-event.php">Neue Veranstaltung</a>
+        </li> 
+        <li>
+            <a href="calendar_levels-of-privacy.php">öffentlich / privat</a>
+        </li> 
+        <li>
+            <a href="calendar_add-videoconference.php">Videokonferenz</a>
+        </li> 
+        <li>
+            <a href="calendar_equipment-reservation.php">Geräte reservieren</a>
+        </li> 
+        <li>
+            <a href="calendar_export-events.php">Termine exportieren</a>
+        </li> 
+        <li>
+            <a href="calendar_export-private.php">Private Termine exportieren</a>
+        </li> 
+        <li>
+            <a href="calendar_website.php">Termine auf Webseite anzeigen</a>
+        </li>    
+         <li>
+            <a href="studentapp_parents-day-create.php">Elternsprechtag anlegen</a>
+        </li>      
+    </ul>
+</li>
+
+<li id="menu10" >
+    <a href="#moodle" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Lernplattform</a>
+    <ul class="collapse list-unstyled" id="moodle">
+        <li>
+            <a href="moodle_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="moodle_login.php">Zu Moodle&trade; wechseln</a>
+        </li> 
+        <li>
+            <a href="moodle_import-students.php">Schüler synchronisieren</a>
+        </li> 
+        <li>
+            <a href="moodle_import-teacher.php">Lehrer synchronisieren</a>
+        </li> 
+        <li>
+            <a href="moodle_import-courses.php">Kurse synchronisieren</a>
+        </li>         
+    </ul>
+</li>
+
+<li id="menu11" >
+    <a href="#reports" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Zeugnisse</a>
+    <ul class="collapse list-unstyled" id="reports">
+        <li>
+            <a href="reports_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="reports_roadmap.php">Ablaufplan</a>
+        </li> 
+        <li>
+            <a href="reports_write-overview.php">Zeugnisse schreiben - Übersicht</a>
+        </li> 
+        <li>
+            <a href="reports_write.php">Zeugnisse online schreiben</a>
+        </li> 
+        <li>
+            <a href="reports_write-offline.php">Zeugnisse offline schreiben</a>
+        </li>
+        <li>
+            <a href="reports_write-hand.php">Zeugnisse von Hand schreiben</a>
+        </li> 
+        <li>
+            <a href="reports_correct.php">Zeugnisse korrigieren</a>
+        </li> 
+        <li>
+            <a href="reports_accept.php">Zeugnisse freigeben</a>
+        </li> 
+        <li>
+            <a href="reports_print-individual.php">Druckvorschau</a>
+        </li> 
+        <li>
+            <a href="reports_print.php">Zeugnisse drucken</a>
+        </li> 
+        <li>
+            <a href="reports_archieve.php">Zeugnisse archivieren</a>
+        </li> 
+        <li>
+            <a href="reports_create-marks.php">Noten erzeugen</a>
+        </li> 
+        <li>
+            <a href="reports_definition.php">Zeugnisprozesse</a>
+        </li> 
+        <li>
+            <a href="reports_create-definition.php">Zeugnisdefinition erstellen</a>
+        </li> 
+        <li>
+            <a href="reports_create-process.php">Zeugnisprozesse verwalten</a>
+        </li> 
+        <li>
+            <a href="reports_spellchecking-install.php">Rechtschreibkorrektur installieren</a>
+        </li> 
+        <li>
+            <a href="reports_spellchecking.php">Rechtschreibung korrigieren</a>
+        </li> 
+        <li>
+            <a href="reports_sort-subjects.php">Zeugnisreihenfolge</a>
+        </li>   
+        <li>
+            <a href="reports_problems.php">Zeugnisprobleme</a>
+        </li>     
+    </ul>
+</li>
+
+<li id="menu12">
+    <a href="#register" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Klassenbuch</a>
+    <ul class="collapse list-unstyled" id="register">
+        <li>
+            <a href="register_overview.php">Übersicht</a>
+        </li>   
+        <li>
+            <a href="register_open.php">Klassenbuch öffnen</a>
+        </li>  
+        <li>
+            <a href="register_themes.php">Stundenthemen</a>
+        </li> 
+        <li>
+            <a href="register_absence.php">Abwesenheit, Verspätung</a>
+        </li> 
+        <li>
+            <a href="register_entry.php">Eintrag, Bemerkung</a>
+        </li>  
+        <li>
+            <a href="register_homework.php">Hausaufgabe</a>
+        </li> 
+        <li>
+            <a href="studentapp_register.php">Für Eltern anzeigen</a>
+        </li> 
+    </ul>
+</li>
+
+<li id="menu13">
+    <a href="#user" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Benutzerverwaltung</a>
+    <ul class="collapse list-unstyled" id="user">
+        <li>
+            <a href="user_overview.php">Übersicht</a>
+        </li>      
+        <li>
+            <a href="user_change-password.php">Passwort ändern</a>
+        </li>  
+        <li>
+            <a href="user_change-role.php">Rollen ändern</a>
+        </li>  
+        <li>
+            <a href="user_notifications.php">Benachrichtigungen</a>
+        </li>  
+    </ul>
+</li>
+
+<li id="menu14">
+    <a href="#threema" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Messenger</a>
+    <ul class="collapse list-unstyled" id="threema">
+        <li>
+            <a href="threema_overview.php">Übersicht</a>
+        </li>   
+    </ul>
+</li>
+
+<li id="menu15">
+    <a href="#bbb" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Videokonferenzen</a>
+    <ul class="collapse list-unstyled" id="bbb">
+        <li>
+            <a href="bbb_overview.php">Übersicht</a>
+        </li>   
+        <li>
+            <a href="calendar_add-videoconference.php">Videokonferenz hinzufügen</a>
+        </li> 
+        <li>
+            <a href="bbb_start-videoconference.php">Videokonferenz starten</a>
+        </li> 
+    </ul>
+</li>
+
+<li id="menu16">
+    <a href="#studentapp" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Schüler/Eltern-App</a>
+    <ul class="collapse list-unstyled" id="studentapp">
+        <li>
+            <a href="studentapp_overview.php">Übersicht</a>
+        </li> 
+        <li>
+            <a href="studentapp_rights.php">Einrichten, Rechteverwaltung</a>
+        <li>
+            <a href="studentapp_homework.php">Hausaufgaben anzeigen</a>
+        </li>
+        <li>
+            <a href="studentapp_sicknote.php">Schüler krankmelden</a>
+        </li>
+         <li>
+            <a href="studentapp_register.php">Klassenbuch-Einträge</a>
+        </li>
+        <li>
+            <a href="studentapp_parents-day-create.php">Elternsprechtag anlegen</a>
+        </li>
+        <li>
+            <a href="studentapp_parents-day.php">Elternsprechtag Anmeldung</a>
+        </li>
+    </ul>
+</li>
+
+
+</ul>
+
+</nav>
+
+        <!-- Page Content  -->
+        <div id="right-part">
+
+            <nav id="menu" class="navbar navbar-expand-lg navbar-light sky bg-light">
+           
+                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <a href="index.php"  class="mr-auto"><img src="wikiimages/logo-white.png" class="logo d-inline"><span id="title-font">Dokumentation</span></a>
+                   
+
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+            <a class="nav-link nav-a" id="main-page-link" href="../index.php">Zur Hauptseite</a>
+          </li>
+                           
+                        </ul>
+                    </div>
+            
+            </nav><div id="content-wrapper"><div id="top"></div></div><div id="content" class="container col-xl-10 py-2"><p class="app-paragraph"><span class="planer-app">Waldorf 365 Planer</span></p><h1>Export und Import im XML-Format</h1><p class="tag-paragraph"><img class="tag-image" src="wikiimages/tags.svg"> Stichwörter: <span class="tag">Datei</span><span class="tag">Export</span><span class="tag">Import</span><span class="tag">Xml</span></p>
+
+    <p>Die Gesamten Daten von<span class="waldorf365"> Waldorf 365 </span>können im XML-Format exportiert und importiert werden.</p>
+    <p>Dies ermöglicht Sicherheitskopien in einem standardisierten Format zu speichern 
+    und die Daten in Verbindung mit anderer Software zu verwenden</p>
+
+    <h2>Export der XML-Datei</h2>
+
+    <p class="remark"><img src="wikiimages/info2.svg" class="info-image">Aus Sicherheitsgründen kann die XML-Datei nur von der Cloud aus exportiert werden</p>
+    <p class="role"><img src="wikiimages/key.svg" class="role-image">Dieser Vorgang erfordert Administrator-Rechte.</p>
+    <p> Gehen Sie dazu wie in dem folgenden Screenshot vor</p>
+    <img class="screenshot img-fluid border rounded-3 shadow-lg mb-4" src="wikiimages/xml-export.webp">
+
+    <ul>
+    <li>Wählen Sie im Hauptmenü <strong>Info / Hilfe</strong>.</li>
+    <li>Wählen Sie den Bereich <strong>Sicherheitskopien</strong>.</li>
+    <li>Klicken Sie auf <strong>Sicherheitskopie herunterladen</strong>.</li>
+    <li>Wählen Sie <strong>XML-Datei.</strong></li>
+    </ul>
+
+    <h2>Import der XML-Datei</h2>
+
+    <p class="remark"><img src="wikiimages/info2.svg" class="info-image">Aus Sicherheitsgründen kann die XML-Datei nur im Planer importiert werden</p>
+    <p> Gehen Sie dazu wie in dem folgenden Screenshot vor</p>
+    <img class="screenshot img-fluid border rounded-3 small-image shadow-lg mb-4" src="wikiimages/xml-import.webp">
+
+    <ul>
+    <li>Wählen Sie im Hauptmenü <strong>Import / Eport</strong>.</li>
+    <li>Klicken Sie auf <strong>Waldorf 365 XML imnportieren</strong>.</li>
+    <li>Wählen Sie die Datei - Die Daten werden als neue Datei geladen.</li>
+    </ul>
+    
+
+    <h2>Aufbau der XML-Datei</h2>
+
+    <p> Das Hauptobjekt ist vom Typ <code>File</code>, es enthält 
+    alle Definitionen zum Dateiformat.
+    </p>
+    <p> Das Objekt vom Typ <code>SchoolState</code>, enthalt 
+    allgemeingültige Informationen zur Schule.
+    </p>
+    <p>
+        Jedes Schuljahr wird als Objekt vom Typ <code>Scenario</code>
+        abgebildet.
+    </p>
+    <p>
+    Alle weiteren Objekte sind in einem Schuljahr enthalten.
+</p>
+  <p>Beispielhafter Datei-Aufbau:</p>
+
+    
+    <pre>
+    &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+    &lt;File Fileformat-Version=&quot;3.1&quot;&gt;
+      &lt;SchoolState  City=&quot;Musterstadt&quot; ... &gt;&lt;/SchoolState&gt;
+      &lt;Scenario  Id=&quot;abc&quot;  Name=&quot;2021/2022&quot; ... &gt;
+        &lt;Subject Name=&quot;Hauptunterricht&quot; Shortcut=&quot;HU&quot; ... &gt;&lt;/Subject&gt;
+        ...
+      &lt;/Scenario&gt;
+      &lt;Scenario  Id=&quot;def&quot;  Name=&quot;2022/2023&quot; ...&gt;
+        &lt;Subject Name=&quot;Hauptunterricht&quot; Shortcut=&quot;HU&quot; ... &gt;&lt;/Subject&gt;
+        ...
+      &lt;/Scenario&gt;
+    &lt;/File&gt;
+    </pre>
+    
+    
+    <h2>Speicherformat aller Objekte im XML-Format</h2>
+   <div class="xml-api">
+ 
+   <h2>Abwesenheit</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Absence</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">day</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Wochentag (0=Montag...)</span></td></tr>
+<tr><td><span class="xml-api-column-name">hour</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Nr. der Unterrichtsstunde</span></td></tr>
+<tr><td><span class="xml-api-column-name">mode</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Typ (0=strikte Abwesenheit, bisher keine weiteren Werte definiert)</span></td></tr>
+</table>
+
+<h2>Informationen über Cloud-Zugang</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">AccountSettings</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">CalendarId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id des persönlichen Kalenders</span></td></tr>
+<tr><td><span class="xml-api-column-name">ConfirmationFlags</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Abgeschlossene Bestätigungsprozesse z. B. Datenschutzerklärung bestätigt</span></td></tr>
+<tr><td><span class="xml-api-column-name">EventNotification</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Benachrichtigung bei Veranstaltungen?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">Identity</span></td><td><span class="xml-api-column-type-description">Objektreferenz über Identität (über mehrere Schuljahre gültig)</span></td><td><span class="xml-api-column-description">Identitäts-Id des Account-Inhabers</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">NewFeaturesDate</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Datum, bis zu dem die neuen Programmfeatures bekannt sind</span></td></tr>
+<tr><td><span class="xml-api-column-name">NotificationPolicy</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Benachrichtigungs-Richtlinie</span></td></tr>
+<tr><td><span class="xml-api-column-name">PasswordLastChanged</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Letztes Änderungsdatum des Passworts</span></td></tr>
+<tr><td><span class="xml-api-column-name">SubstitutionNotification</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Benachrichtigung bei Vertretungen?</span></td></tr>
+<tr><td><span class="xml-api-column-name">ThreemaId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Threema-ID</span></td></tr>
+</table>
+
+<h2>Veranstaltung</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">CalendarEvent</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Creator</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Identität des Autors</span></td></tr>
+<tr><td><span class="xml-api-column-name">Date</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Description</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Beschreibung</span></td></tr>
+<tr><td><span class="xml-api-column-name">End</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">End-Zeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">Groups</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Teilnehmende Klassen bzw. Gruppen</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Rooms</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Verwendete Räume</span></td></tr>
+<tr><td><span class="xml-api-column-name">Start</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Start-Zeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">Subjects</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Unterrichtete Fächer</span></td></tr>
+<tr><td><span class="xml-api-column-name">Substitutions</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Zugehörige Vertretungen</span></td></tr>
+<tr><td><span class="xml-api-column-name">Teachers</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Teilnehmende Lehrer</span></td></tr>
+<tr><td><span class="xml-api-column-name">VideoConferenceId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id einer zur Veranstaltung hinzu gebuchten Videokonferenz</span></td></tr>
+<tr><td><span class="xml-api-column-name">Visibility</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Sichtbarkeit (0=Nur für Teilnehmer, 1=Für alle, 2=Für Lehrer, 3=Externe Vermietung)</span></td></tr>
+</table>
+
+<h2>Spezialfall</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Category</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Colliding</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">kollidierend?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">NoReport</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">kein Zeugnis?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Role</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Rollendefinitionen, die beschreiben welche Rolle der Spezialfall erfüllt.</span></td></tr>
+<tr><td><span class="xml-api-column-name">ScheduleFactor</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Stundenplan-Faktor</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">WorkloadFactor</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Deputats-Faktor</span></td></tr>
+</table>
+
+<h2>Chat-Nachricht</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">ChatMessage</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">ActualReaders</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Empfänger, welche die Nachricht gelesen haben</span></td></tr>
+<tr><td><span class="xml-api-column-name">ChannelId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id des Channels</span></td></tr>
+<tr><td><span class="xml-api-column-name">CreateDateTime</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Sendezeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">ExpectedReaders</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Erwartete Empfänger der Nachricht</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Sender</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Sender</span></td></tr>
+<tr><td><span class="xml-api-column-name">Status</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Status</span></td></tr>
+<tr><td><span class="xml-api-column-name">Text</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Text</span></td></tr>
+<tr><td><span class="xml-api-column-name">Type</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Art (0=System-Nachricht, 1=Chat-Nachricht, 2=Vertretungs-Benachrichtigung)</span></td></tr>
+</table>
+
+<h2>Zeugnis-Korrektur</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Correction</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">CorrectedText</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">korrigierter Text</span></td></tr>
+<tr><td><span class="xml-api-column-name">Corrector</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Korrigierender Lehrer</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">NewText</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Neuer Textvorschlag</span></td></tr>
+<tr><td><span class="xml-api-column-name">Remark</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Bemerkung des korrigierenden Lehrers</span></td></tr>
+</table>
+
+<h2>Kurs</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Course</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Absences</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Abwesenheiten</span></td></tr>
+<tr><td><span class="xml-api-column-name">Categories</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">zugewiesene Spezialfälle</span></td></tr>
+<tr><td><span class="xml-api-column-name">Color</span></td><td><span class="xml-api-column-type-description">Farbe - Hexadezimal</span></td><td><span class="xml-api-column-description">Farbe</span></td></tr>
+<tr><td><span class="xml-api-column-name">DoubleLessonMode</span></td><td><span class="xml-api-column-type-description">Liste von ganzen Zahlen durch Komma getrennt</span></td><td><span class="xml-api-column-description">mögliche Kurslängen (1=Einzelstunde, 2=Doppelstunde...)</span></td></tr>
+<tr><td><span class="xml-api-column-name">EpochWeeks</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Anzahl der Epochenwochen</span></td></tr>
+<tr><td><span class="xml-api-column-name">Groups</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Gruppen bzw. Klassen</span></td></tr>
+<tr><td><span class="xml-api-column-name">HandWorkload</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">händisches Deputat (überschreibt das berechnete Deputat)</span></td></tr>
+<tr><td><span class="xml-api-column-name">HoursPerWeek</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Anzahl der Stunden im Stundenplan pro Woche</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">LastChanged</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Zeitpunkt er letzten Änderung</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">PreferredRooms</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">mögliche Räume</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Subjects</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Fächer</span></td></tr>
+<tr><td><span class="xml-api-column-name">Teachers</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Lehrer</span></td></tr>
+</table>
+
+<h2>Kurs-Gruppierung</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">CourseGroup</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Courses</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Zusammengehörige Kurse</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+</table>
+
+<h2>Unterrichtstag</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Day</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+</table>
+
+<h2>Arbeitsvertrag</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Employment</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">End</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">End-Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Permanent</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">unbefristeter Vertrag?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Start</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Start-Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Type</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Art des Arbeitsvertrags (0=Grundvertrag, 1=befristete Änderung)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Workload</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">vertraglich vereinbarte Deputatsstunden</span></td></tr>
+</table>
+
+<h2>Epochenplan</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">EpochPlan</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Draft</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Entwurf?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Groups</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Klassen bzw. Gruppen</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">LastChanged</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Zeitpunkt der letzten Änderung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Lessons</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Epochenwochen</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">NumberOfManualChanges</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">PlanningConfigurations</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Für die Berechnung verwendete Algorithmus-Konfigurationen</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+</table>
+
+<h2>Gerät</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Equipment</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Description</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Beschreibung des Geräts</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+</table>
+
+<h2>Geräte-Reservierung</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">EquipmentReservation</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Creator</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Autor</span></td></tr>
+<tr><td><span class="xml-api-column-name">Date</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Equipment</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Reserviertes Gerät</span></td></tr>
+<tr><td><span class="xml-api-column-name">Event</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Kalender-Veranstaltung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">Lesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Unterrichtsstunde oder Epochenwoche</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">PlacementLesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Unterrichtsstunde, in welcher die zugehörige Epochenwoche unterrichtet wird</span></td></tr>
+</table>
+
+<h2>Test-Korrektur</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">ExamCorrection</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Correction</span></td><td><span class="xml-api-column-type-description">Liste von Eigenschaften im Format Name1:Wert1,Name2:Wert2...</span></td><td><span class="xml-api-column-description">Erreichte Punkte der Schüler</span></td></tr>
+<tr><td><span class="xml-api-column-name">CorrectionMode</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Korrekturmodus (0=Prozentbewertung, 1=Vier-Punkte-Bewertung)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Course</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Kurs</span></td></tr>
+<tr><td><span class="xml-api-column-name">Date</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Description</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Beschreibung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">LastChanged</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Zeitpunkt der letzten Änderung</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">MaxScore</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Punkte, die für Note 1 hinreichen</span></td></tr>
+<tr><td><span class="xml-api-column-name">MidScore</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Punkte, die für Note 4 hinreichen</span></td></tr>
+<tr><td><span class="xml-api-column-name">MinScore</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Punkte, bis zu denen die Note gegeben wird</span></td></tr>
+<tr><td><span class="xml-api-column-name">Teacher</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Lehrer</span></td></tr>
+<tr><td><span class="xml-api-column-name">TotalScore</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Gesamtpunkte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Weight</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Jahres-Gewichtung</span></td></tr>
+</table>
+
+<h2>Rückmeldung</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Feedback</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Completed</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Rückmeldeprozess abgeschlossen?</span></td></tr>
+<tr><td><span class="xml-api-column-name">FeedbackObjects</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Objekte, auf die sich die Rückmeldung bezieht</span></td></tr>
+<tr><td><span class="xml-api-column-name">FeedbackProcessId</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Rückmeldeprozess</span></td></tr>
+<tr><td><span class="xml-api-column-name">FeedbackText</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Rückmelde-Text</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Status</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Status-Nummer</span></td></tr>
+<tr><td><span class="xml-api-column-name">TeacherId</span></td><td><span class="xml-api-column-type-description">Objektreferenz über Identität (über mehrere Schuljahre gültig)</span></td><td><span class="xml-api-column-description">Identität des Rückmeldenden</span></td></tr>
+</table>
+
+<h2>Feedback-Prozess</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">FeedbackProcess</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Active</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Auf der Cloud aktiv?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Description</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Beschreibung</span></td></tr>
+<tr><td><span class="xml-api-column-name">FeedbackObjects</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Objekte, zu denen eine Rückmeldung gegeben werden soll (z. B. Stundenplan)</span></td></tr>
+<tr><td><span class="xml-api-column-name">FeedbackVisible</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Rückmeldungen bei der Arbeit am Planer (z. B. im Stundenplan) einblenden?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Mode</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Art des Feedbacks</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Participants</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Lehrer, die an dem Rückmeldeprozess teilnehmen</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+</table>
+
+<h2>Cloud-Datei</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">FileObject</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">FileEnding</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Datei-Endung (Dateiformat)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">LastChanged</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Zeitpunkt der letzen Änderung</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Dateiname</span></td></tr>
+<tr><td><span class="xml-api-column-name">Permissions</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Objekte (z. B. Lehrer oder Klassen) mit Lese-Berechtigung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Permissions</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Objekte (z. B. Lehrer oder Klassen) mit Schreib-Berechtigung</span></td></tr>
+<tr><td><span class="xml-api-column-name">SubFiles</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Enthaltene Ordner oder Dateien</span></td></tr>
+</table>
+
+<h2>Klasse</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Grade</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Absences</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Abwesenheiten</span></td></tr>
+<tr><td><span class="xml-api-column-name">Categories</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">zugewiesene Spezialfälle</span></td></tr>
+<tr><td><span class="xml-api-column-name">ClassTeacher</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Klassenlehrer / Klassenbetreuer</span></td></tr>
+<tr><td><span class="xml-api-column-name">Color</span></td><td><span class="xml-api-column-type-description">Farbe - Hexadezimal</span></td><td><span class="xml-api-column-description">Farbe</span></td></tr>
+<tr><td><span class="xml-api-column-name">EpochFactor</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Anzahl der Deputatsstunden, die für eine Epochenwoche in dieser Klasse angerechnet werden</span></td></tr>
+<tr><td><span class="xml-api-column-name">ForceFirstHour</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Muss die Klasse Unterricht in der ersten Stunde haben?</span></td></tr>
+<tr><td><span class="xml-api-column-name">GradePartitions</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Klassenteilungen</span></td></tr>
+<tr><td><span class="xml-api-column-name">Groups</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Gruppen</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">Letter</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Klassen-Buchstabe</span></td></tr>
+<tr><td><span class="xml-api-column-name">Level</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Klassenstufe</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">MaxLessonsPerDay</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">maximale Anzahl der Unterrichtsstunden pro Tag</span></td></tr>
+<tr><td><span class="xml-api-column-name">MinLessonsPerDay</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">minimale Anzahl der Unterrichtsstunden pro Tag</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">NumberOfAfterNoonDays</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">maximale Anzahl der Tage mit Nachmittagsunterricht</span></td></tr>
+<tr><td><span class="xml-api-column-name">NumberOfStudents</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Anzahl der Schüler</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Students</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Liste der Schüler</span></td></tr>
+<tr><td><span class="xml-api-column-name">SubjectMappings</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Curriculums-Einträge</span></td></tr>
+</table>
+
+<h2>Klassenteilung</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">GradePartiton</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Groups</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Gruppen, die bei dieser Klassenteilung parallel unterrichtet werden können</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+</table>
+
+<h2>Gruppe</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Group</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Absences</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Abwesenheiten</span></td></tr>
+<tr><td><span class="xml-api-column-name">Categories</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">zugewiesene Spezialfälle</span></td></tr>
+<tr><td><span class="xml-api-column-name">Color</span></td><td><span class="xml-api-column-type-description">Farbe - Hexadezimal</span></td><td><span class="xml-api-column-description">Farbe</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">NumberOfStudents</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Anzahl der Schüler</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Students</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Liste der Schüler</span></td></tr>
+</table>
+
+<h2>Server-Ausfall-Beschreibung</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">HealthAccident</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Customer</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Kunden-Kennung</span></td></tr>
+<tr><td><span class="xml-api-column-name">End</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">End-Zeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Start</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Start-Zeitpunkt</span></td></tr>
+</table>
+
+<h2>Ferien</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">HolidayPeriod</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">End</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">End-Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Start</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Start-Datum</span></td></tr>
+</table>
+
+<h2>Hausaufgabe</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Homework</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Creator</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Autor</span></td></tr>
+<tr><td><span class="xml-api-column-name">Date</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Description</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Beschreibung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Event</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Kalender-Veranstaltung</span></td></tr>
+<tr><td><span class="xml-api-column-name">HomeworkDueDate</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Fälligkeits-Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">Lesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Unterrichtsstunde oder Epochenwoche</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">PlacementLesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Unterrichtsstunde, in welcher die zugehörige Epochenwoche unterrichtet wird</span></td></tr>
+</table>
+
+<h2>Karte</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Lesson</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Course</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Kurs</span></td></tr>
+<tr><td><span class="xml-api-column-name">Day</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Wochentag (0=Montag...)</span></td></tr>
+<tr><td><span class="xml-api-column-name">EpochPlan</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Epochenplan bei Epochenunterricht</span></td></tr>
+<tr><td><span class="xml-api-column-name">EpochPlanGrade</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Klasse bei Epochenunterricht</span></td></tr>
+<tr><td><span class="xml-api-column-name">Fixed</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">im Stundenplan fixiert?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Hour</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Nr. der Unterrichtsstunde am Tag</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">LastChanged</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Zeitpunkt der letzten Änderung</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">LocalRooms</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Räume</span></td></tr>
+</table>
+
+<h2>Stunden-Eintrag</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">LessonRegisterEntry</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Creator</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Autor</span></td></tr>
+<tr><td><span class="xml-api-column-name">Date</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Event</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Kalender-Veranstaltung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">Lesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Unterrichtsstunde oder Epochenwoche</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">PlacementLesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Unterrichtsstunde, in welcher die zugehörige Epochenwoche unterrichtet wird</span></td></tr>
+<tr><td><span class="xml-api-column-name">Themes</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Themen der Stunde</span></td></tr>
+</table>
+
+<h2>Note</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Mark</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Digits</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Note als Zahl geschrieben</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Value</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">zugehöriger Zahlenwert</span></td></tr>
+</table>
+
+<h2>Notenliste</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">MarkScale</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Marks</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Liste der Noten</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+</table>
+
+<h2>Push-Benachrichtigung</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Notification</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">ChannelId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id des Channels</span></td></tr>
+<tr><td><span class="xml-api-column-name">CreateDateTime</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Sendezeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Sender</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Sender</span></td></tr>
+<tr><td><span class="xml-api-column-name">Status</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Status</span></td></tr>
+<tr><td><span class="xml-api-column-name">Text</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Text</span></td></tr>
+<tr><td><span class="xml-api-column-name">Type</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Art (0=System-Nachricht, 1=Chat-Nachricht, 2=Vertretungs-Benachrichtigung)</span></td></tr>
+</table>
+
+<h2>Algorithmus-Konfiguration</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">PlanningConfigurationDescription</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">AddMissingLessons</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Fehlende Stunden hinzufügen?</span></td></tr>
+<tr><td><span class="xml-api-column-name">FastConstraints</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Schnelle Berechnung von Kollisionen?</span></td></tr>
+<tr><td><span class="xml-api-column-name">FixExistingLessons</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Vorhandene Stunden Fixieren? Modus 0 - 3</span></td></tr>
+<tr><td><span class="xml-api-column-name">ForceAssigning</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Setzen aller Karten erzwingen?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">IsSchedule</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Stundenplan (true) oder Epochenplan (false)</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">ManualFixing</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">MinutesToPlan</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Rechenzeit in Minuten</span></td></tr>
+<tr><td><span class="xml-api-column-name">PlanningAlgorithmId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Verwendeter Algorithmus</span></td></tr>
+<tr><td><span class="xml-api-column-name">RoomPlanningMode</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Raumplanungsmodus (0=Räume und Stunden, 1=Nur Räume)</span></td></tr>
+<tr><td><span class="xml-api-column-name">StartingPlanId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Startplan</span></td></tr>
+<tr><td><span class="xml-api-column-name">TeacherConstraints</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Allgemeine Lehrer-Bedingungen berücksichtigen?</span></td></tr>
+<tr><td><span class="xml-api-column-name">UseCourseGroups</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Fest berechnete Gegenteiler verwenden?</span></td></tr>
+<tr><td><span class="xml-api-column-name">UseForcedDoubleLessons</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Feste Doppelstunden verwenden?</span></td></tr>
+</table>
+
+<h2>Zeugnis-Vortext</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Pretext</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Course</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Kurs</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">ReportField</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Zugehöriges Bewertungsfeld</span></td></tr>
+<tr><td><span class="xml-api-column-name">Status</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Status (0=Leer, 1=Unvollständig geschrieben, 2=Vollständig geschrieben, 3=Korrigiert, 4=Druckfreigabe, 5=Gesperrt)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Text</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Zeugnistext</span></td></tr>
+</table>
+
+<h2>Zeugniseintrag</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Report</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Course</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Kurs</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Mark</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Note</span></td></tr>
+<tr><td><span class="xml-api-column-name">Number</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Zahl</span></td></tr>
+<tr><td><span class="xml-api-column-name">Pretext</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">verwendeter Vortext</span></td></tr>
+<tr><td><span class="xml-api-column-name">ReportField</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Zugehöriges Bewertungsfeld</span></td></tr>
+<tr><td><span class="xml-api-column-name">Status</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Status (0=Leer, 1=Unvollständig geschrieben, 2=Vollständig geschrieben, 3=Korrigiert, 4=Druckfreigabe, 5=Gesperrt)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Student</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Schüler</span></td></tr>
+<tr><td><span class="xml-api-column-name">Text</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Zeugnistext</span></td></tr>
+</table>
+
+<h2>Bewertungsfeld</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">ReportBuildingBlock</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">AllowedMarks</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Auswählbare Noten</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">MarkForced</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Eingabe zwingend?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">SingleLined</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Einzeilig?</span></td></tr>
+<tr><td><span class="xml-api-column-name">StudentNameNeeded</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Schülername muss auftauchen?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Type</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Eingabe-Form (0=Text, 1=Note, 2=Nummer)</span></td></tr>
+<tr><td><span class="xml-api-column-name">UsePretext</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Vortext zulässig?</span></td></tr>
+</table>
+
+<h2>Zeugnisdefinition</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">ReportDefinition</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Date</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Ausstellungsdatum des Zeugnisses</span></td></tr>
+<tr><td><span class="xml-api-column-name">ExcludedCourses</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Ausgeschlossene Kurse</span></td></tr>
+<tr><td><span class="xml-api-column-name">ExcludedStudents</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Ausgeschlossene Schüler</span></td></tr>
+<tr><td><span class="xml-api-column-name">Grades</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Einschränkung auf diese Klassen</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">ReportBuildingBlocks</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Bewertungsfelder (z. B. Zeugnistext oder Note - also Felder die für jedes Fach pro Schüler einzugeben sind)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">StudentFields</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Schülerfelder (z. B. Fehlzeiten oder Zeugnisspruch - also Felder, die nur einmal pro Schüler einzugeben sind)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Students</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Einschränkung auf diese Schüler</span></td></tr>
+<tr><td><span class="xml-api-column-name">Subjects</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Einschränkung auf diese Fächer</span></td></tr>
+<tr><td><span class="xml-api-column-name">Template</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">TemplateString</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Angepasste Zeugnisvorlage</span></td></tr>
+</table>
+
+<h2>Zeugnisnotiz</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">ReportNote</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Creator</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Autor</span></td></tr>
+<tr><td><span class="xml-api-column-name">Date</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Event</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Kalender-Veranstaltung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">Lesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Unterrichtsstunde oder Epochenwoche</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">PlacementLesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Unterrichtsstunde, in welcher die zugehörige Epochenwoche unterrichtet wird</span></td></tr>
+<tr><td><span class="xml-api-column-name">Student</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Schüler</span></td></tr>
+<tr><td><span class="xml-api-column-name">Text</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Bemerkung</span></td></tr>
+</table>
+
+<h2>Raum</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Room</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Absences</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Abwesenheiten</span></td></tr>
+<tr><td><span class="xml-api-column-name">Categories</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">zugewiesene Spezialfälle</span></td></tr>
+<tr><td><span class="xml-api-column-name">Color</span></td><td><span class="xml-api-column-type-description">Farbe - Hexadezimal</span></td><td><span class="xml-api-column-description">Farbe</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">Identity</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id zur Identifizierung über Schuljahre hinweg</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">RoomGroup</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Unterräume bei Raumgruppe</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">capacity</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Anzahl der Lern-Plätze</span></td></tr>
+</table>
+
+<h2>Schuljahr</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Scenario</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Decription</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Beschreibung</span></td></tr>
+<tr><td><span class="xml-api-column-name">End</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">End-Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">EpochFactor</span></td><td><span class="xml-api-column-type-description">Dezimalzahl</span></td><td><span class="xml-api-column-description">Anzahl der Deputatsstunden, die für eine Epochenwoche im Normalfall angerechnet werden</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">LastChanged</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Zeitpunkt der letzten Änderung</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Start</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Start-Datum</span></td></tr>
+</table>
+
+<h2>Stundenplan</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Schedule</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">End</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">End-Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">LastChanged</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Zeitpunkt der letzten Änderung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Lessons</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Unterrichtsstunden</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">NumberOfManualChanges</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Anzahl der manuellen Änderungen</span></td></tr>
+<tr><td><span class="xml-api-column-name">PlanningConfigurations</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Für die Berechnung verwendete Algorithmus-Konfigurationen</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Start</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Start-Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">YearPercent</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Anteil des Stundenplans am Jahr als Faktor für die Berechnung von Deputaten</span></td></tr>
+</table>
+
+<h2>Schul-Einstellungen</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">SchoolState</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">ActiveScenario</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Auf der Cloud gültiges Schuljahr</span></td></tr>
+<tr><td><span class="xml-api-column-name">CanteenSeats</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Anzahl der Mensaplätze</span></td></tr>
+<tr><td><span class="xml-api-column-name">City</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Ort der Schul-Adresse</span></td></tr>
+<tr><td><span class="xml-api-column-name">CountryCode</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Ländercode</span></td></tr>
+<tr><td><span class="xml-api-column-name">EditedScenario</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Im Planer bearbeitetes Schuljahr</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">PLZ</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Postleitzahl der Schul-Adresse</span></td></tr>
+<tr><td><span class="xml-api-column-name">SchoolName</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name der Schule</span></td></tr>
+<tr><td><span class="xml-api-column-name">SchoolTypeDescripiton</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Schulart-Beschreibung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">StateCode</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Code des Bundeslandes</span></td></tr>
+<tr><td><span class="xml-api-column-name">Street</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Straße der Schul-Adresse</span></td></tr>
+<tr><td><span class="xml-api-column-name">SubstitutionsDeadline</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Deadline für automatische Krankmeldungen</span></td></tr>
+<tr><td><span class="xml-api-column-name">WeekHoursForFullTimeJob</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Wöchentliche Arbeitszeit einer vollen Stelle in Stunden</span></td></tr>
+<tr><td><span class="xml-api-column-name">WorkloadHoursForFullTimeJob</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Anzahl der Deputatsstunden, die einer vollen Stelle entsprechen</span></td></tr>
+</table>
+
+<h2>Einstellung</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Setting</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">IntegerValue</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">Key</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">LocalTimeValue</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">StringValue</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description"></span></td></tr>
+</table>
+
+<h2>Krankmeldung</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">SickNote</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Creator</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Autor</span></td></tr>
+<tr><td><span class="xml-api-column-name">Description</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Grund des Fehlens</span></td></tr>
+<tr><td><span class="xml-api-column-name">DoctorDate</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Datum der ersten Ärztlichen Krankmeldung</span></td></tr>
+<tr><td><span class="xml-api-column-name">EndDate</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">End-Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">EndTime</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">End-Zeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">MissingObject</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Fehlend-Gemeldetes Objekt (z. B. Lehrer oder Raum)</span></td></tr>
+<tr><td><span class="xml-api-column-name">StartDate</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Start-Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">StartTime</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Start-Zeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">Substitutions</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Zugehörige Vertretungen</span></td></tr>
+</table>
+
+<h2>Planungs-Reihenfolge</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Sorting</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Evaluation</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Bewertung der Sortierung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Mode</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Sortier-Modus</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">ObjectsInOrder</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Sortierreihenfolge der sortierten Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">UsedAlgorithm</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Kennung des verwendeten Sortier-Algorithmus</span></td></tr>
+</table>
+
+<h2>Planungs-Reihenfolge</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">SortingDescription</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">CreationTime</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Zeitpunkt Berechnung der Sortierung</span></td></tr>
+<tr><td><span class="xml-api-column-name">GradeWeight</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Gewichtung von Klassen</span></td></tr>
+<tr><td><span class="xml-api-column-name">HardScore</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Muss-Bewertung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">MediumScore</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Soll-Bewertung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Mode</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Sortier-Modus</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">RoomWeight</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Gewichtung von Räumen</span></td></tr>
+<tr><td><span class="xml-api-column-name">SoftScore</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Kann-Bewertung</span></td></tr>
+<tr><td><span class="xml-api-column-name">SortedCourses</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Sortierreihenfolge der Kurse</span></td></tr>
+<tr><td><span class="xml-api-column-name">TeacherWeight</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Gewichtung von Lehrern</span></td></tr>
+</table>
+
+<h2>Personal</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">StaffMember</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Absences</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Abwesenheiten</span></td></tr>
+<tr><td><span class="xml-api-column-name">CalendarId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id des persönlichen Kalenders</span></td></tr>
+<tr><td><span class="xml-api-column-name">Categories</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">zugewiesene Spezialfälle</span></td></tr>
+<tr><td><span class="xml-api-column-name">City</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Ort der Adresse</span></td></tr>
+<tr><td><span class="xml-api-column-name">CityOfBirth</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Geburtsort</span></td></tr>
+<tr><td><span class="xml-api-column-name">Color</span></td><td><span class="xml-api-column-type-description">Farbe - Hexadezimal</span></td><td><span class="xml-api-column-description">Farbe</span></td></tr>
+<tr><td><span class="xml-api-column-name">ConfirmationFlags</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Abgeschlossene Bestätigungsprozesse z. B. Datenschutzerklärung bestätigt</span></td></tr>
+<tr><td><span class="xml-api-column-name">DateOfBirth</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Geburtsdatum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Email</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">E-Mail-Adresse(n)</span></td></tr>
+<tr><td><span class="xml-api-column-name">EventNotification</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Benachrichtigung bei Kalender-Veranstaltung?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Firstname</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Vorname</span></td></tr>
+<tr><td><span class="xml-api-column-name">Gender</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Geschlecht (0=männlich,1=weiblich)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">Identity</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id zur Identifizierung über Schuljahre hinweg</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">NotificationPolicy</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Benachrichtigungs-Richtlinie</span></td></tr>
+<tr><td><span class="xml-api-column-name">PLZ</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Postleitzahl der Adresse</span></td></tr>
+<tr><td><span class="xml-api-column-name">PhoneNumber</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Telefon-Nummer(n)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Street</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Straße der Adresse</span></td></tr>
+<tr><td><span class="xml-api-column-name">SubstitutionNotification</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Benachrichtigung bei Vertretung?</span></td></tr>
+<tr><td><span class="xml-api-column-name">ThreemaId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Threema-Id</span></td></tr>
+</table>
+
+<h2>Schüler</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Student</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Absences</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Abwesenheiten</span></td></tr>
+<tr><td><span class="xml-api-column-name">CalendarId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id des persönlichen Kalenders</span></td></tr>
+<tr><td><span class="xml-api-column-name">Categories</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">zugewiesene Spezialfälle</span></td></tr>
+<tr><td><span class="xml-api-column-name">City</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Ort der Adresse</span></td></tr>
+<tr><td><span class="xml-api-column-name">CityOfBirth</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Geburtsort</span></td></tr>
+<tr><td><span class="xml-api-column-name">Color</span></td><td><span class="xml-api-column-type-description">Farbe - Hexadezimal</span></td><td><span class="xml-api-column-description">Farbe</span></td></tr>
+<tr><td><span class="xml-api-column-name">ConfirmationFlags</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Abgeschlossene Bestätigungsprozesse z. B. Datenschutzerklärung bestätigt</span></td></tr>
+<tr><td><span class="xml-api-column-name">DateOfBirth</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Geburtsdatum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Email</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">E-Mail-Adresse(n)</span></td></tr>
+<tr><td><span class="xml-api-column-name">EventNotification</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Benachrichtigung bei Kalender-Veranstaltung?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Firstname</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Vorname</span></td></tr>
+<tr><td><span class="xml-api-column-name">Gender</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Geschlecht (0=männlich,1=weiblich)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">Identity</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id zur Identifizierung über Schuljahre hinweg</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">NotificationPolicy</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Benachrichtigungs-Richtlinie</span></td></tr>
+<tr><td><span class="xml-api-column-name">PLZ</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Postleitzahl der Adresse</span></td></tr>
+<tr><td><span class="xml-api-column-name">PhoneNumber</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Telefon-Nummer(n)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Street</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Straße der Adresse</span></td></tr>
+<tr><td><span class="xml-api-column-name">SubstitutionNotification</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Benachrichtigung bei Vertretung?</span></td></tr>
+<tr><td><span class="xml-api-column-name">ThreemaId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Threema-Id</span></td></tr>
+</table>
+
+<h2>Verspätung</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">StudentRegisterLateness</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Creator</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Autor</span></td></tr>
+<tr><td><span class="xml-api-column-name">Date</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">EarlierDeparture</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Früheres Verlassen des Unterrichts in Minuten</span></td></tr>
+<tr><td><span class="xml-api-column-name">Event</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Kalender-Veranstaltung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">LaterArrival</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Verspätung in Minuten</span></td></tr>
+<tr><td><span class="xml-api-column-name">Lesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Unterrichtsstunde oder Epochenwoche</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">PlacementLesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Unterrichtsstunde, in welcher die zugehörige Epochenwoche unterrichtet wird</span></td></tr>
+<tr><td><span class="xml-api-column-name">Student</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Schüler</span></td></tr>
+</table>
+
+<h2>Klassenbucheintrag</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">StudentRegisterRemark</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Creator</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Autor</span></td></tr>
+<tr><td><span class="xml-api-column-name">Date</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Event</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Kalender-Veranstaltung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">Lesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Unterrichtsstunde oder Epochenwoche</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">PlacementLesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Unterrichtsstunde, in welcher die zugehörige Epochenwoche unterrichtet wird</span></td></tr>
+<tr><td><span class="xml-api-column-name">Student</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Schüler</span></td></tr>
+<tr><td><span class="xml-api-column-name">Text</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Wortlaut des Eintrags</span></td></tr>
+</table>
+
+<h2>Schüler-Krankmeldung</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">StudentSicknote</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Creator</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Autor der Krankmeldung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Date</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">End</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">End-Zeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">ExcusionStatus</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Status der Entschuldigung (0=Unentschuldigt, 1=Entschuldigung der Eltern, 2=Entschuldigung eines Lehrers, 3=Entschuldigung im System)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Reason</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Grund des Fehlens</span></td></tr>
+<tr><td><span class="xml-api-column-name">Start</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Start-Zeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">Student</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Schüler</span></td></tr>
+</table>
+
+<h2>Fach</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Subject</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Absences</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Abwesenheiten</span></td></tr>
+<tr><td><span class="xml-api-column-name">Categories</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">zugewiesene Spezialfälle</span></td></tr>
+<tr><td><span class="xml-api-column-name">Color</span></td><td><span class="xml-api-column-type-description">Farbe - Hexadezimal</span></td><td><span class="xml-api-column-description">Farbe</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+</table>
+
+<h2>Curriculums-Zuordnung</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">SubjectMapping</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">EpochWeeks</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Epochenwochen</span></td></tr>
+<tr><td><span class="xml-api-column-name">HoursPerWeek</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Lehrerstunden pro Woche</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Subjects</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Fächer</span></td></tr>
+</table>
+
+<h2>Vertretung</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Substitution</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">CountInStatistic</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Stunde in Statistik als Vertretung werten?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Creator</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Identität des Autors</span></td></tr>
+<tr><td><span class="xml-api-column-name">Date</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Description</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Beschreibung</span></td></tr>
+<tr><td><span class="xml-api-column-name">EmailSent</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Benachrichtigungen versendet?</span></td></tr>
+<tr><td><span class="xml-api-column-name">End</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">End-Zeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">Groups</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Teilnehmende Klassen bzw. Gruppen</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">MergedLesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Zusammengelegte Stunde</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">OldDate</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Ursprüngliches Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">OldEndTime</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Ursprünglicher End-Zeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">OldStartTime</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Ursprünglicher Start-Zeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">Rooms</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Verwendete Räume</span></td></tr>
+<tr><td><span class="xml-api-column-name">Start</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Start-Zeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">Status</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Status</span></td></tr>
+<tr><td><span class="xml-api-column-name">Subjects</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Unterrichtete Fächer</span></td></tr>
+<tr><td><span class="xml-api-column-name">SubstitutedCalendarEvent</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Ursprüngliche Kalender-Veranstaltung</span></td></tr>
+<tr><td><span class="xml-api-column-name">SubstitutedLesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Ursprüngliche Stunde oder Epochenwoche</span></td></tr>
+<tr><td><span class="xml-api-column-name">SubstitutedPlacementLesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Unterrichtsstunde, in welcher die ursprüngliche Epochenwoche unterrichtet wurde</span></td></tr>
+<tr><td><span class="xml-api-column-name">Substitutions</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Zugehörige Vertretungen</span></td></tr>
+<tr><td><span class="xml-api-column-name">Task</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Arbeitsauftrag (optional)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Teachers</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Teilnehmende Lehrer</span></td></tr>
+<tr><td><span class="xml-api-column-name">VideoConferenceId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id einer zur Veranstaltung hinzu gebuchten Videokonferenz</span></td></tr>
+<tr><td><span class="xml-api-column-name">Visibility</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Sichtbarkeit (0=Nur für Teilnehmer, 1=Für alle, 2=Für Lehrer, 3=Externe Vermietung)</span></td></tr>
+</table>
+
+<h2>Aufsicht</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Supervision</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Course</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Kurs</span></td></tr>
+<tr><td><span class="xml-api-column-name">Day</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Wochentag (0=Montag...)</span></td></tr>
+<tr><td><span class="xml-api-column-name">DayObject</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Tag der Aufsicht</span></td></tr>
+<tr><td><span class="xml-api-column-name">EpochPlan</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Epochenplan bei Epochenunterricht</span></td></tr>
+<tr><td><span class="xml-api-column-name">EpochPlanGrade</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Klasse bei Epochenunterricht</span></td></tr>
+<tr><td><span class="xml-api-column-name">Fixed</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">im Stundenplan fixiert?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Hour</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Nr. der Unterrichtsstunde am Tag</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">LastChanged</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Zeitpunkt der letzten Änderung</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">LocalRooms</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Räume</span></td></tr>
+<tr><td><span class="xml-api-column-name">Location</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Aufsichts-Ort</span></td></tr>
+<tr><td><span class="xml-api-column-name">Period</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Aufsichts-Zeitraum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Teacher</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Aufsichtsführender Lehrer</span></td></tr>
+</table>
+
+<h2>Aufsichtsort</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">SupervisionLocation</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Absences</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Abwesenheiten</span></td></tr>
+<tr><td><span class="xml-api-column-name">Categories</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">zugewiesene Spezialfälle</span></td></tr>
+<tr><td><span class="xml-api-column-name">Color</span></td><td><span class="xml-api-column-type-description">Farbe - Hexadezimal</span></td><td><span class="xml-api-column-description">Farbe</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">Identity</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id zur Identifizierung über Schuljahre hinweg</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">RoomGroup</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Unterräume bei Raumgruppe</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">capacity</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Anzahl der Lern-Plätze</span></td></tr>
+</table>
+
+<h2>Aufsichtszeitraum</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">SupervisionPeriod</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">End</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">End-Zeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">MiddayBreak</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Mittagspause?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Start</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Start-Zeitpunkt</span></td></tr>
+</table>
+
+<h2>Aufsichtsplan</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">SupervisionsPlan</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Days</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">EndDate</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Gültigkeits-End-Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">LastChanged</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">StartDate</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Gültigkeits-Start-Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">SupervisionLocations</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Aufsichts-Orte</span></td></tr>
+<tr><td><span class="xml-api-column-name">SupervisionPeriods</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">Supervisions</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description"></span></td></tr>
+</table>
+
+<h2>Arbeitsauftrag</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Task</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Text</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description"></span></td></tr>
+</table>
+
+<h2>Lehrer</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Teacher</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Absences</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Abwesenheiten</span></td></tr>
+<tr><td><span class="xml-api-column-name">CalendarId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id des persönlichen Kalenders</span></td></tr>
+<tr><td><span class="xml-api-column-name">Categories</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">zugewiesene Spezialfälle</span></td></tr>
+<tr><td><span class="xml-api-column-name">City</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Ort der Adresse</span></td></tr>
+<tr><td><span class="xml-api-column-name">CityOfBirth</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Geburtsort</span></td></tr>
+<tr><td><span class="xml-api-column-name">Color</span></td><td><span class="xml-api-column-type-description">Farbe - Hexadezimal</span></td><td><span class="xml-api-column-description">Farbe</span></td></tr>
+<tr><td><span class="xml-api-column-name">ConfirmationFlags</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Abgeschlossene Bestätigungsprozesse z. B. Datenschutzerklärung bestätigt</span></td></tr>
+<tr><td><span class="xml-api-column-name">DateOfBirth</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Geburtsdatum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Email</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">E-Mail-Adresse(n)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Employments</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Arbeits-Verträge</span></td></tr>
+<tr><td><span class="xml-api-column-name">EventNotification</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Benachrichtigung bei Kalender-Veranstaltung?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Firstname</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Vorname</span></td></tr>
+<tr><td><span class="xml-api-column-name">Gender</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Geschlecht (0=männlich,1=weiblich)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">Identity</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id zur Identifizierung über Schuljahre hinweg</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">MaxDays</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">maximale Anzahl der Unterrichtstage</span></td></tr>
+<tr><td><span class="xml-api-column-name">MaxLessonsPerDay</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">maximale Anzahl der Stunden pro Tag</span></td></tr>
+<tr><td><span class="xml-api-column-name">MaxWindowsPerDay</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">maximale Anzahl der Freistunden pro Tag</span></td></tr>
+<tr><td><span class="xml-api-column-name">MinLessonsPerDay</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Mindestzahl der Stunden pro Tag</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">NotificationPolicy</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Benachrichtigungs-Richtlinie</span></td></tr>
+<tr><td><span class="xml-api-column-name">NumberOfAfterNoonDays</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">maximale Anzahl der Tage mit Nachmittags-Unterricht</span></td></tr>
+<tr><td><span class="xml-api-column-name">PLZ</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Postleitzahl der Adresse</span></td></tr>
+<tr><td><span class="xml-api-column-name">PhoneNumber</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Telefon-Nummer(n)</span></td></tr>
+<tr><td><span class="xml-api-column-name">ReportGenerationCount</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Anzahl der generierten Zeugnisse</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Street</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Straße der Adresse</span></td></tr>
+<tr><td><span class="xml-api-column-name">SubstitutionNotification</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Benachrichtigung bei Vertretung?</span></td></tr>
+<tr><td><span class="xml-api-column-name">TeachingLicenses</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Unterrichts-Genehmigungen</span></td></tr>
+<tr><td><span class="xml-api-column-name">ThreemaId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Threema-Id</span></td></tr>
+</table>
+
+<h2>Unterrichts-Genehmigung</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">TeachingLicense</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">MaxGrade</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">größte zulässige Klassenstufe</span></td></tr>
+<tr><td><span class="xml-api-column-name">MinGrade</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">kleinste zulässige Klassenstufe</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Subject</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Fach</span></td></tr>
+</table>
+
+<h2>Zeugnis-Vorlage</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Template</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Text</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Code der Zeugnisvorlage im XeTeX und Freemaker Format</span></td></tr>
+</table>
+
+<h2>Test-Termin</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">TestDate</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Creator</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Autor</span></td></tr>
+<tr><td><span class="xml-api-column-name">Date</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Description</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Beschreibung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Event</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Kalender-Veranstaltung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">Lesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Unterrichtsstunde oder Epochenwoche</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">PlacementLesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Unterrichtsstunde, in welcher die zugehörige Epochenwoche unterrichtet wird</span></td></tr>
+</table>
+
+<h2>Unterrichts-Zeitraum</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">TimedObject</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">End</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">End-Zeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">MiddayBreak</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Mittagspause?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">Start</span></td><td><span class="xml-api-column-type-description">Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Start-Zeitpunkt</span></td></tr>
+</table>
+
+<h2>Planungs-Regel</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">UserConstraint</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Absences</span></td><td><span class="xml-api-column-type-description">Liste von ganzen Zahlen durch Komma getrennt</span></td><td><span class="xml-api-column-description">Abwesenheit (nur für interne Zwecke)</span></td></tr>
+<tr><td><span class="xml-api-column-name">ConstraintMode</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Art der Bedingung</span></td></tr>
+<tr><td><span class="xml-api-column-name">HardEvaluation</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Muss-Bewertung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">MediumEvaluation</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Soll-Bewertung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Parameter</span></td><td><span class="xml-api-column-type-description">Liste von ganzen Zahlen durch Komma getrennt</span></td><td><span class="xml-api-column-description">Liste der Parameter</span></td></tr>
+<tr><td><span class="xml-api-column-name">PenaltyIfMatching</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Bestrafung wenn zutreffend?</span></td></tr>
+<tr><td><span class="xml-api-column-name">ScheduleConstraint</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description">Stundenplan-Bedingung?</span></td></tr>
+<tr><td><span class="xml-api-column-name">Scope</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Liste der relevanten Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">ScopeClass</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Art relevanten Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">SoftEvaluation</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Kann-Bewertung</span></td></tr>
+</table>
+
+<h2>Video-Chat-Link</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">VideoChatLink</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">ActualReaders</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Empfänger, welche die Nachricht gelesen haben</span></td></tr>
+<tr><td><span class="xml-api-column-name">ChannelId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id des Channels</span></td></tr>
+<tr><td><span class="xml-api-column-name">ConferenceId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id der Videokonferenz im Konferenzsystem</span></td></tr>
+<tr><td><span class="xml-api-column-name">CreateDateTime</span></td><td><span class="xml-api-column-type-description">Datum und Uhrzeit - ISO-Format</span></td><td><span class="xml-api-column-description">Sendezeitpunkt</span></td></tr>
+<tr><td><span class="xml-api-column-name">ExpectedReaders</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Erwartete Empfänger der Nachricht</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Sender</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Sender</span></td></tr>
+<tr><td><span class="xml-api-column-name">Status</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Status</span></td></tr>
+<tr><td><span class="xml-api-column-name">Text</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Text</span></td></tr>
+<tr><td><span class="xml-api-column-name">Type</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Art (0=System-Nachricht, 1=Chat-Nachricht, 2=Vertretungs-Benachrichtigung)</span></td></tr>
+</table>
+
+<h2>Video-Konferenzlink</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">VideoConferenceLink</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">ConferenceId</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Id der Konferenz im Konferenzsystem</span></td></tr>
+<tr><td><span class="xml-api-column-name">ConferenceMode</span></td><td><span class="xml-api-column-type-description">Integer - ganze Zahl</span></td><td><span class="xml-api-column-description">Verwendetes Konferenzsystem (0=BigBlueButton, 1=KSuite)</span></td></tr>
+<tr><td><span class="xml-api-column-name">Creator</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Autor</span></td></tr>
+<tr><td><span class="xml-api-column-name">Date</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description">Datum</span></td></tr>
+<tr><td><span class="xml-api-column-name">Event</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Kalender-Veranstaltung</span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">Lesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">zugehörige Unterrichtsstunde oder Epochenwoche</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">PlacementLesson</span></td><td><span class="xml-api-column-type-description">Objektreferenz - Id des referenzierten Objekts</span></td><td><span class="xml-api-column-description">Unterrichtsstunde, in welcher die zugehörige Epochenwoche unterrichtet wird</span></td></tr>
+</table>
+
+<h2>Webportal-App</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">WebportalApp</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Description</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+<tr><td><span class="xml-api-column-name">ShowInStudentsApp</span></td><td><span class="xml-api-column-type-description">Boolean</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">Url</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description"></span></td></tr>
+</table>
+
+<h2>Webpush-Anmeldung</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">WebpushSubscription</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Auth</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">Endpoint</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">PersonIdentity</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">SubscriptionDate</span></td><td><span class="xml-api-column-type-description">Datum - ISO-Format</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">UserAgent</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description"></span></td></tr>
+<tr><td><span class="xml-api-column-name">p256dh</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description"></span></td></tr>
+</table>
+
+<h2>Gremium</h2>
+<p>XML-Element-Name: <span class="xml-api-element-name">Workgroup</span></p>
+<table>
+<tr><td><span class="xml-api-column-name">Id</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutige UUID des Objekts</span></td></tr>
+<tr><td><span class="xml-api-column-name">ListPosition</span></td><td><span class="xml-api-column-type-description">Float - Gleitkommazahl</span></td><td><span class="xml-api-column-description">Position in der Liste der gleichartigen Objekte</span></td></tr>
+<tr><td><span class="xml-api-column-name">Members</span></td><td><span class="xml-api-column-type-description">Liste von Objektreferenzen - durch Kommata getrennt</span></td><td><span class="xml-api-column-description">Teilnehmer</span></td></tr>
+<tr><td><span class="xml-api-column-name">Name</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Name</span></td></tr>
+<tr><td><span class="xml-api-column-name">Shortcut</span></td><td><span class="xml-api-column-type-description">String</span></td><td><span class="xml-api-column-description">Eindeutiges Kürzel</span></td></tr>
+</table>
+
+
+
+
+</div>
+
+
+
+
+
+
+    </div> 
+</div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  
+    <script type="text/javascript">
+  $(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+});
+
+
+      
+    </script>
+</body>
+
+</html>

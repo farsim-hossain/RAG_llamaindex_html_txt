@@ -1,0 +1,373 @@
+### Messenger
+1. **Öffnen des Hauptmenüs**
+Sobald sich der Benutzer in der Hauptansicht befindet, stehen über das linke oder obere Hauptmenü der Anwendung verschiedene Navigationsoptionen zur Verfügung.
+2. **Auswahl des Menüeintrags "Messenger"**
+Im Hauptmenü befindet sich ein Eintrag mit der Bezeichnung **"Messenger"**, der die Navigation zum **Messenger** auslöst.
+    - Wenn der Benutzer auf den Menüpunkt _Messenger_ klickt, wird die entsprechende Route `/chat` in der Anwendung aufgerufen.
+
+3. **Zugriffsrechte und verfügbare Funktionen**
+    - Der Menüpunkt erscheint nur für Benutzer, die eine ausreichende Berechtigung besitzen (z. B. Admin, Lehrer oder Schüler). Benutzer ohne eine dieser Rollen können diesen Menüpunkt nicht sehen.
+    - Falls das Modul für den _Chat_ nicht im System gebucht ist, sieht der Benutzer eine entsprechende Warnung, dass die Funktionalität nicht verfügbar ist.
+
+### Funktionen der Messanger-Ansicht
+1. **Anzeige der Chat-Nachrichten**
+Im Hauptbereich der _Messenger-Ansicht_ werden alle relevanten Nachrichten aus einem ausgewählten Chatkanal angezeigt. Benutzer können durch die Nachrichten scrollen. Neue Nachrichten werden automatisch an das Ende der Anzeige hinzugefügt, und die Ansicht springt dorthin, damit der Nutzer den Verlauf einfach verfolgen kann.
+2. **Interaktion mit Nachrichten**
+    - Benutzer können Nachrichten in den Kanälen senden, die ihnen zur Verfügung stehen.
+    - Nachrichten können von einem automatisierten Chatbot beantwortet werden, sofern das System sich in einem Testmodus befindet (dies wird entsprechend gekennzeichnet).
+
+3. **Kanalauswahl**
+    - Benutzer können einen Chatkanal auswählen oder wechseln, indem sie das Menü „Kanal wählen…“ öffnen. Dort werden alle verfügbaren Kanäle angezeigt, zu denen der Benutzer Zugang hat.
+    - Nach Auswahl eines Kanals wird die Chatansicht aktualisiert, und die Nachrichten des entsprechenden Kanals werden geladen.
+
+4. **Zusätzliche Hinweise im Testmodus**
+    - Falls das System als Testumgebung läuft, erscheint ein Hinweistext, in dem erklärt wird, dass ein Test-Chatbot aktiviert ist. Dieser kann verwendet werden, um die Chat-Funktionalitäten zu testen. Datenschutzbestimmungen sollten hierbei unbedingt beachtet werden (z. B. keine sensiblen personenbezogenen Daten senden).
+
+5. **Videokonferenzen starten**
+Es gibt eine Menüfunktion namens „Videochat starten“. Sobald der Nutzer diese Option wählt, wird eine Videokonferenz im Kontext des aktuellen Chatmodells initiiert.
+6. **Nachrichtenschreiben**
+    - Nutzer haben die Möglichkeit, mit Hilfe des Schreib-Widgets neue Nachrichten im gewählten Kanal zu verfassen und direkt abzusenden.
+    - Im Testmodus können die Benutzer dem Test-Chatbot Fragen stellen, um seine Antworten zu testen.
+
+7. **Benachrichtigungen und Menüanpassungen**
+    - Sollte ein gebuchtes Modul nicht verfügbar sein, erhalten Benutzer eine Benachrichtigung in der Ansicht, dass diese Funktionalität nicht verfügbar ist.
+    - Abhängig von der Benutzerrolle (z. B. Lehrer oder Schüler) werden die verfügbaren Kanäle und Optionen dynamisch angepasst.
+
+#### Kalender
+### Navigation zur Kalender-Ansicht über das Hauptmenü
+Die _Kalender-Ansicht_ ist ein zentraler Bestandteil der Anwendung und kann über das **Hauptmenü** erreicht werden, das in der Klasse `MainMenu.java` definiert ist. Der Menüeintrag, der zur _Kalender-Ansicht_ führt, wird entsprechend seiner Rolle und Berechtigung dynamisch eingeblendet.
+### Schritte zur Navigation:
+1. **Öffnen des Hauptmenüs**
+Das Hauptmenü ist entweder links oder oben in der Anwendung sichtbar (hier hängt es von der Implementierung der Benutzeroberfläche ab). Es dient als zentrales Steuerungselement für die Navigation in der Anwendung.
+2. **Auswahl des Menüeintrags "Kalender"**
+Im Hauptmenü befindet sich ein Eintrag mit der Bezeichnung **"Kalender"**, der den Benutzer zur _Kalender-Ansicht_ führt.
+    - Ein Klick auf diesen Menüpunkt löst die Navigation zur entsprechenden Route der _Kalender-Ansicht_ (z. B. `/calendar`) aus.
+    - Danach wechselt die Ansicht automatisch in die _Kalender-Ansicht_, in der die kalenderbezogenen Funktionen verfügbar sind.
+
+3. **Zugriffsrechte**
+    - Genau wie bei anderen Ansichten werden nur berechtigte Benutzer (z. B. Admins, Lehrer oder Schüler) den Menüpunkt _Kalender_ im Hauptmenü sehen. Nicht autorisierte Benutzer haben keinen Zugriff auf diese Funktion.
+    - Falls das Kalendermodul deaktiviert ist, wird der Benutzer entsprechend informiert, dass diese Funktion in seinem aktuellen Setup nicht verfügbar ist.
+
+### Funktionen in der Kalender-Ansicht
+Die _Kalender-Ansicht_ stellt eine zentrale Ansicht für die Verwaltung von Terminen und Ereignissen dar. Je nach Rolle des Benutzers bietet die Kalenderansicht unterschiedliche Funktionen:
+1. **Anzeige von Terminen und Ereignissen**
+    - Die Benutzer können eine Übersicht über alle geplanten Termine und Ereignisse erhalten, die für sie relevant sind. Diese Termine sind in einem Kalenderlayout dargestellt (z. B. Tages-, Wochen- oder Monatsansicht, abhängig von der Konfiguration).
+    - Termine können farblich gekennzeichnet oder nach Kategorien gefiltert werden, um die Übersichtlichkeit zu verbessern.
+
+2. **Interaktion mit Terminen**
+    - Benutzer können:
+        - Termine anzeigen,
+        - Neue Termine erstellen,
+        - Bestehende Termine bearbeiten oder löschen (abhängig von den Rechteinstellungen).
+
+    - Abhängig von der Rolle:
+        - Ein Lehrer könnte z. B. Klassen oder Gruppenereignisse planen,
+        - Schüler sehen möglicherweise nur Termine, die speziell für sie oder ihre Klasse relevant sind.
+
+3. **Benachrichtigungen und Erinnerungen**
+    - Nutzer können Erinnerungen für wichtige Ereignisse einrichten. Im Testsystem oder in produktiven Umgebungen könnten z. B. Benachrichtigungen per E-Mail oder innerhalb der Anwendung (Push-Benachrichtigungen) generiert werden.
+
+4. **Synchronisation und Integration**
+    - Falls implementiert, könnte der _Kalender-Ansicht_ mit externen Diensten wie Google Kalender synchronisiert werden. Damit bleiben alle geplanten Ereignisse zwischen verschiedenen Geräten oder Kalenderplattformen aktuell.
+
+5. **Rollenbasierte Kalenderansicht**
+    - Schüler sehen nur persönliche oder klassenbezogene Termine.
+    - Lehrer haben zusätzlich organisatorische Funktionen wie Klassenplanung.
+    - Administratoren haben umfassende Kalenderfunktionen und die Möglichkeit, auch globale Veranstaltungen hinzuzufügen, die für alle Benutzer sichtbar sind.
+
+### Fazit
+Die _Kalender-Ansicht_ ist eine wichtige Funktion der Anwendung und ermöglicht es, Termine und Ereignisse effektiv zu verwalten. Sie kann über das **Hauptmenü** und den Menüpunkt **"Kalender"** erreicht werden, und die Benutzerrolle bestimmt, welche Funktionen und Informationen in der Kalenderansicht verfügbar sind.
+
+### **Was kann man in der Klassenbuch-Ansicht tun?**
+1. **Übersicht über Unterrichtsstunden**
+    - Die Ansicht bietet eine klare Auflistung oder Kalenderdarstellung aller Unterrichtsstunden für eine Klasse oder Gruppe.
+    - Lehrer können sich vergangene Stunden ansehen oder zukünftige planen.
+
+2. **Dokumentation der Unterrichtsinhalte**
+    - Jede Stunde kann mit Details versehen werden, wie:
+        - Thema der Stunde,
+        - behandelte Inhalte,
+        - Lernziele oder Ergebnisse.
+
+    - Diese Dokumentation hilft, den Unterricht nachvollziehbar zu machen und ist auch für Kollegen oder Vertretungen hilfreich.
+
+3. **Anwesenheitsmanagement**
+    - Lehrer können die Anwesenheit von Schülern für jede Unterrichtsstunde überprüfen und festhalten.
+        - Optionen wie "anwesend", "abwesend", "entschuldigt" oder "verspätet" sind häufig verfügbar.
+
+    - Diese Informationen können später für Berichte oder Statistiken verwendet werden.
+
+4. **Eintragung von Notizen**
+    - Zusätzliche Notizen oder Bemerkungen zur Stunde, einzelnen Schülern oder besonderen Vorkommnissen der Stunde können direkt in der Ansicht eingetragen werden.
+
+5. **Rollenbasierte Funktionen**
+    - **Lehrer:** Können die Unterrichtsstunden dokumentieren, Anwesenheiten eintragen und Berichte erstellen.
+    - **Administratoren:** Haben möglicherweise Einsicht in alle Klassen oder können Berichte für größere Gruppen abrufen.
+    - **Schüler:** In der Regel sehen Schüler nur eine Übersicht ihrer eigenen Anwesenheit oder Notizen, falls dies aktiviert ist.
+
+6. **Integration mit anderen Funktionen**
+    - Die Unterrichtsregister-Ansicht kann mit anderen Bereichen der Anwendung verknüpft sein, wie z. B. dem Kalender, der Notenverwaltung oder dem Feedbackbereich. Dies schafft eine bessere Übersicht und erleichtert die Verwaltung.
+
+7. **Berichtsfunktion**
+    - Lehrer oder Administratoren können Berichte über die Unterrichtsstunden oder die Anwesenheit eines bestimmten Zeitraums erstellen.
+    - Diese Berichte sind nützlich für Elterngespräche, interne Analysen oder zur Verbesserung der Unterrichtsorganisation.
+
+### Moodle-Ansicht
+    Die `Moodle-Ansicht`stellt verschiedene Moodle-bezogene Funktionen bereit. Hier ist eine genaue Übersicht basierend auf dem bereitgestellten Quellcode:
+
+
+**1. Zu Moodle wechseln**
+- Es gibt einen Button, mit dem man schnell zu Moodle wechseln kann. Bei einem Klick auf diesen Button öffnet sich ein Dialog, der wahrscheinlich einen Link oder eine Anleitung zum Wechseln zu Moodle bereitstellt.
+
+**2. Synchronisieren von Schülern, Lehrern und Kursen**
+- Falls der aktuelle Benutzer eine Administratorrolle für Moodle hat, werden zusätzliche Funktionen bereitgestellt. Es gibt Buttons für die Synchronisation von Schülern, Lehrern und Kursen zwischen dieser Anwendung und Moodle. Bei einem Klick auf einen dieser Buttons öffnet sich ein entsprechender Dialog, der die Synchronisationsaktion startet.
+
+**3. Sicherheit und Rollenverwaltung**
+- Der Zugriff auf diese Ansicht ist auf Benutzer mit bestimmten Rollen beschränkt. Die Software stellt sicher, dass nur Benutzer mit den Rollen Admin, Lehrer oder Schüler Zugriff auf diese Seite haben.
+
+**4. Funktionsverfügbarkeit**
+- bevor die Seite angezeigt wird, überprüft die Anwendung, ob das Moodle-Paket in Ihren gebuchten Paketen enthalten ist. Falls das Moodle-Paket fehlt, erscheint eine Beschreibung des fehlenden Pakets.
+
+Insgesamt bietet die MoodleView-Seite einen einfachen und sicheren Zugang zu Moodle-bezogenen administrativen Funktionen direkt aus Ihrer Anwendung heraus. Sie ermöglicht es den Benutzern, ihre Moodle-Daten in der Anwendung zu synchronisieren und schnell zu Moodle zu wechseln.
+
+### Dateien-Ansicht
+Die Dateien-Ansicht in Ihrer Software dient als zentraler Ort, um Ihre Dateien zu verwalten und zu organisieren. Stellen Sie sich diese Ansicht wie einen digitalen Aktenschrank vor, in dem Sie alle wichtigen Dokumente und Dateien ablegen und wiederfinden können.
+Hier sind einige typische Funktionen, die Ihnen die Dateien-Ansicht bietet:
+- **Übersichtliche Darstellung:** Alle Ihre Dateien werden übersichtlich dargestellt, ähnlich wie in einer Liste oder einem Dateibaum. So behalten Sie den Überblick und finden schnell, was Sie suchen.
+- **Dateien hinzufügen:** Sie können neue Dateien von Ihrem Computer oder anderen Speicherorten in die Dateien-Ansicht hochladen und dort speichern.
+- **Ordnung schaffen:** Um Ihre Dateien zu organisieren, können Sie Ordner erstellen und Ihre Dateien darin ablegen. So finden Sie später leichter, was Sie benötigen.
+- **Dateien öffnen und bearbeiten:** In vielen Fällen können Sie Dateien direkt aus der Dateien-Ansicht heraus öffnen und bearbeiten.
+- **Dateien löschen:** Nicht mehr benötigte Dateien können Sie einfach und schnell löschen, um Platz zu sparen und die Übersicht zu behalten.
+- **Zusammenarbeit (falls verfügbar):** Manchmal bietet die Dateien-Ansicht auch Funktionen zur Zusammenarbeit, zum Beispiel das Teilen von Dateien mit anderen Benutzern.
+
+Die Dateien-Ansicht hilft Ihnen dabei, Ihre digitalen Dokumente effizient zu verwalten und jederzeit Zugriff auf wichtige Informationen zu haben.
+
+### Zeugnisse eines Schülers anzeigen
+
+Um die Ansicht zum Durchsuchen der Zeugnisse eines einzelnen Schülers zu erreichen, muss man zunächst in der Zeugnisübersicht den Reiter "Ansehen" auswählen. Dort findet man dann die Überschrift "Zeugnisse eines Schülers" und daneben eine Schaltfläche mit der Beschriftung "Anzeigen". Ein Klick auf diese Schaltfläche öffnet die gewünschte Ansicht.
+
+Diese Ansicht zeigt Ihnen die Zeugnisse an. Zuerst wählen Sie die Klasse und dann den Schüler aus, dessen Zeugnis Sie sehen möchten. Anschließend werden die Zeugnisinhalte angezeigt. Bei Bedarf können Sie eine Druckvorschau als PDF-Datei erstellen. Administratoren haben zusätzliche Möglichkeiten, den Status der Zeugnisse zu ändern oder sie zu löschen.
+
+### Registerkarte Zeugnisse Drucken
+
+Hier kann der Benutzer PDF-Dateien erzeugen. Er kann auswählen, welche Art von Zeugnis gedruckt werden soll, für welche Klasse und ob alles, nur das Cover oder nur der Innenteil gedruckt werden soll. Außerdem kann er das Papierformat zwischen A4 und A5 wählen.
+
+### Registerkarte "Zeugnis-Probleme"
+
+Dieser Code zeigt dem Benutzer alle möglichen Probleme mit den Zeugnissen an. Die Probleme sind nach Kategorien zusammengefasst und in einer aufklappbaren Liste dargestellt. Zu jedem Problem gibt es eine kurze Beschreibung und je nach Problemtyp zwei mögliche Aktionen:
+1. **Zum betroffenen Zeugnis springen:** Mit einem Klick auf das Stift-Symbol kann der Benutzer direkt zu dem Zeugnis navigieren, das das Problem verursacht.
+2. **Problem automatisch lösen:** Einige Probleme können automatisch behoben werden. Dafür gibt es eine Schaltfläche mit einem Zauberstab-Symbol.
+
+Am Anfang wird eine kurze Erklärung angezeigt, wie diese Ansicht funktioniert und was die Symbole bedeuten. Diese Erklärung kann der Benutzer ausblenden.
+
+### Zeugnisse: Kurs-Übersicht
+Diese Ansicht zeigt dem Benutzer eine Übersicht über den Bearbeitungsstand der Zeugnisse einer Klasse. Der Benutzer kann zuerst eine Klasse auswählen. Anschließend sieht er eine Tabelle mit allen Kursen dieser Klasse.
+In der Tabelle findet der Benutzer für jeden Kurs folgende Informationen:
+- **Kurs:** Der Name des Kurses und die Art der Bewertung (z.B. Texte, Noten, oder beides). Hier kann der Benutzer durch einen Klick weitere Aktionen auswählen, z.B. die Einstellungen des Kurses ändern oder alle angefangenen Zeugnisse zur Korrektur freigeben. Bei Bedarf kann ein Kurs auch komplett vom Zeugnisschreiben verborgen werden.
+- **Leer/unvollständig:** Wie viele Zeugnisse im Kurs noch leer oder unvollständig sind.
+- **Zu korrigieren:** Wie viele Zeugnisse im Kurs korrigiert werden müssen.
+- **Freizugeben:** Wie viele Zeugnisse im Kurs auf die Freigabe warten.
+- **Fertig:** Wie viele Zeugnisse im Kurs fertiggestellt sind.
+
+### Zeugnisse: Lehrer-Übersicht
+
+In dieser Ansicht wird der Bearbeitungsstand der Zeugnisse nach Lehrern und Kursen angezeigt. Die Informationen sind in einer hierarchischen Tabelle dargestellt. Für jeden Lehrer werden die zugehörigen Kurse aufgelistet.
+Die Tabelle enthält folgende Spalten:
+- **Lehrer / Kurs:** Name des Lehrers und der jeweiligen Kurse.
+- **Ungeschrieben:** Anzahl der ungeschriebenen Zeugnisse pro Lehrer und Kurs.
+- **Warten auf Korrektur:** Anzahl der Zeugnisse, die fertig geschrieben sind und auf Korrektur warten.
+- **Korrigiert:** Anzahl der korrigierten Zeugnisse.
+- **Fertig:** Anzahl der fertiggestellten Zeugnisse.
+- **Gesamt:** Gesamtstatus der Zeugnisse pro Lehrer und Kurs.
+
+### Zeugnisse archivieren
+
+Hier kann der Benutzer eine Archivdatei mit allen Zeugnissen herunterladen. Er kann auswählen, ob die Zeugnisse als ODT-, PDF- und/oder Latex-Dateien gespeichert werden sollen. Der Vorgang der Archivierung kann einige Zeit dauern und läuft im Hintergrund ab. Der Benutzer kann währenddessen weiterarbeiten, solange er sich nicht ausloggt. Sobald das Archiv fertig ist, öffnet sich ein Fenster mit einem Download-Link.
+
+### Zeugnisse: Korrektur-Ansicht
+Auf dieser Seite können Lehrer die Texte von Zeugnissen korrigieren. Es gibt eine Auswahl für Lehrer, Kurs und Schüler, um das gewünschte Zeugnis auszuwählen. Der zu korrigierende Text wird in einem großen Textfeld angezeigt.
+Der Lehrer kann den Text direkt im Textfeld korrigieren. Zusätzlich gibt es ein Feld für Anmerkungen zur Korrektur. Alternativ kann der Lehrer auch angeben, dass der Text keine Fehler enthält.
+Mit einem Klick auf "Speichern und nächster" wird die Korrektur gespeichert und der nächste zu korrigierende Text angezeigt. Über das Menü kann der Lehrer jederzeit zurück zur Übersicht wechseln.
+
+### Zeugnisse: Zweitkorrektur
+Diese Ansicht dient der Zweitkorrektur von Zeugnissen. Sie sucht in den bereits korrigierten Zeugnissen nach Fehlern. Während der Suche wird ein Fortschrittsbalken angezeigt. Anschließend werden die gefundenen Fehler angezeigt. Über das Menü kann der Benutzer zurück zur Übersicht navigieren.
+Waldorf 365 verwendet einen Dienst, der die Zweitkorrektur von Zeugnissen unterstützt. Er verwendet ein externes Programm zur Rechtschreibprüfung und markiert mögliche Fehler in den Zeugnistexten.
+Der Dienst analysiert die Texte der Zeugnisse und gibt eine Liste von Komponenten zurück, die die gefundenen Fehler beschreiben. Jeder Fehler wird mit dem entsprechenden Zeugnistext und einer Fehlermeldung angezeigt. Klickt man auf einen Fehler, öffnet sich ein Popup-Fenster, in dem der Benutzer den Zeugnistext direkt bearbeiten kann.
+
+## Zeugnisse freigeben
+In dieser Ansicht können Lehrer die Korrekturen von Zeugnistexten überprüfen und freigeben.
+Es werden jeweils der Originaltext und die korrigierte Version nebeneinander angezeigt. Unterschiede zwischen den beiden Versionen werden hervorgehoben. Eventuelle Anmerkungen des Korrektors werden ebenfalls angezeigt.
+Der Lehrer kann dann entweder die Korrektur übernehmen oder den Originaltext wiederherstellen. Mit "Überspringen" kann der Lehrer die aktuelle Korrektur überspringen und zur nächsten Korrektur wechseln. Über das Menü kann der Lehrer zur Übersicht oder zurück zur Seite zum Zeugnisschreiben navigieren.
+
+## Klassenarbeit erstellen / Klassenarbeit aktualisieren
+Dieser Dialog ermöglicht das Erstellen oder Aktualisieren einer Klassenarbeit.
+Folgende Informationen können eingegeben werden:
+- **Kurs:** Der Kurs, für den die Klassenarbeit gilt (wird angezeigt und kann nicht geändert werden).
+- **Name:** Der Name der Klassenarbeit (erforderlich).
+- **Gewichtung:** Die Gewichtung der Klassenarbeit.
+- **Korrekturmodus:** Auswahl zwischen prozentualer Bewertung oder Bewertung anhand von Punktzahlen für die Noten 1, 4 und 6.
+- **Gesamtpunkte (nur bei prozentualer Bewertung):** Die Gesamtpunktzahl der Klassenarbeit.
+- **Punkte für Note 1, 4 und 6 (nur bei Bewertung anhand von Punktzahlen):** Die Punktzahlen, die für die jeweiligen Noten benötigt werden.
+
+Mit "Erstellen" bzw. "Aktualisieren" wird die Klassenarbeit gespeichert.
+
+## Arbeiten / Noten
+Diese Ansicht zeigt dem Lehrer eine Übersicht über die Noten und Klassenarbeiten in seinen Kursen.
+Die Ansicht ist in Tabs aufgeteilt. Derzeit ist nur der Tab "Eigene Noten" aktiv. Hier werden die Kurse des Lehrers in einer hierarchischen Tabelle dargestellt. Für jeden Kurs werden die zugehörigen Klassenarbeiten und die Ergebnisse aufgelistet. Der Lehrer kann die Klassenarbeiten über die Tabelle auch bearbeiten.
+
+## Gesamtnoten
+Diese Ansicht zeigt eine Notenübersicht für einen bestimmten Kurs an. Der Lehrer sieht eine Tabelle mit den Schülern des Kurses und ihren jeweiligen Noten oder Prozentpunkten, abhängig vom gewählten Bewertungsmodus der Klassenarbeiten.
+Über das Menü kann der Lehrer eine PDF-Datei der Notenübersicht erstellen.
+
+## Stundenplan PDF erstellen
+Dieser Dialog dient dazu, eine PDF-Datei eines Stundenplans zu generieren. Er zeigt zunächst Informationen über den ausgewählten Plan, beispielsweise den Namen der Klasse oder des Lehrers und den Zeitraum, für den der Plan gilt.
+Im Anschluss daran bietet der Dialog verschiedene Möglichkeiten, das Aussehen und den Inhalt des PDFs anzupassen:
+- **Darstellungsoptionen (Checkboxen):** Mit Hilfe von mehreren Checkboxen kann der Benutzer steuern, welche Informationen im PDF enthalten sein sollen.
+    - **Farbig:** Aktiviert den Farbdruck des Stundenplans. Ist die Option deaktiviert, wird der Stundenplan schwarz-weiß gedruckt.
+    - **Räume drucken:** Zeigt die Raumnummern im Stundenplan an.
+    - **Wenn möglich volle Namen:** Gibt die vollständigen Namen der Lehrer an, anstatt Abkürzungen zu verwenden.
+    - **Gruppen drucken:** Zeigt die Schülergruppen im Stundenplan an.
+    - **Legende drucken:** Fügt eine Legende hinzu, die die im Stundenplan verwendeten Symbole und Abkürzungen erklärt.
+    - **Zeiten drucken:** Zeigt die Uhrzeiten der einzelnen Stunden an.
+    - **Pausen darstellen:** Kennzeichnet die Pausen im Stundenplan.
+    - **Gesamtpläne auf mehrere Seiten verteilen:** Verteilt den Stundenplan, wenn er zu groß für eine Seite ist, auf mehrere Seiten, um die Lesbarkeit zu verbessern.
+
+- **Wochendatum (Datumsauswahl):** Hier kann der Benutzer festlegen, für welche Woche der Stundenplan gedruckt werden soll. Durch Auswahl eines beliebigen Datums innerhalb der gewünschten Woche wird der Stundenplan für diese gesamte Woche generiert.
+
+Wenn der Benutzer alle gewünschten Einstellungen vorgenommen hat, klickt er auf die Schaltfläche "PDF erstellen". Der Stundenplan wird dann als PDF-Datei generiert und in einem neuen Tab oder Fenster des Browsers geöffnet. Von dort aus kann der Benutzer die Datei herunterladen, speichern oder direkt ausdrucken.
+
+## Digitale Schultasche
+Die "Digitale Schultasche" dient als zentrale Anlaufstelle für Lehrer, um verschiedene Aufgaben im Zusammenhang mit Unterricht und Kommunikation zu erledigen.
+Zuerst prüft das Programm, ob ein Lehrer angemeldet ist. Ist dies nicht der Fall, wird eine Meldung angezeigt, dass eine Anmeldung erforderlich ist.
+Anschließend werden die für den angemeldeten Lehrer verfügbaren Aktionen ermittelt und dargestellt. Welche Aktionen angezeigt werden, hängt von den individuellen Berechtigungen des Lehrers ab.
+Die verfügbaren Aktionen werden als übersichtliche Karten präsentiert. Jede Karte besteht aus:
+- **Überschrift:** Eine kurze, verständliche Bezeichnung der Aktion.
+- **Schaltfläche "Erstellen":** Ein Klick auf diese Schaltfläche startet die jeweilige Aktion. Dies kann z.B. das Öffnen eines neuen Fensters zum Ausfüllen von Informationen oder der Wechsel zu einer anderen Seite innerhalb des Programms sein.
+
+Die Karten sind in einem Raster angeordnet, um die Übersichtlichkeit zu verbessern. Sollten mehr Aktionen verfügbar sein als Platz vorhanden ist, kann man durch das Raster scrollen.
+Hier sind die möglichen Aktionen der "Digitalen Schultasche" und was sie bewirken:
+- **Adresslisten erstellen:** Erstellt Listen mit den Adressen der Schüler einer Klasse oder Gruppe. Diese Funktion ist nur verfügbar, wenn der Lehrer die entsprechende Berechtigung hat.
+- **Klassenarbeit bewerten:** Öffnet die Übersicht der Klassenarbeiten, um die Leistungen der Schüler zu bewerten und einzutragen.
+- **Schüler-Liste erstellen:** Öffnet ein Fenster, in dem man Schülerlisten erstellen kann, z.B. Klassenlisten oder Anwesenheitslisten. Hier kann man verschiedene Informationen zu den Schülern auswählen, die in der Liste erscheinen sollen.
+- **E-Mail-Verteiler:** Öffnet ein Fenster zur Verwaltung von E-Mail-Verteilern. Damit kann der Lehrer E-Mails an bestimmte Gruppen von Schülern oder Eltern senden. Auch diese Funktion ist nur verfügbar, wenn der Lehrer die entsprechende Berechtigung hat.
+- **Kontaktdaten suchen:** Ermöglicht die Suche nach Kontaktdaten von Schülern, Eltern oder Kollegen. Auch hier ist die entsprechende Berechtigung erforderlich.
+
+Die "Digitale Schultasche" vereinfacht die Arbeit von Lehrern, indem sie alle wichtigen Funktionen übersichtlich an einem Ort zusammenfasst.
+
+
+#### Benutzerverwaltung 
+Dieser Bereich verwaltet die Benutzerkonten und Einstellungen in einem Verwaltungsbereich. Administratoren können hier verschiedene Aktionen im Zusammenhang mit Benutzern durchführen, wie z.B. Konten erstellen, Passwörter zurücksetzen, Rollen ändern und Benutzer löschen.
+Hier eine Zusammenfassung der wichtigsten Funktionen:
+**1. Benutzerkontenverwaltung:**
+- **Neues Benutzerkonto erstellen:** Erstellt ein neues Benutzerkonto. Es generiert automatisch einen Benutzernamen basierend auf Vor- und Nachname, erstellt ein zufälliges Passwort und weist dem Benutzer die richtige Rolle zu (Lehrer oder Schüler). Die Zugangsdaten werden dem Benutzer per E-Mail zugeschickt.
+- **Passwort zurücksetzen und zusenden:** Erstellt ein neues zufälliges Passwort für einen bestehenden Benutzer, aktualisiert den Eintrag in der Datenbank und sendet das neue Passwort per E-Mail an den Benutzer.
+- **Zugangscode erstellen und bereitstellen:** Generiert einen eindeutigen Zugangscode für externen Zugriff, speichert ihn in den Kontoeinstellungen des Benutzers und sendet ihn per E-Mail zu. Dies bietet eine alternative Anmeldemöglichkeit, z.B. für Eltern.
+- **Benutzer löschen:** Löscht die ausgewählten Benutzerkonten.
+- **Zugangsdaten/Zugangscode senden:** Versendet E-Mails mit Zugangsdaten oder Zugangscodes. Optional können diese Daten auch in einer PDF-Datei zusammengefasst und bereitgestellt werden, anstatt sie direkt per E-Mail zu versenden. Dies hängt von einer Einstellung im System ab.
+- **Zufälliges Passwort generieren:** Erstellt ein sicheres, zufälliges Passwort.
+
+**2. Benutzeroberfläche und Filter:**
+- **Benutzerfilter erstellen:** Erstellt ein Auswahlmenü, um Benutzer nach Typ zu filtern (alle Personen, Lehrer, Mitarbeiter, Schüler oder Schüler einer bestimmten Klasse).
+- **Benutzertabelle erstellen:** Erstellt eine Tabelle, die die Benutzerinformationen anzeigt, einschließlich Benutzername, Name, Rollen und einer Schnellzugriffsanzeige (falls zutreffend).
+- **Benutzer filtern:** Filtert die in der Tabelle angezeigten Benutzer basierend auf den ausgewählten Filterkriterien.
+
+## Verwaltungsrollen
+Dieser Dialog dient dazu, die Rollen von Benutzern zu ändern. Man kann damit die Rollen für mehrere Benutzer gleichzeitig anpassen.
+So funktioniert es:
+1. **Auswahl der Benutzer:** Bevor der Dialog geöffnet wird, wählt man die Benutzer aus, deren Rollen geändert werden sollen.
+2. **Rollen auswählen:** Im Dialog werden dann die verfügbaren Rollen angezeigt. Welche Rollen das sind, hängt davon ab, ob man nur Lehrer/Mitarbeiter oder nur Schüler ausgewählt hat.
+    - **Lehrer/Mitarbeiter:** Wenn nur Lehrer oder Mitarbeiter ausgewählt wurden, kann man zwischen "Administrator" und "Lehrer" wählen. Hier kann man immer nur eine Rolle auswählen. Zusätzlich werden noch weitere Rollen als Checkboxen angezeigt. Man kann mehrere Checkboxen aktivieren und so den Benutzern mehrere Rollen zuweisen. Wenn alle ausgewählten Benutzer bereits eine bestimmte Rolle haben, ist die entsprechende Checkbox von Anfang an aktiviert.
+    - **Schüler:** Wenn nur Schüler ausgewählt wurden, werden andere Rollen als Checkboxen angezeigt. Auch hier kann man mehrere Checkboxen auswählen.
+
+3. **Rollen zuweisen:** Wenn man auf "Rolle ändern" klickt, werden die ausgewählten Rollen den Benutzern zugewiesen.
+4. **Rückmeldung:** Anschließend bekommt man eine Meldung, ob die Rollen für alle Benutzer erfolgreich geändert wurden. Falls bei der Zuweisung Fehler aufgetreten sind, wird eine entsprechende Meldung angezeigt. Der Bildschirm wird aktualisiert, damit man die geänderten Rollen sieht.
+
+Dieser Dialog erleichtert die Verwaltung von Benutzerrollen, da man die Rollen für mehrere Benutzer gleichzeitig ändern kann und eine klare Rückmeldung über den Erfolg der Aktion erhält. Die Unterscheidung zwischen Lehrer-/Mitarbeiter- und Schülerrollen verhindert, dass ungeeignete Rollen zugewiesen werden.
+
+## Aufsichtspläne
+Diese Ansicht zeigt die Aufsichtspläne an und ermöglicht es, diese zu verwalten.
+**Anzeige des Plans:**
+Zuerst wird geprüft, ob Aufsichtspläne vorhanden sind. Falls nicht, wird eine Meldung angezeigt, die den Benutzer auffordert, einen neuen Plan zu erstellen. Sind Pläne vorhanden, werden diese in einer Auswahlliste angezeigt. Nach der Auswahl eines Plans wird der dazugehörige Aufsichtsplan in einer Tabelle dargestellt. Die Tabelle zeigt die Aufsichten nach Zeitraum und Ort geordnet. Für jeden Wochentag gibt es eine Spalte, in der die Aufsichtspersonen eingetragen sind. Ist für eine bestimmte Aufsicht noch keine Person eingetragen, wird die Zelle mit "Neu" markiert.
+**Funktionen und Menü:**
+Über ein Menü oberhalb der Tabelle kann der Benutzer folgende Aktionen ausführen:
+- **Neuer Aufsichtsplan:** Erstellt einen neuen, leeren Aufsichtsplan. Es öffnet sich ein Dialog, in dem man den Plan benennen und weitere Einstellungen vornehmen kann.
+- **Aufsichtsplan Einstellungen:** Öffnet ein Fenster, in dem man die Einstellungen des ausgewählten Aufsichtsplans bearbeiten kann (z.B. welche Tage berücksichtigt werden).
+- **PDF erstellen:** Erstellt eine PDF-Datei des aktuellen Aufsichtsplans.
+- **Aufsichtsplan löschen:** Löscht den ausgewählten Aufsichtsplan. Es erscheint eine Sicherheitsabfrage, bevor der Plan endgültig gelöscht wird.
+
+**Aufsichten bearbeiten:**
+In der Tabelle kann der Benutzer die Aufsichten direkt bearbeiten. Durch Klicken auf einen Eintrag in der Tabelle (den Namen eines Lehrers) öffnet sich ein Kontextmenü. In diesem Menü kann man:
+- **Löschen:** Die ausgewählte Aufsicht entfernen.
+- **Aufsicht Hinzufügen:** Eine neue Aufsicht für den gewählten Zeitraum und Ort hinzufügen. Es öffnet sich ein Untermenü, in dem man den Lehrer auswählen kann, der die Aufsicht übernehmen soll.
+
+Klickt man auf "Neu" in einer leeren Zelle, öffnet sich ebenfalls ein Kontextmenü, über das man direkt einen Lehrer für die entsprechende Aufsicht auswählen kann.
+
+## Aufsichtsplan erstellen / Aufsichtsplan aktualisieren
+Dieser Dialog dient zum Erstellen oder Aktualisieren eines Aufsichtsplans. Er ist in verschiedene Bereiche (Tabs) unterteilt:
+**Start:**
+- **Name:** Hier muss ein Name für den Aufsichtsplan eingegeben werden. Dieser Name ist erforderlich.
+- **Startdatum:** Das Datum, ab dem der Aufsichtsplan gültig ist.
+- **Enddatum:** Das Datum, bis zu dem der Aufsichtsplan gültig ist.
+
+**Tage:**
+- **Verwendete Wochentage:** Hier kann man auswählen, für welche Wochentage der Aufsichtsplan gelten soll. Die Auswahl erfolgt über Checkboxen. Wochentage, für die bereits Aufsichten eingetragen wurden, können nicht mehr deaktiviert werden.
+
+**Zeiten:**
+- **Zeiträume:** Hier definiert man die Zeiträume, für die Aufsichten eingeplant werden können. Für jeden Zeitraum gibt es zwei Felder zur Auswahl der Start- und Endzeit. Über einen Button mit einem Plus-Symbol kann man neue Zeiträume hinzufügen. Einträge, die für Aufsichten verwendet werden, können nicht gelöscht werden.
+
+**Orte:**
+- **Aufsichtsorte:** Hier legt man die Orte fest, an denen die Aufsichten stattfinden. Für jeden Ort gibt es ein Textfeld, in das man den Namen des Ortes eintragen kann. Über einen Button mit einem Plus-Symbol kann man neue Orte hinzufügen. Orte, die für Aufsichten verwendet werden, können nicht gelöscht werden.
+
+**Speichern:**
+- Wenn alle erforderlichen Angaben gemacht wurden, kann man den Aufsichtsplan mit "Erstellen" bzw. "Aktualisieren" speichern. Es wird geprüft, ob ein Name eingegeben wurde und ob das Startdatum vor dem Enddatum liegt.
+
+## Webseiten-Baukasten
+Diese Seite bietet Werkzeuge zum Erstellen von HTML-Code, mit dem bestimmte Schuldaten, wie Kalender und Vertretungspläne, auf einer Webseite angezeigt werden können. Sie vereinfacht das Einbetten dynamischer Inhalte, indem sie gebrauchsfertige Code-Schnipsel bereitstellt.
+**Funktionsweise:**
+Die Seite zeigt abhängig davon, welche Module in den Einstellungen der Anwendung aktiviert sind, verschiedene Bausteine an.
+**Bausteine:**
+Jeder Baustein dient der Darstellung einer bestimmten Art von Daten (z.B. Kalender, Vertretungen). Jeder Baustein enthält:
+- **Überschrift:** Gibt die Art der Daten an (z.B. "Kalender", "Vertretungsplan").
+- **Veröffentlichen (Checkbox):** Mit dieser Checkbox kann man steuern, ob die Daten auf der Webseite veröffentlicht werden sollen oder nicht.
+- **Informationen (Text):** Ein kurzer Text, der beschreibt, welche Daten veröffentlicht werden (z.B. "Es werden nur öffentliche Termine, die in der Zukunft liegen, veröffentlicht.").
+- **Code anzeigen (ausklappbarer Bereich):** Hier wird der generierte HTML- und JavaScript-Code angezeigt. Der Code ist zunächst ausgeblendet und kann durch Klicken auf "Code anzeigen" eingeblendet werden. Der Code wird in einer Schriftart mit fester Breite angezeigt, um die Lesbarkeit zu verbessern. Ist die Checkbox "Veröffentlichen" aktiviert, wird der Code standardmäßig angezeigt.
+
+**Spezifische Bausteine:**
+- **Kalender:** Erstellt den Baustein für die Kalenderdaten. Der generierte Code erstellt eine HTML-Tabelle mit Spalten für Datum, Uhrzeit, Veranstaltung und Beschreibung. Mithilfe von JavaScript werden die Kalenderdaten von einem bestimmten API-Endpunkt abgerufen und dynamisch in die Tabelle eingefügt.
+- **Vertretungsplan:** Erstellt den Baustein für die Vertretungsdaten. Der generierte Code erstellt eine HTML-Tabelle mit Spalten für Datum, fehlenden Unterricht und Vertretung. Mithilfe von JavaScript werden die Vertretungsdaten von einem API-Endpunkt abgerufen und dynamisch in die Tabelle eingefügt.
+
+Diese Seite vereinfacht die Integration von Schuldaten in eine Webseite, indem sie vorgefertigte Code-Schnipsel bereitstellt und diese mit den Einstellungen für die Veröffentlichung auf dem Server verknüpft. Die Verwendung von JavaScript ermöglicht dynamische Aktualisierungen, ohne dass der Code manuell geändert werden muss.
+
+## Lehrer-Deputat auf Cloud
+Diese Ansicht zeigt das Deputat eines Lehrers an.
+**Lehrer auswählen:**
+Wenn der angemeldete Benutzer die Rolle "Deputatsadministrator" hat, kann er über ein Menü oder einen Button in der Titelzeile einen Lehrer auswählen, dessen Deputat angezeigt werden soll. Im Menü werden alle Lehrer aufgelistet. Nach der Auswahl wird das Deputat des gewählten Lehrers angezeigt.
+**Deputatsanzeige:**
+Diese Cloud-Ansicht zeigt das Deputat eines Lehrers, aufgeschlüsselt nach Kursen, und enthält wichtige Details wie Vertragsstunden, geplantes Deputat und alle besonderen Faktoren, die die Deputatsberechnung beeinflussen.
+**Funktionsweise:**
+1. **Kurse filtern:** Zuerst werden die Kurse herausgefiltert, die vom aktuell ausgewählten Lehrer unterrichtet werden. Nur diese Kurse werden in der Deputatsansicht angezeigt.
+2. **Deputatsansicht einrichten:**
+    - Die Ansicht erhält den Lehrer und das aktive Schuljahr als Eingabe.
+    - Es wird geprüft, ob dem angemeldeten Konto ein Lehrer zugeordnet ist. Falls nicht, wird eine Meldung angezeigt.
+    - Alle Kurse, die der Lehrer im gegebenen Schuljahr unterrichtet, werden abgerufen.
+    - Es werden alle Sonderfälle (z.B. Deputatsreduzierung aufgrund besonderer Umstände) ermittelt, die mit den Kursen des Lehrers verbunden sind.
+    - Es wird eine Liste mit Abkürzungen für Sonderfälle erstellt, die in der Ansicht angezeigt werden.
+    - Außerdem werden einige interne Daten zu Klassen und Gruppen verarbeitet, um eine korrekte Deputatsberechnung zu gewährleisten.
+
+3. **Deputatsanzeige:**
+    - **Schuljahr und Vertragsdeputat:** Zeigt den Namen des ausgewählten Schuljahres und das Vertragsdeputat des Lehrers für dieses Jahr an.
+    - **Geplantes Deputat:** Zeigt das geplante Deputat des Lehrers für das Schuljahr an, berechnet aus den zugewiesenen Kursen.
+    - **Deputatstabelle:** Das Kernstück der Ansicht ist eine Tabelle, die die Deputatsaufschlüsselung für jeden Kurs anzeigt.
+
+4. **Details der Deputatstabelle:**
+    - **Spalten:**
+        - **Gruppe:** Zeigt die Klasse oder Gruppe, die mit dem Kurs verbunden ist (z.B. "Klasse 7", "7.A").
+        - **Fach:** Das im Kurs unterrichtete Fach.
+        - **Deputat:** Das Basisdeputat für den Kurs, möglicherweise einschließlich regulärer Stunden und Epochenwochen. Das Format ist "Stunden / Wochen" oder nur "Stunden" oder "Wochen", wenn einer der Werte Null ist.
+        - **Spezialfall:** Falls zutreffend, werden hier Abkürzungen für Sonderfälle angezeigt, die die Deputatsberechnung für diesen Kurs beeinflussen.
+        - **Faktor:** Ein Faktor, der aufgrund der Sonderfälle auf das Basisdeputat angewendet wird.
+        - **= (Gesamt):** Das endgültig berechnete Deputat für den Kurs unter Berücksichtigung des Basisdeputats, der Sonderfälle und des angewendeten Faktors.
+
+    - **Abkürzungen:** Unterhalb der Tabelle wird eine Liste der in der Spalte "Spezialfall" verwendeten Abkürzungen mit ihrer Bedeutung angezeigt, um die Deputatsanpassungen leichter zu verstehen.
+
+Diese Ansicht bietet einen umfassenden Überblick über das Deputat eines Lehrers und stellt die Informationen klar und transparent dar. Sie berücksichtigt verschiedene Faktoren, die die endgültige Deputatsberechnung beeinflussen können, und verwendet Abkürzungen und Erklärungen, um das Verständnis zu erleichtern.
