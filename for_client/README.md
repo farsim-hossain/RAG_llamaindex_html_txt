@@ -57,6 +57,7 @@ OPENAI_MODEL=gpt-3.5-turbo
 
 ## Deployment with Docker
 
+- make sure you have the vector_store directory (if not, you have to create virtual environment and run the `python vectorize_webpages.py`)
 - docker build -t rag-system .
 - docker run -p 8000:8000 --env-file .env rag-system
 
