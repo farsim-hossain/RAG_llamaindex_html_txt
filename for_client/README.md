@@ -50,9 +50,10 @@ OPENAI_MODEL=gpt-3.5-turbo
 
 ## Deployment Without Docker
 
+- create virtual environment and activate it using `python -m venv venv` and `source venv/bin/activate`
 - pip install -r requirements.txt
 - python vectorize_webpages.py
-- python rest_api.py
+- python rest_api.py or uvicorn rest_api:app --reload
 
 ## Deployment with Docker
 
@@ -69,6 +70,12 @@ curl -X POST "http://localhost:8000/query" \
      -d '{"question": "Your question here"}'
 ```
 
+If you are using windows cmd, you have to format the command like this :
+
+```bash
+curl -X POST "http://localhost:8000/query" -H "Content-Type: application/json" -d "{\"question\": \"Your question here\"}"
+```
+
 Response format:
 
 ```json
@@ -77,5 +84,3 @@ Response format:
   "sources": ["source1.txt", "source2.txt"]
 }
 ```
-
-# RAG_llamaindex_html_txt
