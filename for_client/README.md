@@ -52,8 +52,8 @@ OPENAI_MODEL=gpt-3.5-turbo
 
 - create virtual environment and activate it using `python -m venv venv` and `source venv/bin/activate`
 - pip install -r requirements.txt
-- python vectorize_webpages.py
-- python rest_api.py or uvicorn rest_api:app --reload
+- If you do not see the vector_store directory, run the following command:`python vectorize_webpages.py`
+- run python rest_api.py or uvicorn rest_api:app --reload
 
 ## Deployment with Docker
 
