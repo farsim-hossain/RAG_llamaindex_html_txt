@@ -60,9 +60,17 @@ docker --version
 docker-compose --version
 ```
 
+### Docker and Docker Compose Installation
+
+Please follow this link for installing Docker :
+https://docs.docker.com/engine/install/rhel/#install-using-the-repository
+
+Please follow this link for installing Docker Compose :
+https://docs.docker.com/compose/install/linux/
+
 # Create a .env File
 
-Create a `.env` file in the root directory of the project with the following content:
+Create a `.env` file in the root directory (if not there already) of the project with the following content:
 
 ```env
 OPENAI_API_KEY=your_key_here
