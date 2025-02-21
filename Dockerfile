@@ -1,6 +1,4 @@
-
-
-# Use Python 3.9 slim image
+# Dockerfile
 FROM python:3.9-slim
 
 # Set working directory
@@ -13,15 +11,11 @@ COPY requirements.txt .
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir --default-timeout=1000 -r requirements.txt
 
-
-# Copy application code
+# Copy application code (including existing vector_store)
 COPY . .
-
-# Create vector store directory
-RUN mkdir -p vector_store
 
 # Expose port
 EXPOSE 8000
 
-# Run vectorizer first, then start the API
-CMD ["sh", "-c", "uvicorn rest_api:app --host 0.0.0.0 --port 8000"]
+# Run the API with multiple workers for better performance
+CMD ["uvicorn", "rest_api:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "4"]

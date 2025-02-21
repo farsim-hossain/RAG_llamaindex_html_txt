@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  rag-api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: rag-api
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: '12'
+          memory: 4.5G
+        reservations:
+          cpus: '4'
+          memory: 3G
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-3.5-turbo}
+      - PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb=512
+      - MALLOC_TRIM_THRESHOLD_=100000
+    volumes:
+      - ./vector_store:/app/vector_store:ro  # Added ':ro' for read-only access since it's pre-built
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - rag-api
