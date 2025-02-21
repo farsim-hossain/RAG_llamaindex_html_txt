@@ -26,7 +26,7 @@ services:
       - PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb=512
       - MALLOC_TRIM_THRESHOLD_=100000
     volumes:
-      - ./vector_store:/app/vector_store:ro  # Added ':ro' for read-only access since it's pre-built
+      - ./vector_store:/app/vector_store:ro
       - ./logs:/app/logs
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
@@ -52,35 +52,3 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
     depends_on:
       - rag-api
-
-  prometheus:
-    image: prom/prometheus:latest
-    deploy:
-      resources:
-        limits:
-          cpus: '1'
-          memory: 512M
-        reservations:
-          memory: 256M
-    volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
-      - prometheus_data:/prometheus
-
-  grafana:
-    image: grafana/grafana:latest
-    deploy:
-      resources:
-        limits:
-          cpus: '1'
-          memory: 512M
-        reservations:
-          memory: 256M
-    volumes:
-      - grafana_data:/var/lib/grafana
-
-volumes:
-  prometheus_data:
-  grafana_data:
-
-
-
